@@ -321,6 +321,193 @@ nav a.active { color: #1a1a1a; border-bottom: 2px solid #c41e3a; padding-bottom:
   nav { display: none; }
 }
 
+/* ── SVG Infographic Animations ── */
+@keyframes growWidth {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+@keyframes growHeight {
+  from { transform: scaleY(0); }
+  to { transform: scaleY(1); }
+}
+@keyframes drawLine {
+  from { stroke-dashoffset: var(--dash-length); }
+  to { stroke-dashoffset: 0; }
+}
+@keyframes fadeInSvg {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes scaleUpDot {
+  from { transform: scale(0); }
+  to { transform: scale(1); }
+}
+@keyframes fadeInArea {
+  from { fill-opacity: 0; }
+  to { fill-opacity: 1; }
+}
+@keyframes cascadeIn {
+  from { opacity: 0; transform: translateY(-12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* All animatable elements start invisible until triggered */
+.animate-on-scroll .anim-bar,
+.animate-on-scroll .anim-bar-v,
+.animate-on-scroll .anim-line,
+.animate-on-scroll .anim-dot,
+.animate-on-scroll .anim-cell,
+.animate-on-scroll .anim-funnel,
+.animate-on-scroll .anim-slope,
+.animate-on-scroll .anim-lollipop,
+.animate-on-scroll .anim-stem {
+  opacity: 0;
+}
+
+/* Horizontal bar grow */
+.animate-on-scroll.animated .anim-bar {
+  opacity: 1;
+  transform-origin: left center;
+  animation: growWidth 700ms ease-out both;
+}
+
+/* Vertical bar grow */
+.animate-on-scroll.animated .anim-bar-v {
+  opacity: 1;
+  transform-origin: center bottom;
+  animation: growHeight 700ms ease-out both;
+}
+
+/* Line draw */
+.animate-on-scroll.animated .anim-line {
+  opacity: 1;
+  animation: drawLine 900ms ease-out both;
+}
+
+/* Area fade in — uses fill-opacity so SVG opacity attribute is preserved */
+.animate-on-scroll .anim-area {
+  opacity: unset;
+  fill-opacity: 0;
+}
+.animate-on-scroll.animated .anim-area {
+  animation: fadeInArea 600ms ease-out both;
+}
+
+/* Dot / circle fade in */
+.animate-on-scroll.animated .anim-dot {
+  opacity: 1;
+  transform-origin: center center;
+  animation: scaleUpDot 500ms ease-out both;
+}
+
+/* Waffle cell fill */
+.animate-on-scroll.animated .anim-cell {
+  opacity: 1;
+  animation: fadeInSvg 300ms ease-out both;
+}
+
+/* Funnel section cascade */
+.animate-on-scroll.animated .anim-funnel {
+  opacity: 1;
+  animation: cascadeIn 600ms ease-out both;
+}
+
+/* Slope chart lines */
+.animate-on-scroll.animated .anim-slope {
+  opacity: 1;
+  animation: drawLine 800ms ease-out both;
+}
+
+/* Lollipop dots */
+.animate-on-scroll.animated .anim-lollipop {
+  opacity: 1;
+  transform-origin: center center;
+  animation: scaleUpDot 400ms ease-out both;
+}
+
+/* Lollipop stems */
+.animate-on-scroll.animated .anim-stem {
+  opacity: 1;
+  transform-origin: center bottom;
+  animation: growHeight 500ms ease-out both;
+}
+
+/* Respect reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .animate-on-scroll .anim-bar,
+  .animate-on-scroll .anim-bar-v,
+  .animate-on-scroll .anim-line,
+  .animate-on-scroll .anim-dot,
+  .animate-on-scroll .anim-cell,
+  .animate-on-scroll .anim-funnel,
+  .animate-on-scroll .anim-slope,
+  .animate-on-scroll .anim-lollipop,
+  .animate-on-scroll .anim-stem {
+    opacity: 1;
+    animation: none !important;
+    transform: none !important;
+  }
+  .animate-on-scroll .anim-area {
+    fill-opacity: 1;
+    animation: none !important;
+  }
+}
+
+/* ── Scroll Data Story ── */
+.scroll-story{position:relative;background:#0a0a2e;overflow:hidden}
+.scroll-story::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(1px 1px at 15% 25%,rgba(100,200,255,0.3),transparent),radial-gradient(1px 1px at 45% 65%,rgba(100,200,255,0.2),transparent),radial-gradient(1px 1px at 75% 15%,rgba(200,150,255,0.3),transparent),radial-gradient(1px 1px at 85% 75%,rgba(100,200,255,0.2),transparent);opacity:0.5;pointer-events:none}
+.scroll-scene{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:80px 24px;position:relative;z-index:2}
+.scroll-scene:last-child{min-height:70vh}
+.scene-content{max-width:680px;margin:0 auto;text-align:center;opacity:0;transform:translateY(40px);transition:opacity 0.8s ease,transform 0.8s ease}
+.scene-content.in-view{opacity:1;transform:translateY(0)}
+.scene-label{font-family:'Inter',sans-serif;font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.18em;color:#c41e3a;margin-bottom:16px}
+.scene-headline{font-family:'Source Serif 4',Georgia,serif;font-size:clamp(2rem,4vw,3rem);font-weight:700;color:#fff;letter-spacing:-0.03em;line-height:1.15;margin-bottom:20px}
+.scene-subtext{font-family:'Inter',sans-serif;font-size:0.9rem;color:rgba(255,255,255,0.5);line-height:1.6;max-width:500px;margin:0 auto}
+.scene-section-ref{font-family:'Inter',sans-serif;font-size:0.7rem;font-weight:600;text-transform:uppercase;letter-spacing:0.1em;color:rgba(255,255,255,0.3);margin-top:24px;display:block}
+.big-counter{font-family:'Inter',sans-serif;font-size:clamp(3rem,7vw,5.5rem);font-weight:700;color:#fff;letter-spacing:-0.04em;line-height:1;margin:28px 0 8px}
+.big-counter .dim{color:rgba(255,255,255,0.2)}
+.big-counter .arrow{color:#c41e3a;font-size:0.5em;vertical-align:middle;margin:0 12px}
+.permit-viz{margin:36px auto;max-width:460px;display:flex;flex-direction:column;gap:16px}
+.permit-row{display:flex;align-items:center;gap:12px}
+.permit-label{font-family:'Inter',sans-serif;font-size:0.75rem;font-weight:600;color:rgba(255,255,255,0.5);min-width:52px;text-align:right}
+.permit-track{flex:1;height:32px;background:rgba(255,255,255,0.06);border-radius:4px;overflow:hidden}
+.permit-fill{height:100%;border-radius:4px;display:flex;align-items:center;justify-content:flex-end;padding-right:12px;font-family:'Inter',sans-serif;font-size:0.8rem;font-weight:700;color:#fff;width:0;transition:width 1.4s cubic-bezier(0.22,1,0.36,1)}
+.in-view .permit-fill{width:var(--bar-w)}
+.lang-stat{font-family:'Inter',sans-serif;font-size:1rem;color:rgba(255,255,255,0.5);margin-top:20px}
+.lang-stat strong{font-size:2rem;color:#fff;font-weight:700}
+.disparity-viz{margin:36px auto;max-width:440px;display:flex;flex-direction:column;gap:20px}
+.disparity-row{text-align:left}
+.disparity-meta{font-family:'Inter',sans-serif;font-size:0.8rem;font-weight:600;color:rgba(255,255,255,0.65);margin-bottom:6px;display:flex;justify-content:space-between}
+.disparity-meta .pct{font-weight:700;color:#fff}
+.disparity-track{height:32px;background:rgba(255,255,255,0.06);border-radius:4px;overflow:hidden}
+.disparity-fill{height:100%;border-radius:4px;width:0;transition:width 1.4s cubic-bezier(0.22,1,0.36,1)}
+.in-view .disparity-fill{width:var(--bar-w)}
+.disparity-source{font-family:'Inter',sans-serif;font-size:0.7rem;color:rgba(255,255,255,0.25);margin-top:12px;text-align:left}
+.jobs-viz{margin:36px auto;max-width:460px;display:flex;flex-direction:column;gap:14px}
+.jobs-row{display:flex;align-items:center;gap:12px}
+.jobs-label{font-family:'Inter',sans-serif;font-size:0.75rem;font-weight:600;min-width:68px;text-align:right}
+.jobs-label.lost{color:#d97706}
+.jobs-label.gained{color:#059669}
+.jobs-track{flex:1;height:32px;background:rgba(255,255,255,0.06);border-radius:4px;overflow:hidden}
+.jobs-fill{height:100%;border-radius:4px;display:flex;align-items:center;padding-left:12px;font-family:'Inter',sans-serif;font-size:0.8rem;font-weight:700;color:#fff;width:0;transition:width 1.4s cubic-bezier(0.22,1,0.36,1)}
+.in-view .jobs-fill{width:var(--bar-w)}
+.jobs-note{font-family:'Inter',sans-serif;font-size:0.75rem;color:rgba(255,255,255,0.3);font-style:italic;margin-top:8px;text-align:left}
+.funnel-viz{margin:36px auto;max-width:480px;display:flex;flex-direction:column;align-items:center;gap:8px}
+.funnel-step{height:48px;border-radius:4px;display:flex;align-items:center;justify-content:center;font-family:'Inter',sans-serif;font-weight:600;font-size:0.85rem;color:#fff;width:0;overflow:hidden;white-space:nowrap;opacity:0;transform:translateY(12px);transition:width 1s cubic-bezier(0.22,1,0.36,1),opacity 0.6s ease,transform 0.6s ease}
+.in-view .funnel-step{opacity:1;transform:translateY(0);width:var(--fw)}
+.in-view .funnel-step:nth-child(1){transition-delay:0s}
+.in-view .funnel-step:nth-child(2){transition-delay:0.3s}
+.in-view .funnel-step:nth-child(3){transition-delay:0.6s}
+.funnel-label{font-family:'Inter',sans-serif;font-size:0.65rem;color:rgba(255,255,255,0.35);margin-top:2px;opacity:0;transition:opacity 0.5s ease}
+.in-view .funnel-label{opacity:1}
+.in-view .funnel-label:nth-of-type(2){transition-delay:0.3s}
+.in-view .funnel-label:nth-of-type(3){transition-delay:0.6s}
+.in-view .funnel-label:nth-of-type(4){transition-delay:0.9s}
+.scene-final-text{font-family:'Source Serif 4',Georgia,serif;font-size:clamp(1.25rem,2.5vw,1.65rem);font-weight:400;color:rgba(255,255,255,0.8);line-height:1.65;max-width:560px;margin:0 auto;font-style:italic}
+.scene-final-text em{color:#fff;font-style:normal;font-weight:600}
+.scroll-story-bridge{height:100px;background:linear-gradient(to bottom,#0a0a2e,#fafafa)}
+@media(max-width:768px){.big-counter{font-size:clamp(2rem,10vw,3.2rem)}.big-counter .arrow{margin:0 6px}.permit-label,.jobs-label{min-width:40px;font-size:0.65rem}.funnel-step{height:40px;font-size:0.75rem}.scroll-scene{padding:60px 16px}.lang-stat strong{font-size:1.5rem}}
+
 </style>
 </head>
 <body>
@@ -438,6 +625,133 @@ if(sessionStorage.getItem('ai-city-auth')==='1'){
     <p>The machine is already in the municipal building. The question is who controls it.</p>
   </div>
 </section>
+
+<!-- ═══ SCROLL DATA STORY ═══ -->
+<section class="scroll-story" id="data-story">
+
+  <!-- Scene 1: The Scale -->
+  <div class="scroll-scene">
+    <div class="scene-content" data-scene>
+      <div class="scene-label">The Scale</div>
+      <div class="scene-headline">The AI-in-cities market is about to explode</div>
+      <div class="big-counter">
+        <span class="dim">$</span><span id="counter-value">50.6</span><span class="dim">B</span>
+      </div>
+      <div class="scene-subtext">Global spending on AI in cities, 2025. By 2034, that number reaches <strong style="color:#fff">$460 billion</strong> — a ninefold increase in under a decade.</div>
+      <span class="scene-section-ref">Precedence Research, 2024</span>
+    </div>
+  </div>
+
+  <!-- Scene 2: The Promise -->
+  <div class="scroll-scene">
+    <div class="scene-content" data-scene>
+      <div class="scene-label">The Promise</div>
+      <div class="scene-headline">What if government actually worked faster?</div>
+      <div class="permit-viz">
+        <div class="permit-row">
+          <span class="permit-label">Before</span>
+          <div class="permit-track">
+            <div class="permit-fill" style="--bar-w:100%;background:rgba(255,255,255,0.15)">180 days</div>
+          </div>
+        </div>
+        <div class="permit-row">
+          <span class="permit-label">After AI</span>
+          <div class="permit-track">
+            <div class="permit-fill" style="--bar-w:1.7%;background:#059669;min-width:68px">3 days</div>
+          </div>
+        </div>
+      </div>
+      <div class="scene-subtext">Building permit review times in Honolulu after AI-assisted processing. Denver's 311 system now answers residents in</div>
+      <div class="lang-stat"><strong>72</strong> languages, around the clock</div>
+      <span class="scene-section-ref">Section I &mdash; The Promise</span>
+    </div>
+  </div>
+
+  <!-- Scene 3: The Peril -->
+  <div class="scroll-scene">
+    <div class="scene-content" data-scene>
+      <div class="scene-label">The Peril</div>
+      <div class="scene-headline">The algorithm sees race</div>
+      <div class="disparity-viz">
+        <div class="disparity-row">
+          <div class="disparity-meta">
+            <span>Black defendants &mdash; false positive rate</span>
+            <span class="pct">44.9%</span>
+          </div>
+          <div class="disparity-track">
+            <div class="disparity-fill" style="--bar-w:89.8%;background:#c41e3a"></div>
+          </div>
+        </div>
+        <div class="disparity-row">
+          <div class="disparity-meta">
+            <span>White defendants &mdash; false positive rate</span>
+            <span class="pct">23.5%</span>
+          </div>
+          <div class="disparity-track">
+            <div class="disparity-fill" style="--bar-w:47%;background:rgba(255,255,255,0.25)"></div>
+          </div>
+        </div>
+        <div class="disparity-source">COMPAS recidivism algorithm, ProPublica analysis (2016)</div>
+      </div>
+      <div class="scene-subtext">Nearly twice the error rate. Same tool. Same courtrooms. Different outcomes by skin color.</div>
+      <span class="scene-section-ref">Section II &mdash; The Peril</span>
+    </div>
+  </div>
+
+  <!-- Scene 4: The Disruption -->
+  <div class="scroll-scene">
+    <div class="scene-content" data-scene>
+      <div class="scene-label">The Disruption</div>
+      <div class="scene-headline">Not the same jobs. Not the same places.</div>
+      <div class="jobs-viz">
+        <div class="jobs-row">
+          <span class="jobs-label lost">Displaced</span>
+          <div class="jobs-track">
+            <div class="jobs-fill" style="--bar-w:54%;background:#d97706">92M jobs</div>
+          </div>
+        </div>
+        <div class="jobs-row">
+          <span class="jobs-label gained">Created</span>
+          <div class="jobs-track">
+            <div class="jobs-fill" style="--bar-w:100%;background:#059669">170M jobs</div>
+          </div>
+        </div>
+        <div class="jobs-note">The net number looks positive. But the workers who lose jobs are not the ones who get the new ones — and the cities where jobs vanish are not the cities where they appear.</div>
+      </div>
+      <span class="scene-section-ref">Section III &mdash; The Disruption</span>
+    </div>
+  </div>
+
+  <!-- Scene 5: The Gap -->
+  <div class="scroll-scene">
+    <div class="scene-content" data-scene>
+      <div class="scene-label">The Gap</div>
+      <div class="scene-headline">Who is watching the machine?</div>
+      <div class="funnel-viz">
+        <div class="funnel-step" style="--fw:100%;background:rgba(255,255,255,0.12)">250+ cities using AI</div>
+        <div class="funnel-label">deployed tools with no public framework</div>
+        <div class="funnel-step" style="--fw:12%;background:rgba(196,30,58,0.5)">~30</div>
+        <div class="funnel-label">have procurement guidelines</div>
+        <div class="funnel-step" style="--fw:2.4%;background:#c41e3a;min-width:56px">~6</div>
+        <div class="funnel-label">have community oversight boards</div>
+      </div>
+      <div class="scene-subtext" style="margin-top:24px">Most cities adopted AI before adopting rules for it.</div>
+      <span class="scene-section-ref">Section IV &mdash; The Governance Question</span>
+    </div>
+  </div>
+
+  <!-- Scene 6: The Question -->
+  <div class="scroll-scene">
+    <div class="scene-content" data-scene>
+      <div class="scene-final-text">
+        <p>The machine is already in the municipal building.</p>
+        <p style="margin-top:16px">The question is <em>who controls it</em>.</p>
+      </div>
+    </div>
+  </div>
+
+</section>
+<div class="scroll-story-bridge"></div>
 
 <!-- ═══ TABLE OF CONTENTS ═══ -->
 <section class="toc" id="toc">
@@ -557,8 +871,8 @@ function svg311Revolution() {
       const aw = (c.after / maxVal) * chartW;
       return `
         <text x="${chartL - 6}" y="${y + barH}" font-family="Inter,sans-serif" font-size="9" fill="${COLORS.dark}" text-anchor="end" font-weight="500">${c.name}</text>
-        <rect x="${chartL}" y="${y}" width="${bw}" height="${barH}" fill="${COLORS.dark}" opacity="0.25"/>
-        <rect x="${chartL}" y="${y + barH + 2}" width="${aw}" height="${barH}" fill="${COLORS.red}"/>
+        <rect class="anim-bar" style="animation-delay:${i * 60}ms" x="${chartL}" y="${y}" width="${bw}" height="${barH}" fill="${COLORS.dark}" opacity="0.25"/>
+        <rect class="anim-bar" style="animation-delay:${i * 60 + 30}ms" x="${chartL}" y="${y + barH + 2}" width="${aw}" height="${barH}" fill="${COLORS.red}"/>
         <text x="${chartL + aw + 4}" y="${y + barH * 2}" font-family="Inter,sans-serif" font-size="8" fill="${COLORS.red}" font-weight="600">${c.after}h</text>`;
     }).join('')}
     <!-- Legend -->
@@ -604,10 +918,10 @@ function svgPermits() {
       return `
         <text x="${chartL - 6}" y="${y + 14}" font-family="Inter,sans-serif" font-size="9" fill="${COLORS.dark}" text-anchor="end" font-weight="600">${d.city}</text>
         <!-- Before bar (full span) -->
-        <rect x="${chartL}" y="${y + 4}" width="${x2 - chartL}" height="12" fill="#e5e5e5"/>
+        <rect class="anim-bar" style="animation-delay:${i * 80}ms" x="${chartL}" y="${y + 4}" width="${x2 - chartL}" height="12" fill="#e5e5e5"/>
         <text x="${x2 + 4}" y="${y + 14}" font-family="Inter,sans-serif" font-size="7.5" fill="#aaa">${d.before}d</text>
         <!-- After bar (compressed) -->
-        <rect x="${chartL}" y="${y + 20}" width="${Math.max(4, x1 - chartL)}" height="12" fill="${COLORS.red}"/>
+        <rect class="anim-bar" style="animation-delay:${i * 80 + 40}ms" x="${chartL}" y="${y + 20}" width="${Math.max(4, x1 - chartL)}" height="12" fill="${COLORS.red}"/>
         <text x="${Math.max(4, x1 - chartL) + chartL + 4}" y="${y + 30}" font-family="Inter,sans-serif" font-size="7.5" fill="${COLORS.red}" font-weight="600">${d.after}d</text>
         <!-- Reduction label -->
         <text x="${chartL - 6}" y="${y + 30}" font-family="Inter,sans-serif" font-size="8" fill="${COLORS.green}" text-anchor="end">-${pct}%</text>
@@ -648,10 +962,10 @@ function svgPublicHealth() {
       return `
         <g transform="translate(${x}, 0)">
           <!-- Before bar -->
-          <rect x="8" y="${baseY - bH}" width="16" height="${bH}" fill="${COLORS.dark}" opacity="0.2"/>
+          <rect class="anim-bar-v" style="animation-delay:${i * 80}ms" x="8" y="${baseY - bH}" width="16" height="${bH}" fill="${COLORS.dark}" opacity="0.2"/>
           <text x="16" y="${baseY - bH - 4}" font-family="Inter,sans-serif" font-size="8" fill="#aaa" text-anchor="middle">${c.before}%</text>
           <!-- After bar -->
-          <rect x="28" y="${baseY - aH}" width="16" height="${aH}" fill="${COLORS.green}"/>
+          <rect class="anim-bar-v" style="animation-delay:${i * 80 + 40}ms" x="28" y="${baseY - aH}" width="16" height="${aH}" fill="${COLORS.green}"/>
           <text x="36" y="${baseY - aH - 4}" font-family="Inter,sans-serif" font-size="8" fill="${COLORS.green}" text-anchor="middle" font-weight="600">${c.after}%</text>
           <!-- Baseline -->
           <line x1="4" y1="${baseY}" x2="48" y2="${baseY}" stroke="#ddd" stroke-width="1"/>
@@ -727,9 +1041,9 @@ function svgTraffic() {
       return `<text x="${toX(i)}" y="${chartB + 14}" font-family="Inter,sans-serif" font-size="7" fill="#bbb" text-anchor="middle">${p.date}</text>`;
     }).join('')}
     <!-- Area fill -->
-    <path d="${areaD}" fill="${COLORS.blue}" opacity="0.08"/>
+    <path class="anim-area" style="animation-delay:900ms" d="${areaD}" fill="${COLORS.blue}" opacity="0.08"/>
     <!-- Line -->
-    <path d="${pathD}" fill="none" stroke="${COLORS.blue}" stroke-width="2.5" stroke-linejoin="round"/>
+    <path class="anim-line" d="${pathD}" fill="none" stroke="${COLORS.blue}" stroke-width="2.5" stroke-linejoin="round"/>
     <!-- City expansion markers -->
     ${pts.filter(p => p.label).map(p => {
       const i = pts.indexOf(p);
@@ -774,11 +1088,11 @@ function svgClimate() {
     <!-- X axis -->
     ${years.map((yr, i) => `<text x="${toX(i)}" y="${chartB + 14}" font-family="Inter,sans-serif" font-size="8" fill="#bbb" text-anchor="middle">${yr}</text>`).join('')}
     <!-- Stacked areas -->
-    <path d="${costArea}" fill="${COLORS.red}" opacity="0.18"/>
-    <path d="${saveArea}" fill="${COLORS.green}" opacity="0.18"/>
+    <path class="anim-area" style="animation-delay:900ms" d="${costArea}" fill="${COLORS.red}" opacity="0.18"/>
+    <path class="anim-area" style="animation-delay:950ms" d="${saveArea}" fill="${COLORS.green}" opacity="0.18"/>
     <!-- Lines -->
-    <path d="${costPath}" fill="none" stroke="${COLORS.red}" stroke-width="2.5" stroke-linejoin="round"/>
-    <path d="${savePath}" fill="none" stroke="${COLORS.green}" stroke-width="2.5" stroke-linejoin="round"/>
+    <path class="anim-line" d="${costPath}" fill="none" stroke="${COLORS.red}" stroke-width="2.5" stroke-linejoin="round"/>
+    <path class="anim-line" style="animation-delay:100ms" d="${savePath}" fill="none" stroke="${COLORS.green}" stroke-width="2.5" stroke-linejoin="round"/>
     <!-- End labels -->
     <text x="${toX(6) + 4}" y="${toY(dcEnergy[6]) - 2}" font-family="Inter,sans-serif" font-size="8" fill="${COLORS.red}" font-weight="600">110 TWh consumed</text>
     <text x="${toX(6) + 4}" y="${toY(aiSavings[6]) + 10}" font-family="Inter,sans-serif" font-size="8" fill="${COLORS.green}" font-weight="600">100 TWh saved</text>
@@ -825,7 +1139,7 @@ function svgPredictivePolicing() {
         const x = chartL + 10 + i * (barW + gapInner);
         const h = (g.fp / maxPct) * chartH;
         return `
-          <rect x="${x}" y="${chartB - h}" width="${barW}" height="${h}" fill="${g.color}" opacity="0.8"/>
+          <rect class="anim-bar-v" style="animation-delay:${i * 80}ms" x="${x}" y="${chartB - h}" width="${barW}" height="${h}" fill="${g.color}" opacity="0.8"/>
           <text x="${x + barW / 2}" y="${chartB - h - 5}" font-family="Inter,sans-serif" font-size="9" fill="${g.color}" text-anchor="middle" font-weight="700">${g.fp}%</text>`;
       }).join('')}
     </g>
@@ -837,7 +1151,7 @@ function svgPredictivePolicing() {
         const x = chartL + 120 + i * (barW + gapInner);
         const h = (g.fn / maxPct) * chartH;
         return `
-          <rect x="${x}" y="${chartB - h}" width="${barW}" height="${h}" fill="${g.color}" opacity="0.8"/>
+          <rect class="anim-bar-v" style="animation-delay:${(i + 2) * 80}ms" x="${x}" y="${chartB - h}" width="${barW}" height="${h}" fill="${g.color}" opacity="0.8"/>
           <text x="${x + barW / 2}" y="${chartB - h - 5}" font-family="Inter,sans-serif" font-size="9" fill="${g.color}" text-anchor="middle" font-weight="700">${g.fn}%</text>`;
       }).join('')}
     </g>
@@ -882,7 +1196,7 @@ function svgChildWelfare() {
       cumX += w;
       const lines = c.label.split('\\n');
       return `
-        <rect x="${x}" y="${tmT}" width="${w}" height="${tmH}" fill="${c.color}" opacity="0.75" stroke="#fff" stroke-width="2"/>
+        <rect class="anim-bar" style="animation-delay:${i * 100}ms" x="${x}" y="${tmT}" width="${w}" height="${tmH}" fill="${c.color}" opacity="0.75" stroke="#fff" stroke-width="2"/>
         <text x="${x + w / 2}" y="${tmT + tmH / 2 - 10}" font-family="Inter,sans-serif" font-size="${w > 55 ? 9 : 7}" fill="#fff" text-anchor="middle" font-weight="600">${lines[0]}</text>
         ${lines[1] ? `<text x="${x + w / 2}" y="${tmT + tmH / 2 + 2}" font-family="Inter,sans-serif" font-size="${w > 55 ? 9 : 7}" fill="#fff" text-anchor="middle" font-weight="600">${lines[1]}</text>` : ''}
         <text x="${x + w / 2}" y="${tmT + tmH / 2 + 18}" font-family="Inter,sans-serif" font-size="14" fill="#fff" text-anchor="middle" font-weight="700" opacity="0.9">${c.pct}%</text>`;
@@ -934,8 +1248,8 @@ function svgCourts() {
     ${timeline.map((d, i) => {
       const x = toX(i), y = toY(d.cum);
       return `
-        <line x1="${x}" y1="${chartB}" x2="${x}" y2="${y}" stroke="${COLORS.purple}" stroke-width="2" opacity="0.4"/>
-        <circle cx="${x}" cy="${y}" r="4.5" fill="${COLORS.purple}"/>
+        <line class="anim-stem" style="animation-delay:${i * 70}ms" x1="${x}" y1="${chartB}" x2="${x}" y2="${y}" stroke="${COLORS.purple}" stroke-width="2" opacity="0.4"/>
+        <circle class="anim-lollipop" style="animation-delay:${i * 70 + 200}ms" cx="${x}" cy="${y}" r="4.5" fill="${COLORS.purple}"/>
         <text x="${x}" y="${y - 8}" font-family="Inter,sans-serif" font-size="8" fill="${COLORS.purple}" text-anchor="middle" font-weight="700">${d.cum}</text>
         ${d.label ? `<text x="${x}" y="${y - 18}" font-family="Inter,sans-serif" font-size="6.5" fill="${COLORS.dark}" text-anchor="middle" font-weight="500">${d.label}</text>` : ''}`;
     }).join('')}
@@ -982,7 +1296,7 @@ function svgSurveillance() {
       const w = toBarW(c.cams);
       return `
         <text x="${chartL - 6}" y="${y + 16}" font-family="Inter,sans-serif" font-size="9" fill="${COLORS.dark}" text-anchor="end" font-weight="500">${c.name}</text>
-        <rect x="${chartL}" y="${y + 4}" width="${w}" height="${rowH - 8}" fill="${COLORS.dark}" opacity="0.7"/>
+        <rect class="anim-bar" style="animation-delay:${i * 70}ms" x="${chartL}" y="${y + 4}" width="${w}" height="${rowH - 8}" fill="${COLORS.dark}" opacity="0.7"/>
         <text x="${chartL + w + 4}" y="${y + 16}" font-family="Inter,sans-serif" font-size="8" fill="${COLORS.dark}" font-weight="600">${c.cams >= 100 ? c.cams + 'M' : c.cams + 'M'}</text>
         <!-- Per capita dot -->
         <circle cx="${chartL + (c.perCap / 500) * chartW}" cy="${y + rowH / 2}" r="3.5" fill="none" stroke="${COLORS.red}" stroke-width="1.5"/>`;
@@ -1032,9 +1346,9 @@ function svgJobs() {
       const lineColor = c.createRank < c.riskRank ? COLORS.green : (c.createRank > c.riskRank ? COLORS.red : '#999');
       const opacity = bigShift ? 0.7 : 0.25;
       return `
-        <line x1="${colL + 30}" y1="${yL}" x2="${colR - 30}" y2="${yR}" stroke="${lineColor}" stroke-width="${bigShift ? 1.8 : 1}" opacity="${opacity}"/>
-        <circle cx="${colL + 30}" cy="${yL}" r="3" fill="${COLORS.red}" opacity="0.8"/>
-        <circle cx="${colR - 30}" cy="${yR}" r="3" fill="${COLORS.green}" opacity="0.8"/>
+        <line class="anim-slope" style="animation-delay:${cities.indexOf(c) * 60}ms" x1="${colL + 30}" y1="${yL}" x2="${colR - 30}" y2="${yR}" stroke="${lineColor}" stroke-width="${bigShift ? 1.8 : 1}" opacity="${opacity}"/>
+        <circle class="anim-dot" style="animation-delay:${cities.indexOf(c) * 60}ms" cx="${colL + 30}" cy="${yL}" r="3" fill="${COLORS.red}" opacity="0.8"/>
+        <circle class="anim-dot" style="animation-delay:${cities.indexOf(c) * 60 + 400}ms" cx="${colR - 30}" cy="${yR}" r="3" fill="${COLORS.green}" opacity="0.8"/>
         <text x="${colL - 38}" y="${yL + 3.5}" font-family="Inter,sans-serif" font-size="8" fill="${COLORS.dark}" text-anchor="end">${c.riskRank}. ${c.name}</text>
         <text x="${colR + 38}" y="${yR + 3.5}" font-family="Inter,sans-serif" font-size="8" fill="${COLORS.dark}">${c.createRank}. ${c.name}</text>`;
     }).join('')}
@@ -1070,7 +1384,7 @@ function svgEducation() {
       const w = (u.pct / maxPct) * chartW;
       return `
         <text x="${chartL - 6}" y="${y + barH / 2 + 3}" font-family="Inter,sans-serif" font-size="8" fill="${COLORS.dark}" text-anchor="end">${u.label}</text>
-        <rect x="${chartL}" y="${y}" width="${w}" height="${barH}" fill="${u.color}" opacity="0.8"/>
+        <rect class="anim-bar" style="animation-delay:${i * 60}ms" x="${chartL}" y="${y}" width="${w}" height="${barH}" fill="${u.color}" opacity="0.8"/>
         <text x="${chartL + w + 4}" y="${y + barH / 2 + 3}" font-family="Inter,sans-serif" font-size="9" fill="${u.color}" font-weight="700">${u.pct}%</text>`;
     }).join('')}
     <!-- Divider line between cheat and legit -->
@@ -1109,7 +1423,7 @@ function svgDemocracy() {
       const y = gridT + row * (cellH + gapY);
       const hasLaw = withLaw.includes(st);
       return `
-        <rect x="${x}" y="${y}" width="${cellW}" height="${cellH}" fill="${hasLaw ? COLORS.red : '#e5e5e5'}" opacity="${hasLaw ? 0.85 : 0.6}"/>
+        <rect class="anim-cell" style="animation-delay:${i * 30}ms" x="${x}" y="${y}" width="${cellW}" height="${cellH}" fill="${hasLaw ? COLORS.red : '#e5e5e5'}" opacity="${hasLaw ? 0.85 : 0.6}"/>
         <text x="${x + cellW / 2}" y="${y + cellH / 2 + 3}" font-family="Inter,sans-serif" font-size="7" fill="${hasLaw ? '#fff' : '#999'}" text-anchor="middle" font-weight="${hasLaw ? 600 : 400}">${st}</text>`;
     }).join('')}
     <!-- Legend -->
@@ -1159,7 +1473,7 @@ function svgDigitalDivide() {
     ${groups.map(g => {
       const x = toX(g.broadband), y = toY(g.aiBenefit);
       return `
-        <circle cx="${x}" cy="${y}" r="5" fill="${g.color}" opacity="0.85"/>
+        <circle class="anim-dot" style="animation-delay:${groups.indexOf(g) * 120}ms" cx="${x}" cy="${y}" r="5" fill="${g.color}" opacity="0.85"/>
         <text x="${x + 7}" y="${y + 3}" font-family="Inter,sans-serif" font-size="7" fill="${g.color}" font-weight="600">${g.label}</text>`;
     }).join('')}
     <!-- Annotation -->
@@ -1203,8 +1517,8 @@ function svgDOGE() {
     <rect x="${toX(8)}" y="${chartT}" width="${toX(9) - toX(8)}" height="${chartH}" fill="${COLORS.orange}" opacity="0.06"/>
     <text x="${(toX(8) + toX(9)) / 2}" y="${chartT + 10}" font-family="Inter,sans-serif" font-size="6.5" fill="${COLORS.orange}" text-anchor="middle" font-weight="600">DOGE era</text>
     <!-- Lines -->
-    <path d="${wPath}" fill="none" stroke="${COLORS.blue}" stroke-width="2.5" stroke-linejoin="round"/>
-    <path d="${sPath}" fill="none" stroke="${COLORS.red}" stroke-width="2.5" stroke-linejoin="round"/>
+    <path class="anim-line" d="${wPath}" fill="none" stroke="${COLORS.blue}" stroke-width="2.5" stroke-linejoin="round"/>
+    <path class="anim-line" style="animation-delay:100ms" d="${sPath}" fill="none" stroke="${COLORS.red}" stroke-width="2.5" stroke-linejoin="round"/>
     <!-- End dots -->
     <circle cx="${toX(9)}" cy="${toYw(workforce[9])}" r="3.5" fill="${COLORS.blue}"/>
     <circle cx="${toX(9)}" cy="${toYs(spending[9])}" r="3.5" fill="${COLORS.red}"/>
@@ -1251,7 +1565,7 @@ function svgProcurement() {
       const opacity = 0.9 - i * 0.15;
       const colors = [COLORS.blue, COLORS.purple, COLORS.orange, COLORS.red];
       return `
-        <polygon points="${x1L},${y} ${x1R},${y} ${x2R},${y + rowH - 4} ${x2L},${y + rowH - 4}" fill="${colors[i]}" opacity="${opacity}"/>
+        <polygon class="anim-funnel" style="animation-delay:${i * 150}ms" points="${x1L},${y} ${x1R},${y} ${x2R},${y + rowH - 4} ${x2L},${y + rowH - 4}" fill="${colors[i]}" opacity="${opacity}"/>
         <text x="${cx}" y="${y + rowH / 2 + 1}" font-family="Inter,sans-serif" font-size="${i === 0 ? 10 : 9}" fill="#fff" text-anchor="middle" font-weight="700">${s.label}</text>
         <!-- Count label on right -->
         <text x="${x1R + 8}" y="${y + rowH / 2 + 1}" font-family="Inter,sans-serif" font-size="10" fill="${colors[i]}" font-weight="700">${s.count}</text>
@@ -1310,7 +1624,7 @@ function svgBillOfRights() {
           const cx = chartL + di * colW + colW / 2;
           const cy = y + rowH / 2;
           const r = s * 3 + 2; // radius: 5, 8, 11, 14
-          return `<circle cx="${cx}" cy="${cy}" r="${r}" fill="${c.color}" opacity="${0.2 + s * 0.18}"/>
+          return `<circle class="anim-dot" style="animation-delay:${(ci * 7 + di) * 40}ms" cx="${cx}" cy="${cy}" r="${r}" fill="${c.color}" opacity="${0.2 + s * 0.18}"/>
           <text x="${cx}" y="${cy + 3}" font-family="Inter,sans-serif" font-size="8" fill="${s >= 3 ? '#fff' : c.color}" text-anchor="middle" font-weight="600">${s}</text>`;
         }).join('')}`;
     }).join('')}
@@ -2674,7 +2988,7 @@ function insertInfographic(body, svg) {
   const parts = body.split('</p>');
   if (parts.length > 4) {
     // Insert after 3rd paragraph
-    const infographic = `<div class="inline-infographic" style="margin:40px auto;max-width:600px;background:#fafbff;border-radius:8px;padding:20px;border:1px solid #e8eaf0;">${svg}</div>`;
+    const infographic = `<div class="inline-infographic animate-on-scroll" style="margin:40px auto;max-width:600px;background:#fafbff;border-radius:8px;padding:20px;border:1px solid #e8eaf0;">${svg}</div>`;
     parts.splice(3, 0, infographic);
     return parts.join('</p>');
   }
@@ -2718,6 +3032,10 @@ function showArticle(id) {
   document.getElementById('toc').style.display = 'none';
   document.querySelector('.issue-intro').style.display = 'none';
   document.querySelector('.issue-hero').style.display = 'none';
+  const scrollStory = document.querySelector('.scroll-story');
+  if (scrollStory) scrollStory.style.display = 'none';
+  const bridge = document.querySelector('.scroll-story-bridge');
+  if (bridge) bridge.style.display = 'none';
   document.querySelectorAll('.article-full').forEach(el => { el.classList.remove('active'); el.style.display = 'none'; });
   const article = document.getElementById(id);
   if (article) {
@@ -2736,6 +3054,10 @@ function hideArticle() {
   document.getElementById('toc').style.display = 'block';
   document.querySelector('.issue-intro').style.display = 'block';
   document.querySelector('.issue-hero').style.display = '';
+  const scrollStory = document.querySelector('.scroll-story');
+  if (scrollStory) scrollStory.style.display = '';
+  const bridge = document.querySelector('.scroll-story-bridge');
+  if (bridge) bridge.style.display = '';
   window.scrollTo({ top: 0, behavior: 'instant' });
 }
 
@@ -2743,6 +3065,105 @@ function hideArticle() {
 renderTOC();
 renderCards();
 renderArticles();
+
+// ═══ INFOGRAPHIC SCROLL ANIMATIONS ═══
+(function() {
+  // Set up stroke-dasharray for line/slope elements so the draw animation works
+  function prepareLineAnimations(container) {
+    container.querySelectorAll('.anim-line, .anim-slope').forEach(el => {
+      const length = el.getTotalLength ? el.getTotalLength() : 300;
+      el.style.strokeDasharray = length;
+      el.style.strokeDashoffset = length;
+      el.style.setProperty('--dash-length', length);
+    });
+  }
+
+  // Intersection Observer: trigger animations when infographics scroll into view
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const el = entry.target;
+        // Prepare line animations just before triggering (element must be visible in DOM)
+        prepareLineAnimations(el);
+        // Small delay to let the browser paint the dasharray before animating
+        requestAnimationFrame(() => {
+          el.classList.add('animated');
+        });
+        observer.unobserve(el);
+      }
+    });
+  }, {
+    threshold: 0.15,
+    rootMargin: '0px 0px -40px 0px'
+  });
+
+  // Observe all animate-on-scroll elements (initial + dynamically added)
+  function observeInfographics() {
+    document.querySelectorAll('.animate-on-scroll:not(.observed)').forEach(el => {
+      el.classList.add('observed');
+      observer.observe(el);
+    });
+  }
+
+  // Run after DOM is ready and articles are rendered
+  observeInfographics();
+
+  // Re-observe when articles are shown (they start as display:none)
+  const origShow = window.showArticle;
+  window.showArticle = function(id) {
+    origShow(id);
+    // After the article is shown, observe any new infographics
+    requestAnimationFrame(() => observeInfographics());
+  };
+})();
+</script>
+
+<!-- Scroll Data Story: Intersection Observer -->
+<script>
+(function() {
+  // Animate counter from 50.6 to 460
+  function animateCounter(el, start, end, duration) {
+    const startTime = performance.now();
+    function tick(now) {
+      const elapsed = now - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+      // Ease out cubic
+      const eased = 1 - Math.pow(1 - progress, 3);
+      const current = start + (end - start) * eased;
+      if (current < 100) {
+        el.textContent = current.toFixed(1);
+      } else {
+        el.textContent = Math.round(current);
+      }
+      if (progress < 1) requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  }
+
+  let counterAnimated = false;
+
+  const sceneObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+
+        // Trigger counter animation on Scene 1
+        const counterEl = entry.target.querySelector('#counter-value');
+        if (counterEl && !counterAnimated) {
+          counterAnimated = true;
+          animateCounter(counterEl, 50.6, 460, 2400);
+        }
+      }
+    });
+  }, {
+    threshold: 0.3,
+    rootMargin: '0px 0px -10% 0px'
+  });
+
+  document.querySelectorAll('[data-scene]').forEach(scene => {
+    sceneObserver.observe(scene);
+  });
+})();
 </script>
 
 </body>
