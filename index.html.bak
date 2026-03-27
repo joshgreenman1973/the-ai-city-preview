@@ -162,7 +162,7 @@ nav a.active { color: var(--vc-black); border-bottom: 2px solid var(--vc-orange)
   line-height: 1.15; margin-bottom: 12px;
 }
 .section-header .section-desc {
-  font-size: 1.05rem; color: var(--vc-charcoal); max-width: 640px; line-height: 1.6;
+  font-size: 1.05rem; color: #666; max-width: 640px; line-height: 1.6;
   margin-top: 0;
 }
 
@@ -198,7 +198,7 @@ nav a.active { color: var(--vc-black); border-bottom: 2px solid var(--vc-orange)
   font-size: 0.95rem; color: #555; line-height: 1.55; margin-bottom: 16px;
 }
 .card-author {
-  font-family: var(--font-primary); font-size: 0.78rem; color: #999;
+  font-family: 'Inter', sans-serif; font-size: 0.78rem; color: #999;
 }
 .card-author strong { color: #555; font-weight: 600; }
 .card-visual {
@@ -241,7 +241,7 @@ nav a.active { color: var(--vc-black); border-bottom: 2px solid var(--vc-orange)
   font-size: 1.2rem; color: #555; line-height: 1.6; margin-bottom: 24px;
 }
 .article-header .byline {
-  font-family: var(--font-primary); font-size: 0.85rem; color: #888;
+  font-family: 'Inter', sans-serif; font-size: 0.85rem; color: #888;
 }
 .article-header .byline strong { color: #333; }
 .article-body {
@@ -249,8 +249,8 @@ nav a.active { color: var(--vc-black); border-bottom: 2px solid var(--vc-orange)
   font-size: 1.15rem; line-height: 1.85;
 }
 .article-body p { margin-bottom: 1.4em; }
-.article-body a { color: var(--vc-orange); text-decoration: underline; text-decoration-color: rgba(255,124,83,0.3); text-underline-offset: 2px; }
-.article-body a:hover { text-decoration-color: var(--vc-orange); }
+.article-body a { color: #c41e3a; text-decoration: underline; text-decoration-color: rgba(196,30,58,0.3); text-underline-offset: 2px; }
+.article-body a:hover { text-decoration-color: #c41e3a; }
 .article-body h2 {
   font-size: 1.5rem; font-weight: 700; margin: 2em 0 0.8em;
   letter-spacing: -0.01em;
@@ -259,26 +259,24 @@ nav a.active { color: var(--vc-black); border-bottom: 2px solid var(--vc-orange)
   font-size: 1.2rem; font-weight: 700; margin: 1.8em 0 0.6em;
 }
 .article-body blockquote {
-  border-left: 3px solid var(--vc-chartreuse); padding-left: 24px; margin: 2em 0;
-  font-style: italic; color: var(--vc-charcoal);
+  border-left: 3px solid #c41e3a; padding-left: 24px; margin: 2em 0;
+  font-style: italic; color: #444;
 }
 .article-body .pullquote {
-  font-family: var(--font-secondary);
-  font-size: 1.6rem; font-weight: 300; line-height: 1.45;
-  color: var(--vc-black); text-align: left; padding: 40px 48px;
-  margin: 2.5em -40px; border-top: none; border-bottom: none;
-  border-left: 4px solid var(--vc-chartreuse);
-  font-style: normal; letter-spacing: -0.01em;
+  font-size: 1.5rem; font-weight: 300; line-height: 1.4;
+  color: #c41e3a; text-align: center; padding: 32px 40px;
+  margin: 2em 0; border-top: 2px solid #e5e5e5; border-bottom: 2px solid #e5e5e5;
+  font-style: normal;
 }
 
 /* ── Back button ── */
 .back-to-issue {
-  font-family: var(--font-primary); font-size: 0.85rem; font-weight: 500;
-  color: var(--vc-orange); text-decoration: none; display: inline-flex;
+  font-family: 'Inter', sans-serif; font-size: 0.85rem; font-weight: 500;
+  color: #c41e3a; text-decoration: none; display: inline-flex;
   align-items: center; gap: 6px; margin-bottom: 32px;
   cursor: pointer; border: none; background: none; padding: 0;
 }
-.back-to-issue:hover { color: var(--vc-magenta); }
+.back-to-issue:hover { color: #a01830; }
 .back-to-issue::before { content: '\2190'; }
 
 /* ── Infographic containers ── */
@@ -287,9 +285,9 @@ nav a.active { color: var(--vc-black); border-bottom: 2px solid var(--vc-orange)
   background: #f8f8f8; border-radius: 6px;
 }
 .infographic-title {
-  font-family: var(--font-primary); font-size: 0.85rem; font-weight: 700;
+  font-family: 'Inter', sans-serif; font-size: 0.85rem; font-weight: 700;
   text-transform: uppercase; letter-spacing: 0.08em;
-  color: var(--vc-orange); margin-bottom: 16px;
+  color: #c41e3a; margin-bottom: 16px;
 }
 .infographic svg { width: 100%; height: auto; }
 
@@ -299,7 +297,7 @@ nav a.active { color: var(--vc-black); border-bottom: 2px solid var(--vc-orange)
   background: #fafafa; border-bottom: 1px solid #e5e5e5;
 }
 .toc h3 {
-  font-family: var(--font-primary); font-size: 0.75rem; font-weight: 700;
+  font-family: 'Inter', sans-serif; font-size: 0.75rem; font-weight: 700;
   text-transform: uppercase; letter-spacing: 0.15em; color: #999;
   margin-bottom: 24px;
 }
@@ -308,41 +306,41 @@ nav a.active { color: var(--vc-black); border-bottom: 2px solid var(--vc-orange)
   gap: 12px; max-width: 1200px; margin: 0 auto;
 }
 .toc-item {
-  font-family: var(--font-primary); font-size: 0.85rem;
+  font-family: 'Inter', sans-serif; font-size: 0.85rem;
   padding: 10px 14px; border-radius: 4px; cursor: pointer;
   transition: background 0.15s; display: flex; align-items: baseline; gap: 8px;
 }
 .toc-item:hover { background: #eee; }
 .toc-item .num {
-  font-weight: 700; color: var(--vc-orange); min-width: 20px;
+  font-weight: 700; color: #c41e3a; min-width: 20px;
 }
 .toc-item .title { color: #333; font-weight: 500; }
 
 /* ── AI Notice ── */
 .ai-notice {
-  background: var(--vc-chartreuse-20);
-  padding: 28px 36px; border-radius: 0; margin: 32px auto;
-  max-width: 720px; border: none;
-  border-left: 4px solid var(--vc-chartreuse);
+  background: linear-gradient(135deg, #f0f0ff 0%, #fff0f5 100%);
+  padding: 24px 32px; border-radius: 6px; margin: 32px auto;
+  max-width: 720px; border: 1px solid #e0e0f0;
 }
 .ai-notice p {
-  font-family: var(--font-primary); font-size: 0.85rem; color: var(--vc-charcoal);
+  font-family: 'Inter', sans-serif; font-size: 0.85rem; color: #666;
   line-height: 1.6;
 }
-.ai-notice strong { color: var(--vc-black); }
+.ai-notice strong { color: #333; }
 
 /* ── Footer ── */
 .site-footer {
-  background: var(--vc-orange); color: rgba(255,255,255,0.85); padding: 48px 24px;
-  font-family: var(--font-primary); font-size: 0.8rem;
+  background: #1a1a1a; color: #999; padding: 48px 24px;
+  font-family: 'Inter', sans-serif; font-size: 0.8rem;
 }
 .footer-inner {
   max-width: 1200px; margin: 0 auto;
   display: flex; justify-content: space-between; align-items: center;
   flex-wrap: wrap; gap: 16px;
 }
-.footer-logo { color: #fff; font-weight: 900; font-size: 0.85rem; letter-spacing: 0.12em; text-transform: uppercase; }
-.footer-links a { color: rgba(255,255,255,0.75); text-decoration: none; margin-left: 20px; }
+.footer-logo { color: #fff; font-weight: 700; font-size: 1rem; }
+.footer-logo span { color: #c41e3a; }
+.footer-links a { color: #888; text-decoration: none; margin-left: 20px; }
 .footer-links a:hover { color: #fff; }
 
 /* ── Responsive ── */
@@ -493,14 +491,14 @@ nav a.active { color: var(--vc-black); border-bottom: 2px solid var(--vc-orange)
 
 /* ── Scroll Data Story ── */
 .scroll-story {
-  background: var(--vc-black); position: relative; overflow: hidden;
+  background: #0a0a2e; position: relative; overflow: hidden;
 }
 .scroll-story::before {
   content: ''; position: absolute; inset: 0;
-  background: radial-gradient(1px 1px at 15% 25%, rgba(155,159,188,0.2), transparent),
-    radial-gradient(1px 1px at 45% 65%, rgba(155,159,188,0.15), transparent),
-    radial-gradient(1px 1px at 75% 15%, rgba(57,72,130,0.2), transparent),
-    radial-gradient(1px 1px at 85% 75%, rgba(155,159,188,0.15), transparent);
+  background: radial-gradient(1px 1px at 15% 25%, rgba(100,200,255,0.3), transparent),
+    radial-gradient(1px 1px at 45% 65%, rgba(100,200,255,0.2), transparent),
+    radial-gradient(1px 1px at 75% 15%, rgba(200,150,255,0.3), transparent),
+    radial-gradient(1px 1px at 85% 75%, rgba(100,200,255,0.2), transparent);
   opacity: 0.4; pointer-events: none;
 }
 
@@ -512,22 +510,22 @@ nav a.active { color: var(--vc-black); border-bottom: 2px solid var(--vc-orange)
 }
 .story-hero::before {
   content: ''; position: absolute; inset: 0;
-  background: radial-gradient(ellipse at 50% 40%, rgba(255,124,83,0.04) 0%, transparent 60%);
+  background: radial-gradient(ellipse at 50% 40%, rgba(196,30,58,0.06) 0%, transparent 60%);
 }
 .story-hero-label {
-  font-family: var(--font-primary); font-size: 11px; letter-spacing: 4px;
-  text-transform: uppercase; color: var(--vc-orange); margin-bottom: 24px;
+  font-family: 'Inter', sans-serif; font-size: 11px; letter-spacing: 4px;
+  text-transform: uppercase; color: #c41e3a; margin-bottom: 24px;
   font-weight: 700; opacity: 0; animation: storyFadeUp 1s 0.2s forwards;
 }
 .story-hero h2 {
-  font-family: var(--font-primary); font-weight: 900;
+  font-family: 'Inter', sans-serif; font-weight: 900;
   font-size: clamp(36px, 6vw, 72px); line-height: 1.05;
   max-width: 800px; color: #fff; letter-spacing: -1px;
   opacity: 0; animation: storyFadeUp 1s 0.4s forwards;
 }
-.story-hero h2 em { color: var(--vc-orange); font-style: normal; }
+.story-hero h2 em { color: #c41e3a; font-style: normal; }
 .story-hero-sub {
-  margin-top: 24px; font-family: var(--font-secondary);
+  margin-top: 24px; font-family: 'Source Serif 4', Georgia, serif;
   font-size: 19px; color: rgba(255,255,255,0.45); max-width: 600px;
   font-style: italic; line-height: 1.65; font-weight: 300;
   opacity: 0; animation: storyFadeUp 1s 0.7s forwards;
@@ -537,11 +535,11 @@ nav a.active { color: var(--vc-black); border-bottom: 2px solid var(--vc-orange)
   opacity: 0; animation: storyFadeUp 1s 1s forwards;
 }
 .story-hero-stat-num {
-  font-family: var(--font-primary); font-size: 38px;
-  font-weight: 700; color: var(--vc-orange); letter-spacing: -0.02em;
+  font-family: 'Inter', sans-serif; font-size: 38px;
+  font-weight: 700; color: #c41e3a; letter-spacing: -0.02em;
 }
 .story-hero-stat-label {
-  font-family: var(--font-primary); font-size: 11px;
+  font-family: 'Inter', sans-serif; font-size: 11px;
   color: rgba(255,255,255,0.3); margin-top: 4px;
   text-transform: uppercase; letter-spacing: 1.5px; font-weight: 600;
   max-width: 140px;
@@ -550,7 +548,7 @@ nav a.active { color: var(--vc-black); border-bottom: 2px solid var(--vc-orange)
   position: absolute; bottom: 40px; opacity: 0;
   animation: storyFadeUp 1s 1.4s forwards, storyBob 2s 2.5s infinite;
 }
-.story-scroll-hint svg { width: 24px; stroke: var(--vc-periwinkle); fill: none; stroke-width: 2; }
+.story-scroll-hint svg { width: 24px; stroke: rgba(255,255,255,0.3); fill: none; stroke-width: 2; }
 
 @keyframes storyFadeUp {
   from { opacity: 0; transform: translateY(30px); }
@@ -566,16 +564,16 @@ nav a.active { color: var(--vc-black); border-bottom: 2px solid var(--vc-orange)
   padding: 100px 32px; max-width: 900px; margin: 0 auto; position: relative;
 }
 .story-section-label {
-  font-family: var(--font-primary); font-size: 11px; letter-spacing: 4px;
+  font-family: 'Inter', sans-serif; font-size: 11px; letter-spacing: 4px;
   text-transform: uppercase; font-weight: 700; margin-bottom: 12px;
 }
 .story-section-title {
-  font-family: var(--font-primary); font-weight: 900;
+  font-family: 'Inter', sans-serif; font-weight: 900;
   font-size: clamp(28px, 4vw, 44px); line-height: 1.1;
   color: #fff; margin-bottom: 20px; letter-spacing: -0.5px;
 }
 .story-section-intro {
-  font-family: var(--font-secondary);
+  font-family: 'Source Serif 4', Georgia, serif;
   font-size: 17px; color: rgba(255,255,255,0.45); max-width: 640px;
   margin-bottom: 48px; line-height: 1.85;
 }
@@ -593,11 +591,11 @@ nav a.active { color: var(--vc-black); border-bottom: 2px solid var(--vc-orange)
 /* Narrative text */
 .story-narrative { max-width: 600px; margin: 0 auto 48px; }
 .story-narrative p {
-  font-family: var(--font-secondary);
+  font-family: 'Source Serif 4', Georgia, serif;
   font-size: 17px; color: rgba(255,255,255,0.45); margin-bottom: 22px; line-height: 1.9;
 }
 .story-narrative p strong { color: rgba(255,255,255,0.85); font-weight: 600; }
-.story-narrative a { color: var(--vc-orange); text-decoration: none; border-bottom: 1px dotted rgba(255,124,83,0.5); }
+.story-narrative a { color: #c41e3a; text-decoration: none; border-bottom: 1px dotted rgba(196,30,58,0.5); }
 
 /* Big number grid */
 .ds-big-number-grid {
@@ -611,28 +609,28 @@ nav a.active { color: var(--vc-black); border-bottom: 2px solid var(--vc-orange)
 .ds-big-number-card::before {
   content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
 }
-.ds-big-number-card.red::before { background: #e7466d; }
-.ds-big-number-card.green::before { background: #57aa4a; }
-.ds-big-number-card.amber::before { background: #ff7c53; }
-.ds-big-number-card.blue::before { background: #217ebe; }
-.ds-big-number-card.purple::before { background: #394882; }
+.ds-big-number-card.red::before { background: #c41e3a; }
+.ds-big-number-card.green::before { background: #059669; }
+.ds-big-number-card.amber::before { background: #d97706; }
+.ds-big-number-card.blue::before { background: #2563eb; }
+.ds-big-number-card.purple::before { background: #7c3aed; }
 
 .ds-big-number-value {
-  font-family: var(--font-primary); font-size: 40px;
+  font-family: 'Inter', sans-serif; font-size: 40px;
   font-weight: 700; line-height: 1; letter-spacing: -0.02em;
 }
-.ds-big-number-card.red .ds-big-number-value { color: #e7466d; }
-.ds-big-number-card.green .ds-big-number-value { color: #57aa4a; }
-.ds-big-number-card.amber .ds-big-number-value { color: #ff7c53; }
-.ds-big-number-card.blue .ds-big-number-value { color: #217ebe; }
-.ds-big-number-card.purple .ds-big-number-value { color: #394882; }
+.ds-big-number-card.red .ds-big-number-value { color: #c41e3a; }
+.ds-big-number-card.green .ds-big-number-value { color: #059669; }
+.ds-big-number-card.amber .ds-big-number-value { color: #d97706; }
+.ds-big-number-card.blue .ds-big-number-value { color: #2563eb; }
+.ds-big-number-card.purple .ds-big-number-value { color: #7c3aed; }
 
 .ds-big-number-desc {
-  margin-top: 10px; font-family: var(--font-primary);
+  margin-top: 10px; font-family: 'Inter', sans-serif;
   font-size: 14px; color: rgba(255,255,255,0.4); line-height: 1.55;
 }
 .ds-big-number-source {
-  margin-top: 12px; font-family: var(--font-primary);
+  margin-top: 12px; font-family: 'Inter', sans-serif;
   font-size: 11px; color: rgba(255,255,255,0.15);
 }
 .ds-big-number-source a { color: rgba(255,255,255,0.15); text-decoration: underline; }
@@ -641,7 +639,7 @@ nav a.active { color: var(--vc-black); border-bottom: 2px solid var(--vc-orange)
 .ds-bar-chart { margin: 40px 0; }
 .ds-bar-row { display: flex; align-items: center; margin-bottom: 12px; gap: 14px; }
 .ds-bar-label {
-  width: 160px; text-align: right; font-family: var(--font-primary);
+  width: 160px; text-align: right; font-family: 'Inter', sans-serif;
   font-size: 13px; color: rgba(255,255,255,0.45); flex-shrink: 0; font-weight: 500;
 }
 .ds-bar-track {
@@ -650,7 +648,7 @@ nav a.active { color: var(--vc-black); border-bottom: 2px solid var(--vc-orange)
 }
 .ds-bar-fill {
   height: 100%; border-radius: 4px; display: flex; align-items: center;
-  padding: 0 12px; font-family: var(--font-primary);
+  padding: 0 12px; font-family: 'Inter', sans-serif;
   font-size: 12px; font-weight: 700; width: 0; color: #fff;
   transition: width 1.5s cubic-bezier(0.22, 1, 0.36, 1);
 }
@@ -662,7 +660,7 @@ nav a.active { color: var(--vc-black); border-bottom: 2px solid var(--vc-orange)
 .ds-bar-fill.delay-5 { transition-delay: 0.75s; }
 
 .ds-chart-source {
-  font-family: var(--font-primary); font-size: 11px;
+  font-family: 'Inter', sans-serif; font-size: 11px;
   color: rgba(255,255,255,0.15); margin-top: 8px;
 }
 
@@ -672,30 +670,30 @@ nav a.active { color: var(--vc-black); border-bottom: 2px solid var(--vc-orange)
   border-radius: 10px; overflow: hidden; border: 1px solid rgba(255,255,255,0.06);
 }
 .ds-compare-side { padding: 32px; display: flex; flex-direction: column; gap: 16px; }
-.ds-compare-side.left { background: rgba(87,170,74,0.06); border-right: 1px solid rgba(255,255,255,0.06); }
-.ds-compare-side.right { background: rgba(231,70,109,0.06); }
+.ds-compare-side.left { background: rgba(5,150,105,0.06); border-right: 1px solid rgba(255,255,255,0.06); }
+.ds-compare-side.right { background: rgba(196,30,58,0.06); }
 .ds-compare-header {
-  font-family: var(--font-primary); font-size: 11px; letter-spacing: 3px;
+  font-family: 'Inter', sans-serif; font-size: 11px; letter-spacing: 3px;
   text-transform: uppercase; font-weight: 700;
 }
-.ds-compare-side.left .ds-compare-header { color: #57aa4a; }
-.ds-compare-side.right .ds-compare-header { color: #e7466d; }
+.ds-compare-side.left .ds-compare-header { color: #059669; }
+.ds-compare-side.right .ds-compare-header { color: #c41e3a; }
 .ds-compare-item {
-  font-family: var(--font-primary); font-size: 14px;
+  font-family: 'Inter', sans-serif; font-size: 14px;
   color: rgba(255,255,255,0.4); line-height: 1.55;
 }
 .ds-compare-item strong { color: rgba(255,255,255,0.85); font-weight: 700; }
 
 /* Pull quote */
 .ds-pull-quote {
-  border-left: 3px solid var(--vc-chartreuse); padding: 20px 28px;
-  margin: 48px 0; font-family: var(--font-secondary);
+  border-left: 3px solid #c41e3a; padding: 20px 28px;
+  margin: 48px 0; font-family: 'Source Serif 4', Georgia, serif;
   font-size: 20px; font-style: italic; font-weight: 300;
   color: rgba(255,255,255,0.7); line-height: 1.6;
-  background: rgba(221,228,76,0.04);
+  background: rgba(196,30,58,0.04);
 }
 .ds-pull-quote cite {
-  display: block; font-size: 12px; font-style: normal; font-family: var(--font-primary);
+  display: block; font-size: 12px; font-style: normal; font-family: 'Inter', sans-serif;
   color: rgba(255,255,255,0.2); margin-top: 14px; font-weight: 500;
 }
 
@@ -718,7 +716,7 @@ nav a.active { color: var(--vc-black); border-bottom: 2px solid var(--vc-orange)
 }
 .ds-waffle-legend-item {
   display: flex; align-items: center; gap: 6px;
-  font-family: var(--font-primary); font-size: 11px; color: rgba(255,255,255,0.3); font-weight: 500;
+  font-family: 'Inter', sans-serif; font-size: 11px; color: rgba(255,255,255,0.3); font-weight: 500;
 }
 .ds-waffle-legend-swatch { width: 12px; height: 12px; border-radius: 2px; }
 
@@ -734,11 +732,11 @@ nav a.active { color: var(--vc-black); border-bottom: 2px solid var(--vc-orange)
 .ds-reveal.visible .ds-funnel-row:nth-child(3) { transition-delay: 0.6s; }
 .ds-funnel-bar {
   height: 40px; border-radius: 4px; display: flex; align-items: center;
-  justify-content: center; font-family: var(--font-primary); font-size: 15px;
+  justify-content: center; font-family: 'Inter', sans-serif; font-size: 15px;
   font-weight: 700; color: #fff; white-space: nowrap;
 }
 .ds-funnel-desc {
-  font-family: var(--font-primary); font-size: 13px;
+  font-family: 'Inter', sans-serif; font-size: 13px;
   color: rgba(255,255,255,0.35); flex: 1;
 }
 
@@ -746,18 +744,18 @@ nav a.active { color: var(--vc-black); border-bottom: 2px solid var(--vc-orange)
 .story-divider {
   width: 60px; height: 3px; margin: 0 auto; background: rgba(255,255,255,0.06);
 }
-.story-divider.red { background: rgba(255,124,83,0.4); }
+.story-divider.red { background: rgba(196,30,58,0.4); }
 
 /* Before/after bars */
 .ds-before-after { margin: 40px 0; }
 .ds-ba-pair { margin-bottom: 24px; }
 .ds-ba-city {
-  font-family: var(--font-primary); font-size: 13px; font-weight: 700;
+  font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 700;
   color: rgba(255,255,255,0.55); margin-bottom: 8px;
 }
 .ds-ba-row { display: flex; align-items: center; gap: 10px; margin-bottom: 4px; }
 .ds-ba-label {
-  font-family: var(--font-primary); font-size: 11px; font-weight: 600;
+  font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 600;
   color: rgba(255,255,255,0.25); width: 50px; text-align: right; text-transform: uppercase; letter-spacing: 0.5px;
 }
 .ds-ba-track {
@@ -766,13 +764,13 @@ nav a.active { color: var(--vc-black); border-bottom: 2px solid var(--vc-orange)
 }
 .ds-ba-fill {
   height: 100%; border-radius: 3px; display: flex; align-items: center;
-  padding: 0 10px; font-family: var(--font-primary);
+  padding: 0 10px; font-family: 'Inter', sans-serif;
   font-size: 11px; font-weight: 700; color: #fff;
   width: 0; transition: width 1.2s cubic-bezier(0.22, 1, 0.36, 1);
 }
 .ds-reveal.visible .ds-ba-fill { width: var(--w); }
 .ds-ba-fill.before { background: rgba(255,255,255,0.1); }
-.ds-ba-fill.after { background: #57aa4a; }
+.ds-ba-fill.after { background: #059669; }
 .ds-ba-fill.delay-1 { transition-delay: 0.12s; }
 .ds-ba-fill.delay-2 { transition-delay: 0.24s; }
 .ds-ba-fill.delay-3 { transition-delay: 0.36s; }
@@ -786,7 +784,7 @@ nav a.active { color: var(--vc-black); border-bottom: 2px solid var(--vc-orange)
 .story-full-divider { height: 120px; position: relative; overflow: hidden; }
 .story-full-divider::before {
   content: ''; position: absolute; inset: 0;
-  background: linear-gradient(to bottom, #050507, rgba(255,124,83,0.03), #050507);
+  background: linear-gradient(to bottom, #0a0a2e, rgba(196,30,58,0.03), #0a0a2e);
 }
 
 /* Responsive */
@@ -799,23 +797,23 @@ nav a.active { color: var(--vc-black); border-bottom: 2px solid var(--vc-orange)
   .ds-waffle-cell { width: 22px; height: 22px; }
 }
 .diverge-label-left, .diverge-label-right {
-  font-family: var(--font-primary); font-size: 0.7rem; font-weight: 600;
+  font-family: 'Inter', sans-serif; font-size: 0.7rem; font-weight: 600;
   min-width: 70px;
 }
 /* Bridge */
-.scroll-story-bridge { height: 120px; background: linear-gradient(to bottom, #050507, #fafafa); }
+.scroll-story-bridge { height: 120px; background: linear-gradient(to bottom, #0a0a2e, #fafafa); }
 
 </style>
 </head>
 <body>
 <!-- Password Gate -->
-<div id="password-gate" style="display:flex;align-items:center;justify-content:center;min-height:100vh;background:#050507;font-family:var(--font-primary);">
+<div id="password-gate" style="display:flex;align-items:center;justify-content:center;min-height:100vh;background:#0a0a2e;font-family:'Inter',sans-serif;">
   <div style="text-align:center;color:#fff;max-width:400px;padding:24px;">
-    <h1 style="font-size:1.6rem;margin-bottom:8px;font-family:var(--font-secondary);">The Algorithmic City</h1>
-    <p style="color:#9b9fbc;margin-bottom:24px;font-size:0.9rem;">Preview access</p>
-    <input id="pw-input" type="password" placeholder="Enter password" style="width:100%;padding:12px 16px;border:1px solid #707175;border-radius:0;background:rgba(255,255,255,0.05);color:#fff;font-size:1rem;margin-bottom:12px;outline:none;font-family:var(--font-primary);" onkeydown="if(event.key==='Enter')checkPw()">
-    <button onclick="checkPw()" style="width:100%;padding:12px;background:#ff7c53;color:#fff;border:none;border-radius:0;font-size:1rem;cursor:pointer;font-family:var(--font-primary);font-weight:600;letter-spacing:0.04em;">Enter</button>
-    <p id="pw-error" style="color:#e7466d;margin-top:12px;font-size:0.85rem;display:none;">Incorrect password</p>
+    <h1 style="font-size:1.6rem;margin-bottom:8px;font-family:'Source Serif 4',serif;">The Algorithmic City</h1>
+    <p style="color:#aaa;margin-bottom:24px;font-size:0.9rem;">Preview Access</p>
+    <input id="pw-input" type="password" placeholder="Enter password" style="width:100%;padding:12px 16px;border:1px solid #444;border-radius:6px;background:#1a1a3e;color:#fff;font-size:1rem;margin-bottom:12px;outline:none;" onkeydown="if(event.key==='Enter')checkPw()">
+    <button onclick="checkPw()" style="width:100%;padding:12px;background:#c41e3a;color:#fff;border:none;border-radius:6px;font-size:1rem;cursor:pointer;">Enter</button>
+    <p id="pw-error" style="color:#c41e3a;margin-top:12px;font-size:0.85rem;display:none;">Incorrect password</p>
   </div>
 </div>
 <script>
@@ -841,7 +839,7 @@ if(sessionStorage.getItem('ai-city-auth')==='1'){
 <!-- ═══ HEADER ═══ -->
 <header class="site-header">
   <div class="header-inner">
-    <a href="#" class="logo" onclick="event.preventDefault(); hideArticle();">The Algorithmic City</a>
+    <a href="#" class="logo" onclick="event.preventDefault(); hideArticle();">VITAL <span>CITY</span></a>
   </div>
 </header>
 
@@ -888,28 +886,28 @@ if(sessionStorage.getItem('ai-city-auth')==='1'){
   </div>
 
   <div class="narrow" style="margin-top: 48px;">
-    <h2 style="font-size: 1.8rem; font-weight: 700; letter-spacing: -0.02em; color: #050507; margin-bottom: 28px; line-height: 1.3;">The Machine in the Municipal Building</h2>
+    <h2 style="font-size: 1.8rem; font-weight: 700; letter-spacing: -0.02em; color: #1a1a1a; margin-bottom: 28px; line-height: 1.3;">The Machine in the Municipal Building</h2>
     <p class="framing-byline" style="font-family: ‘Inter’, sans-serif; font-size: 0.85rem; color: #888; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 36px;">By AI</p>
 
-    <p class="drop-cap">In the spring of 2024, a mid-level administrator in the New York City Department of Buildings did something unremarkable: she asked a chatbot for help. She was trying to determine whether a proposed rooftop addition in Queens required a new environmental review or fell under an existing categorical exclusion. The relevant regulations spanned three agencies, two decades of amendments, and a thicket of cross-references that would take a human analyst the better part of a day to untangle. The AI answered in eleven seconds. It was correct.</p>
+    <p>In the spring of 2024, a mid-level administrator in the New York City Department of Buildings did something unremarkable: she asked a chatbot for help. She was trying to determine whether a proposed rooftop addition in Queens required a new environmental review or fell under an existing categorical exclusion. The relevant regulations spanned three agencies, two decades of amendments, and a thicket of cross-references that would take a human analyst the better part of a day to untangle. The AI answered in eleven seconds. It was correct.</p>
 
     <p>No one issued a press release. No mayor stood at a lectern to announce the dawn of a new era. The moment passed as most consequential moments in government do — without ceremony, inside a bureaucracy, observed by almost no one.</p>
 
-    <p>But it was, in miniature, the story of what is happening to cities right now. Artificial intelligence is not arriving in urban America the way the tech industry likes to narrate its revolutions — as a single, dramatic rupture. It is seeping in. It is showing up in <a href="https://www.govtech.com/artificial-intelligence" style="color:#ff7c53">permitting offices</a> and <a href="https://www.nyc.gov/311" style="color:#ff7c53">311 call centers</a>, in <a href="https://www.brennancenter.org/our-work/research-reports/predictive-policing-explained" style="color:#ff7c53">police precincts</a> and <a href="https://www.eff.org/deeplinks/2024/07/nyc-lets-ai-gamble-child-welfare" style="color:#ff7c53">child welfare agencies</a>, in the <a href="https://www.rand.org/pubs/research_reports/RRA956-21.html" style="color:#ff7c53">classrooms</a> where teachers are trying to figure out whether their students wrote their own essays and the <a href="https://www.brennancenter.org/our-work/research-reports/ai-deepfakes-elections" style="color:#ff7c53">election offices</a> where clerks are trying to figure out whether the candidate in the video is real. It is arriving not as a future to prepare for but as a present to reckon with.</p>
+    <p>But it was, in miniature, the story of what is happening to cities right now. Artificial intelligence is not arriving in urban America the way the tech industry likes to narrate its revolutions — as a single, dramatic rupture. It is seeping in. It is showing up in <a href="https://www.govtech.com/artificial-intelligence" style="color:#c41e3a">permitting offices</a> and <a href="https://www.nyc.gov/311" style="color:#c41e3a">311 call centers</a>, in <a href="https://www.brennancenter.org/our-work/research-reports/predictive-policing-explained" style="color:#c41e3a">police precincts</a> and <a href="https://www.eff.org/deeplinks/2024/07/nyc-lets-ai-gamble-child-welfare" style="color:#c41e3a">child welfare agencies</a>, in the <a href="https://www.rand.org/pubs/research_reports/RRA956-21.html" style="color:#c41e3a">classrooms</a> where teachers are trying to figure out whether their students wrote their own essays and the <a href="https://www.brennancenter.org/our-work/research-reports/ai-deepfakes-elections" style="color:#c41e3a">election offices</a> where clerks are trying to figure out whether the candidate in the video is real. It is arriving not as a future to prepare for but as a present to reckon with.</p>
 
-    <p>The global market for AI in cities is expected to grow from <a href="https://www.precedenceresearch.com/ai-in-smart-cities-market" style="color:#ff7c53">$50.6 billion in 2025 to $460 billion by 2034</a>. By 2027, according to IDC, <a href="https://www.smartcitiesdive.com/news/how-cities-using-ai-2026/810905/" style="color:#ff7c53">65 percent of cities worldwide will deploy AI agents</a> to orchestrate workflows and reduce workloads. These numbers are large enough to be abstract. What they mean concretely is that within a few years, most interactions between residents and their local government — applying for a permit, reporting a pothole, contesting a parking ticket, requesting emergency assistance — will involve an AI system somewhere in the chain. Most people will not know it. Many of the officials approving these systems do not fully understand them. And almost no city in America has a comprehensive framework for governing them.</p>
+    <p>The global market for AI in cities is expected to grow from <a href="https://www.precedenceresearch.com/ai-in-smart-cities-market" style="color:#c41e3a">$50.6 billion in 2025 to $460 billion by 2034</a>. By 2027, according to IDC, <a href="https://www.smartcitiesdive.com/news/how-cities-using-ai-2026/810905/" style="color:#c41e3a">65 percent of cities worldwide will deploy AI agents</a> to orchestrate workflows and reduce workloads. These numbers are large enough to be abstract. What they mean concretely is that within a few years, most interactions between residents and their local government — applying for a permit, reporting a pothole, contesting a parking ticket, requesting emergency assistance — will involve an AI system somewhere in the chain. Most people will not know it. Many of the officials approving these systems do not fully understand them. And almost no city in America has a comprehensive framework for governing them.</p>
 
     <p>That is the gap this issue attempts to address.</p>
 
     <p style="margin-top: 32px; padding-top: 24px; border-top: 1px solid #e5e5e5;">We organized the sixteen essays that follow into four sections, each reflecting a different dimension of the AI transformation.</p>
 
-    <p><strong><a href="#section-promise" style="color:#ff7c53">Section I, "The Promise,"</a></strong> takes seriously the things AI is already doing well for cities. Denver’s AI-powered 311 system is answering resident questions in dozens of languages around the clock. Seattle is <a href="https://www.seattle.gov/sdci/about-us/innovations" style="color:#ff7c53">piloting AI-assisted plan review</a> to dramatically shorten building permit timelines. Health departments are deploying predictive models to target inspections where they’ll do the most good. These are not speculative futures. They are operational realities, and they represent a genuine opportunity to make government faster, cheaper, and more responsive — if the implementation is thoughtful.</p>
+    <p><strong><a href="#section-promise" style="color:#c41e3a">Section I, "The Promise,"</a></strong> takes seriously the things AI is already doing well for cities. Denver’s AI-powered 311 system is answering resident questions in dozens of languages around the clock. Seattle is <a href="https://www.seattle.gov/sdci/about-us/innovations" style="color:#c41e3a">piloting AI-assisted plan review</a> to dramatically shorten building permit timelines. Health departments are deploying predictive models to target inspections where they’ll do the most good. These are not speculative futures. They are operational realities, and they represent a genuine opportunity to make government faster, cheaper, and more responsive — if the implementation is thoughtful.</p>
 
-    <p><strong><a href="#section-peril" style="color:#ff7c53">Section II, "The Peril,"</a></strong> turns to the places where AI is doing real harm — or threatening to. Predictive policing systems trained on decades of racially biased arrest data are sending officers disproportionately to Black and Latino neighborhoods. Child welfare algorithms are flagging families for investigation based on variables that are proxies for poverty, not abuse. Risk assessment tools are shaping criminal sentences while operating as proprietary black boxes that defendants cannot examine or challenge. And the surveillance infrastructure of American cities — <a href="https://www.isaca.org/resources/news-and-trends/industry-news/2025/the-evolution-of-surveillance" style="color:#ff7c53">85 million cameras</a> and counting — is being supercharged by facial recognition and behavioral analytics that make anonymity in public spaces increasingly impossible. These are not theoretical risks. They are documented harms, falling heaviest on the communities that already bear the greatest burden of government overreach.</p>
+    <p><strong><a href="#section-peril" style="color:#c41e3a">Section II, "The Peril,"</a></strong> turns to the places where AI is doing real harm — or threatening to. Predictive policing systems trained on decades of racially biased arrest data are sending officers disproportionately to Black and Latino neighborhoods. Child welfare algorithms are flagging families for investigation based on variables that are proxies for poverty, not abuse. Risk assessment tools are shaping criminal sentences while operating as proprietary black boxes that defendants cannot examine or challenge. And the surveillance infrastructure of American cities — <a href="https://www.isaca.org/resources/news-and-trends/industry-news/2025/the-evolution-of-surveillance" style="color:#c41e3a">85 million cameras</a> and counting — is being supercharged by facial recognition and behavioral analytics that make anonymity in public spaces increasingly impossible. These are not theoretical risks. They are documented harms, falling heaviest on the communities that already bear the greatest burden of government overreach.</p>
 
-    <p><strong><a href="#section-disruption" style="color:#ff7c53">Section III, "The Disruption,"</a></strong> examines the broader social transformations that AI is accelerating in urban life. The <a href="https://www.weforum.org/publications/the-future-of-jobs-report-2025/" style="color:#ff7c53">World Economic Forum projects</a> that AI will displace 92 million jobs globally by 2030 while creating 170 million new ones — but the workers who lose their jobs will not be the same people who get the new ones, and the cities where jobs disappear will not be the cities where they emerge. Meanwhile, AI-generated cheating has made traditional homework functionally pointless in many schools, deepfake technology threatens to warp local elections where no fact-checkers are watching, and a new digital divide is opening — not just between those who have internet access and those who don’t, but between those who benefit from AI and those who are merely sorted by it.</p>
+    <p><strong><a href="#section-disruption" style="color:#c41e3a">Section III, "The Disruption,"</a></strong> examines the broader social transformations that AI is accelerating in urban life. The <a href="https://www.weforum.org/publications/the-future-of-jobs-report-2025/" style="color:#c41e3a">World Economic Forum projects</a> that AI will displace 92 million jobs globally by 2030 while creating 170 million new ones — but the workers who lose their jobs will not be the same people who get the new ones, and the cities where jobs disappear will not be the cities where they emerge. Meanwhile, AI-generated cheating has made traditional homework functionally pointless in many schools, deepfake technology threatens to warp local elections where no fact-checkers are watching, and a new digital divide is opening — not just between those who have internet access and those who don’t, but between those who benefit from AI and those who are merely sorted by it.</p>
 
-    <p><strong><a href="#section-governance" style="color:#ff7c53">Section IV, "The Governance Question,"</a></strong> asks what cities should actually do about all of this. The federal government’s recent experiment in AI-driven efficiency — the much-publicized Department of Government Efficiency — offers a vivid cautionary tale: it cut 270,000 workers but <a href="https://finance.yahoo.com/news/cato-institute-says-doge-failed-130000488.html" style="color:#ff7c53">actually saw spending <em>increase</em> by $248 billion</a>, according to the Cato Institute. The section examines how cities can avoid that trap, proposes a practical Municipal AI Bill of Rights, and argues that the procurement process — the unglamorous mechanism by which governments actually acquire technology — may be the single most important lever for ensuring AI serves the public interest.</p>
+    <p><strong><a href="#section-governance" style="color:#c41e3a">Section IV, "The Governance Question,"</a></strong> asks what cities should actually do about all of this. The federal government’s recent experiment in AI-driven efficiency — the much-publicized Department of Government Efficiency — offers a vivid cautionary tale: it cut 270,000 workers but <a href="https://finance.yahoo.com/news/cato-institute-says-doge-failed-130000488.html" style="color:#c41e3a">actually saw spending <em>increase</em> by $248 billion</a>, according to the Cato Institute. The section examines how cities can avoid that trap, proposes a practical Municipal AI Bill of Rights, and argues that the procurement process — the unglamorous mechanism by which governments actually acquire technology — may be the single most important lever for ensuring AI serves the public interest.</p>
 
     <p style="margin-top: 32px; padding-top: 24px; border-top: 1px solid #e5e5e5;">A few things this issue is not.</p>
 
@@ -952,8 +950,8 @@ if(sessionStorage.getItem('ai-city-auth')==='1'){
 
 <!-- ════════════════ SECTION 1: THE SCALE ════════════════ -->
 <div class="story-section ds-reveal">
-  <div class="ds-section-rule" style="background:#ff7c53"></div>
-  <div class="story-section-label" style="color:#ff7c53">Part I</div>
+  <div class="ds-section-rule" style="background:#c41e3a"></div>
+  <div class="story-section-label" style="color:#c41e3a">Part I</div>
   <div class="story-section-title">The Scale of What's Coming</div>
   <div class="story-section-intro">The global market for AI in cities is about to explode. The question isn't whether cities will adopt AI &mdash; it's whether they'll be ready when it arrives.</div>
 </div>
@@ -988,19 +986,19 @@ if(sessionStorage.getItem('ai-city-auth')==='1'){
   <div class="ds-bar-chart ds-reveal">
     <div class="ds-bar-row">
       <span class="ds-bar-label">2025</span>
-      <div class="ds-bar-track"><div class="ds-bar-fill" style="--w:11%;background:#e7466d">$50.6B</div></div>
+      <div class="ds-bar-track"><div class="ds-bar-fill" style="--w:11%;background:#c41e3a">$50.6B</div></div>
     </div>
     <div class="ds-bar-row">
       <span class="ds-bar-label">2027</span>
-      <div class="ds-bar-track"><div class="ds-bar-fill delay-1" style="--w:22%;background:#e7466d">$101B</div></div>
+      <div class="ds-bar-track"><div class="ds-bar-fill delay-1" style="--w:22%;background:#c41e3a">$101B</div></div>
     </div>
     <div class="ds-bar-row">
       <span class="ds-bar-label">2030</span>
-      <div class="ds-bar-track"><div class="ds-bar-fill delay-2" style="--w:47%;background:#e7466d">$215B</div></div>
+      <div class="ds-bar-track"><div class="ds-bar-fill delay-2" style="--w:47%;background:#c41e3a">$215B</div></div>
     </div>
     <div class="ds-bar-row">
       <span class="ds-bar-label">2034</span>
-      <div class="ds-bar-track"><div class="ds-bar-fill delay-3" style="--w:100%;background:#e7466d">$460B</div></div>
+      <div class="ds-bar-track"><div class="ds-bar-fill delay-3" style="--w:100%;background:#c41e3a">$460B</div></div>
     </div>
     <div class="ds-chart-source">Source: Precedence Research, AI in Smart Cities Market, 2024</div>
   </div>
@@ -1010,8 +1008,8 @@ if(sessionStorage.getItem('ai-city-auth')==='1'){
 
 <!-- ════════════════ SECTION 2: THE PROMISE ════════════════ -->
 <div class="story-section ds-reveal">
-  <div class="ds-section-rule" style="background:#dde44c"></div>
-  <div class="story-section-label" style="color:#dde44c">Part II</div>
+  <div class="ds-section-rule" style="background:#059669"></div>
+  <div class="story-section-label" style="color:#059669">Part II</div>
   <div class="story-section-title">What If Government Actually Worked Faster?</div>
   <div class="story-section-intro">AI is already doing things cities desperately need. The efficiency gains are not hypothetical &mdash; they are operational.</div>
 </div>
@@ -1065,7 +1063,7 @@ if(sessionStorage.getItem('ai-city-auth')==='1'){
   </div>
 
   <div class="story-narrative ds-reveal">
-    <p>In public health, predictive models are helping inspectors target restaurant visits and building code checks where violations are most likely. A Chicago Department of Innovation model <a href="https://chicago.github.io/food-inspections-evaluation/" style="color:#ff7c53">reordered food inspection priorities</a> to find critical violations sooner. Louisville used <a href="https://louisvilleky.gov/government/air-pollution-control-district" style="color:#ff7c53">AI-equipped air-quality sensors</a> to track pollution patterns linked to respiratory illness. San Jose piloted <a href="https://www.sanjoseca.gov/your-government/departments-offices/transportation" style="color:#ff7c53">AI-optimized traffic signals</a> to reduce congestion on key corridors.</p>
+    <p>In public health, predictive models are helping inspectors target restaurant visits and building code checks where violations are most likely. A Chicago Department of Innovation model <a href="https://chicago.github.io/food-inspections-evaluation/" style="color:#c41e3a">reordered food inspection priorities</a> to find critical violations sooner. Louisville used <a href="https://louisvilleky.gov/government/air-pollution-control-district" style="color:#c41e3a">AI-equipped air-quality sensors</a> to track pollution patterns linked to respiratory illness. San Jose piloted <a href="https://www.sanjoseca.gov/your-government/departments-offices/transportation" style="color:#c41e3a">AI-optimized traffic signals</a> to reduce congestion on key corridors.</p>
     <p>The potential is real. But so is the question: who decides where these tools get deployed &mdash; and who gets left out?</p>
   </div>
 </div>
@@ -1074,8 +1072,8 @@ if(sessionStorage.getItem('ai-city-auth')==='1'){
 
 <!-- ════════════════ SECTION 3: ALGORITHMIC BIAS ════════════════ -->
 <div class="story-section ds-reveal">
-  <div class="ds-section-rule" style="background:#e7466d"></div>
-  <div class="story-section-label" style="color:#e7466d">Part III</div>
+  <div class="ds-section-rule" style="background:#c41e3a"></div>
+  <div class="story-section-label" style="color:#c41e3a">Part III</div>
   <div class="story-section-title">The Algorithm Sees Race</div>
   <div class="story-section-intro">When AI systems learn from decades of biased data, they don't eliminate injustice. They automate it &mdash; and they do it at scale, in milliseconds, without appeals.</div>
 </div>
@@ -1086,10 +1084,10 @@ if(sessionStorage.getItem('ai-city-auth')==='1'){
   </div>
 
   <div class="ds-bar-chart ds-reveal">
-    <div style="font-family:var(--font-primary);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:rgba(255,255,255,0.25);margin-bottom:16px">COMPAS Recidivism Tool &mdash; False Positive Rate</div>
+    <div style="font-family:'Inter',sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:rgba(255,255,255,0.25);margin-bottom:16px">COMPAS Recidivism Tool &mdash; False Positive Rate</div>
     <div class="ds-bar-row">
       <span class="ds-bar-label">Black defendants</span>
-      <div class="ds-bar-track"><div class="ds-bar-fill" style="--w:89.8%;background:#e7466d">44.9%</div></div>
+      <div class="ds-bar-track"><div class="ds-bar-fill" style="--w:89.8%;background:#c41e3a">44.9%</div></div>
     </div>
     <div class="ds-bar-row">
       <span class="ds-bar-label">White defendants</span>
@@ -1125,8 +1123,8 @@ if(sessionStorage.getItem('ai-city-auth')==='1'){
 
 <!-- ════════════════ SECTION 4: SURVEILLANCE ════════════════ -->
 <div class="story-section ds-reveal">
-  <div class="ds-section-rule" style="background:#9b9fbc"></div>
-  <div class="story-section-label" style="color:#9b9fbc">Part IV</div>
+  <div class="ds-section-rule" style="background:#d97706"></div>
+  <div class="story-section-label" style="color:#d97706">Part IV</div>
   <div class="story-section-title">The City That Never Stops Watching</div>
   <div class="story-section-intro">The surveillance infrastructure of American cities is being supercharged by AI. Anonymity in public spaces is becoming a historical artifact.</div>
 </div>
@@ -1160,10 +1158,10 @@ if(sessionStorage.getItem('ai-city-auth')==='1'){
   </div>
 
   <div class="ds-waffle-container ds-reveal" id="waffle-section">
-    <div style="font-family:var(--font-primary);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:rgba(255,255,255,0.25);margin-bottom:16px">279 Variables in the Allegheny Family Screening Tool</div>
+    <div style="font-family:'Inter',sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:rgba(255,255,255,0.25);margin-bottom:16px">279 Variables in the Allegheny Family Screening Tool</div>
     <div class="ds-waffle-grid" id="ds-waffle-279"></div>
     <div class="ds-waffle-legend">
-      <div class="ds-waffle-legend-item"><div class="ds-waffle-legend-swatch" style="background:#e7466d"></div> Poverty proxies</div>
+      <div class="ds-waffle-legend-item"><div class="ds-waffle-legend-swatch" style="background:#c41e3a"></div> Poverty proxies</div>
       <div class="ds-waffle-legend-item"><div class="ds-waffle-legend-swatch" style="background:rgba(255,255,255,0.08)"></div> Other variables</div>
     </div>
     <div class="ds-chart-source" style="margin-top:12px">Source: Virginia Eubanks, <em>Automating Inequality</em></div>
@@ -1179,8 +1177,8 @@ if(sessionStorage.getItem('ai-city-auth')==='1'){
 
 <!-- ════════════════ SECTION 5: THE JOB CRISIS ════════════════ -->
 <div class="story-section ds-reveal">
-  <div class="ds-section-rule" style="background:#9b9fbc"></div>
-  <div class="story-section-label" style="color:#9b9fbc">Part V</div>
+  <div class="ds-section-rule" style="background:#d97706"></div>
+  <div class="story-section-label" style="color:#d97706">Part V</div>
   <div class="story-section-title">The Job Crisis No One Is Planning For</div>
   <div class="story-section-intro">The World Economic Forum's headline number sounds reassuring: AI will create 78 million more jobs than it destroys. Look closer and the picture fractures along lines of class, geography, and race.</div>
 </div>
@@ -1204,14 +1202,14 @@ if(sessionStorage.getItem('ai-city-auth')==='1'){
   </div>
 
   <div class="ds-bar-chart ds-reveal">
-    <div style="font-family:var(--font-primary);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:rgba(255,255,255,0.25);margin-bottom:16px">Global Job Impact by 2030</div>
+    <div style="font-family:'Inter',sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:rgba(255,255,255,0.25);margin-bottom:16px">Global Job Impact by 2030</div>
     <div class="ds-bar-row">
-      <span class="ds-bar-label" style="color:#ff7c53">Displaced</span>
-      <div class="ds-bar-track"><div class="ds-bar-fill" style="--w:54%;background:#ff7c53">92M jobs</div></div>
+      <span class="ds-bar-label" style="color:#d97706">Displaced</span>
+      <div class="ds-bar-track"><div class="ds-bar-fill" style="--w:54%;background:#d97706">92M jobs</div></div>
     </div>
     <div class="ds-bar-row">
-      <span class="ds-bar-label" style="color:#57aa4a">Created</span>
-      <div class="ds-bar-track"><div class="ds-bar-fill delay-1" style="--w:100%;background:#57aa4a">170M jobs</div></div>
+      <span class="ds-bar-label" style="color:#059669">Created</span>
+      <div class="ds-bar-track"><div class="ds-bar-fill delay-1" style="--w:100%;background:#059669">170M jobs</div></div>
     </div>
     <div class="ds-chart-source">Source: World Economic Forum, Future of Jobs Report, 2025</div>
   </div>
@@ -1240,26 +1238,26 @@ if(sessionStorage.getItem('ai-city-auth')==='1'){
   </div>
 
   <div class="ds-bar-chart ds-reveal">
-    <div style="font-family:var(--font-primary);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:rgba(255,255,255,0.25);margin-bottom:16px">Share of Workforce with High AI Exposure &mdash; by Sector</div>
+    <div style="font-family:'Inter',sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:rgba(255,255,255,0.25);margin-bottom:16px">Share of Workforce with High AI Exposure &mdash; by Sector</div>
     <div class="ds-bar-row">
       <span class="ds-bar-label">Office &amp; admin</span>
-      <div class="ds-bar-track"><div class="ds-bar-fill" style="--w:85%;background:#e7466d">High exposure</div></div>
+      <div class="ds-bar-track"><div class="ds-bar-fill" style="--w:85%;background:#c41e3a">High exposure</div></div>
     </div>
     <div class="ds-bar-row">
       <span class="ds-bar-label">Legal</span>
-      <div class="ds-bar-track"><div class="ds-bar-fill delay-1" style="--w:78%;background:#e7466d">High exposure</div></div>
+      <div class="ds-bar-track"><div class="ds-bar-fill delay-1" style="--w:78%;background:#c41e3a">High exposure</div></div>
     </div>
     <div class="ds-bar-row">
       <span class="ds-bar-label">Financial</span>
-      <div class="ds-bar-track"><div class="ds-bar-fill delay-2" style="--w:72%;background:#ff7c53">High exposure</div></div>
+      <div class="ds-bar-track"><div class="ds-bar-fill delay-2" style="--w:72%;background:#d97706">High exposure</div></div>
     </div>
     <div class="ds-bar-row">
       <span class="ds-bar-label">Customer service</span>
-      <div class="ds-bar-track"><div class="ds-bar-fill delay-3" style="--w:68%;background:#ff7c53">High exposure</div></div>
+      <div class="ds-bar-track"><div class="ds-bar-fill delay-3" style="--w:68%;background:#d97706">High exposure</div></div>
     </div>
     <div class="ds-bar-row">
       <span class="ds-bar-label">Education</span>
-      <div class="ds-bar-track"><div class="ds-bar-fill delay-4" style="--w:45%;background:#ff7c53">Moderate</div></div>
+      <div class="ds-bar-track"><div class="ds-bar-fill delay-4" style="--w:45%;background:#d97706">Moderate</div></div>
     </div>
     <div class="ds-bar-row">
       <span class="ds-bar-label">Construction</span>
@@ -1282,8 +1280,8 @@ if(sessionStorage.getItem('ai-city-auth')==='1'){
 
 <!-- ════════════════ SECTION 6: THE CLASSROOM CRISIS ════════════════ -->
 <div class="story-section ds-reveal">
-  <div class="ds-section-rule" style="background:#217ebe"></div>
-  <div class="story-section-label" style="color:#217ebe">Part VI</div>
+  <div class="ds-section-rule" style="background:#2563eb"></div>
+  <div class="story-section-label" style="color:#2563eb">Part VI</div>
   <div class="story-section-title">The End of Homework</div>
   <div class="story-section-intro">AI hasn't just disrupted how students cheat. It has made the entire framework of take-home assessment functionally obsolete &mdash; and the tools deployed to fight back are causing their own damage.</div>
 </div>
@@ -1312,14 +1310,14 @@ if(sessionStorage.getItem('ai-city-auth')==='1'){
   </div>
 
   <div class="ds-bar-chart ds-reveal">
-    <div style="font-family:var(--font-primary);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:rgba(255,255,255,0.25);margin-bottom:16px">AI Detection Tool &mdash; False Positive Rates by Student Group</div>
+    <div style="font-family:'Inter',sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:rgba(255,255,255,0.25);margin-bottom:16px">AI Detection Tool &mdash; False Positive Rates by Student Group</div>
     <div class="ds-bar-row">
       <span class="ds-bar-label">Non-native speakers</span>
-      <div class="ds-bar-track"><div class="ds-bar-fill" style="--w:61.3%;background:#e7466d">61.3%</div></div>
+      <div class="ds-bar-track"><div class="ds-bar-fill" style="--w:61.3%;background:#c41e3a">61.3%</div></div>
     </div>
     <div class="ds-bar-row">
       <span class="ds-bar-label">Simple prose style</span>
-      <div class="ds-bar-track"><div class="ds-bar-fill delay-1" style="--w:38%;background:#ff7c53">~38%</div></div>
+      <div class="ds-bar-track"><div class="ds-bar-fill delay-1" style="--w:38%;background:#d97706">~38%</div></div>
     </div>
     <div class="ds-bar-row">
       <span class="ds-bar-label">Native English writers</span>
@@ -1343,8 +1341,8 @@ if(sessionStorage.getItem('ai-city-auth')==='1'){
 
 <!-- ════════════════ SECTION 7: DEEPFAKES & ELECTIONS ════════════════ -->
 <div class="story-section ds-reveal">
-  <div class="ds-section-rule" style="background:#e7466d"></div>
-  <div class="story-section-label" style="color:#e7466d">Part VII</div>
+  <div class="ds-section-rule" style="background:#c41e3a"></div>
+  <div class="story-section-label" style="color:#c41e3a">Part VII</div>
   <div class="story-section-title">The Election No One Can Trust</div>
   <div class="story-section-intro">AI-generated deepfakes are arriving in local politics &mdash; where budgets are small, fact-checkers are few, and the damage is hardest to undo.</div>
 </div>
@@ -1383,8 +1381,8 @@ if(sessionStorage.getItem('ai-city-auth')==='1'){
 
 <!-- ════════════════ SECTION 8: THE DIGITAL DIVIDE ════════════════ -->
 <div class="story-section ds-reveal">
-  <div class="ds-section-rule" style="background:#394882"></div>
-  <div class="story-section-label" style="color:#394882">Part VIII</div>
+  <div class="ds-section-rule" style="background:#7c3aed"></div>
+  <div class="story-section-label" style="color:#7c3aed">Part VIII</div>
   <div class="story-section-title">Two Cities, One Algorithm</div>
   <div class="story-section-intro">The new digital divide isn't between those who have internet access and those who don't. It's between those who benefit from AI and those who are merely sorted by it.</div>
 </div>
@@ -1438,8 +1436,8 @@ if(sessionStorage.getItem('ai-city-auth')==='1'){
 
 <!-- ════════════════ SECTION 9: THE GOVERNANCE GAP ════════════════ -->
 <div class="story-section ds-reveal">
-  <div class="ds-section-rule" style="background:#394882"></div>
-  <div class="story-section-label" style="color:#394882">Part IX</div>
+  <div class="ds-section-rule" style="background:#7c3aed"></div>
+  <div class="story-section-label" style="color:#7c3aed">Part IX</div>
   <div class="story-section-title">Who Is Watching the Machine?</div>
   <div class="story-section-intro">Most cities adopted AI before adopting rules for it. The governance gap is the defining challenge of the next decade.</div>
 </div>
@@ -1477,11 +1475,11 @@ if(sessionStorage.getItem('ai-city-auth')==='1'){
       <div class="ds-funnel-desc">U.S. cities using AI tools</div>
     </div>
     <div class="ds-funnel-row">
-      <div class="ds-funnel-bar" style="width:12%;min-width:50px;background:rgba(57,72,130,0.4)">~30</div>
+      <div class="ds-funnel-bar" style="width:12%;min-width:50px;background:rgba(123,58,237,0.4)">~30</div>
       <div class="ds-funnel-desc">have any procurement guidelines for AI</div>
     </div>
     <div class="ds-funnel-row">
-      <div class="ds-funnel-bar" style="width:2.4%;min-width:42px;background:#394882">~6</div>
+      <div class="ds-funnel-bar" style="width:2.4%;min-width:42px;background:#7c3aed">~6</div>
       <div class="ds-funnel-desc">have community oversight boards</div>
     </div>
   </div>
@@ -1496,7 +1494,7 @@ if(sessionStorage.getItem('ai-city-auth')==='1'){
 
 <!-- ════════════════ CLOSING ════════════════ -->
 <div class="story-section ds-reveal" style="text-align:center;padding:120px 32px 100px">
-  <p style="font-family:var(--font-secondary);font-size:clamp(22px,3.5vw,34px);font-weight:400;color:rgba(255,255,255,0.6);line-height:1.7;max-width:640px;margin:0 auto">
+  <p style="font-family:'Source Serif 4',Georgia,serif;font-size:clamp(22px,3.5vw,34px);font-weight:400;color:rgba(255,255,255,0.6);line-height:1.7;max-width:640px;margin:0 auto">
     The machine is already in the municipal building.<br><br>
     The question is <em style="color:#fff;font-style:normal;font-weight:700">who controls it</em>.
   </p>
@@ -1568,8 +1566,8 @@ if(sessionStorage.getItem('ai-city-auth')==='1'){
 <!-- ═══ FOOTER ═══ -->
 <footer class="site-footer">
   <div class="footer-inner">
-    <div class="footer-logo">The Algorithmic City</div>
-    <div style="color:rgba(255,255,255,0.7); font-size: 0.75rem;">This special issue was generated by AI (Claude, by Anthropic) as a demonstration project. &copy; 2026</div>
+    <div class="footer-logo">VITAL <span>CITY</span></div>
+    <div style="color:#666; font-size: 0.75rem;">This special issue was generated by AI (Claude, by Anthropic) as a demonstration project. &copy; 2026</div>
     <div class="footer-links">
       <a href="#">About</a>
       <a href="#">Contact</a>
@@ -1584,15 +1582,15 @@ if(sessionStorage.getItem('ai-city-auth')==='1'){
 // Data-driven inline SVGs for article card visuals and embedded infographics
 
 const COLORS = {
-  red: '#e7466d',
-  dark: '#050507',
-  gray: '#707175',
-  light: '#f5f5f3',
-  blue: '#217ebe',
-  purple: '#394882',
-  green: '#dde44c',
-  orange: '#ff7c53',
-  teal: '#9b9fbc',
+  red: '#c41e3a',
+  dark: '#1a1a1a',
+  gray: '#666',
+  light: '#f5f5f5',
+  blue: '#2563eb',
+  purple: '#7c3aed',
+  green: '#059669',
+  orange: '#d97706',
+  teal: '#0891b2',
 };
 
 // ── Card Visual: 311 Revolution ──
@@ -3772,7 +3770,7 @@ function renderArticles() {
           ${insertInfographic(a.body, a.visual)}
         </div>
         <div style="text-align:center; margin-top:48px; padding-top:32px; border-top:1px solid #e5e5e5;">
-          ${i < articles.length - 1 ? `<button class="back-to-issue" onclick="showArticle('essay-${i+2}')" style="color:#ff7c53;cursor:pointer;">Next: ${articles[i+1].title} &rarr;</button>` : ''}
+          ${i < articles.length - 1 ? `<button class="back-to-issue" onclick="showArticle('essay-${i+2}')" style="color:#c41e3a;cursor:pointer;">Next: ${articles[i+1].title} &rarr;</button>` : ''}
           <br><br>
           <button class="back-to-issue" onclick="hideArticle()">Back to issue</button>
         </div>
@@ -3925,7 +3923,7 @@ renderArticles();
       const cell = document.createElement('div');
       cell.className = 'ds-waffle-cell';
       if (i < total) {
-        cell.style.background = i < povertyCount ? '#e7466d' : 'rgba(255,255,255,0.08)';
+        cell.style.background = i < povertyCount ? '#c41e3a' : 'rgba(255,255,255,0.08)';
       }
       cell.style.transitionDelay = (i * 8) + 'ms';
       if (i === 279) { cell.style.opacity = '0'; cell.style.visibility = 'hidden'; }
