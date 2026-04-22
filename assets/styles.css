@@ -613,6 +613,50 @@ h1, h2, h3, h4, h5 { line-height: 1.15; letter-spacing: -0.02em; }
 }
 
 /* ============================================================
+   DATA-STORY PROMO BANNER (on index.html)
+   ============================================================ */
+.ds-promo-banner {
+  max-width: 1200px; margin: 0 auto; padding: 0 32px;
+}
+.ds-promo-link {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 24px; padding: 28px 32px; text-decoration: none;
+  background: var(--vc-black); color: #fff;
+  border-radius: 3px; position: relative; overflow: hidden;
+  transition: background 0.2s;
+}
+.ds-promo-link::before {
+  content: ''; position: absolute; top: 0; left: 0; bottom: 0;
+  width: 6px; background: var(--vc-orange);
+}
+.ds-promo-link:hover { background: #1a1a24; }
+.ds-promo-inner { flex: 1; padding-left: 14px; }
+.ds-promo-kicker {
+  font-family: 'halyard-text', 'Inter', sans-serif;
+  font-size: 11px; font-weight: 700; letter-spacing: 3px;
+  text-transform: uppercase; color: var(--vc-orange); margin-bottom: 8px;
+}
+.ds-promo-title {
+  font-family: 'gascogne-serial', 'Source Serif 4', Georgia, serif;
+  font-size: clamp(20px, 2.2vw, 26px); font-weight: 700;
+  line-height: 1.25; color: #fff; margin-bottom: 6px;
+}
+.ds-promo-title em { color: var(--vc-orange); font-style: italic; }
+.ds-promo-sub {
+  font-family: 'halyard-text', 'Inter', sans-serif;
+  font-size: 14px; color: rgba(255,255,255,0.6); line-height: 1.4;
+}
+.ds-promo-arrow {
+  font-size: 32px; color: var(--vc-orange);
+  transition: transform 0.2s;
+}
+.ds-promo-link:hover .ds-promo-arrow { transform: translateX(6px); }
+@media (max-width: 600px) {
+  .ds-promo-link { padding: 20px 20px; }
+  .ds-promo-arrow { display: none; }
+}
+
+/* ============================================================
    PRINT
    ============================================================ */
 @media print {
