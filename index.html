@@ -88,6 +88,51 @@ h1, h2, h3, h4 { line-height: 1.2; }
   letter-spacing: 0.12em; color: var(--vc-black); text-decoration: none;
   text-transform: uppercase;
 }
+.print-btn {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-family: var(--font-primary); font-size: 0.7rem; font-weight: 700;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--vc-black); background: transparent;
+  border: 1px solid var(--vc-black); border-radius: 2px;
+  padding: 8px 12px; cursor: pointer; transition: all 0.15s ease;
+}
+.print-btn:hover { background: var(--vc-black); color: var(--vc-white); }
+.print-btn svg { display: block; }
+@media (max-width: 600px) { .print-btn span { display: none; } .print-btn { padding: 8px; } }
+
+/* ── Print styles: fully designed PDF output ── */
+@media print {
+  @page { size: Letter; margin: 0.6in 0.5in; }
+  html, body { background: #fff !important; color: var(--vc-black) !important; font-size: 10.5pt; }
+  body { line-height: 1.5; }
+  .site-header, .print-btn, .floating-nav, .scroll-progress, .issue-nav-sticky,
+  .back-to-top, .table-of-contents-toggle, nav, .password-overlay,
+  button, .login-form, .login-container { display: none !important; }
+  #issue-view { background: #fff !important; padding: 0 !important; }
+  .issue-hero {
+    background: #050507 !important; color: #fff !important;
+    page-break-after: always; padding: 1in 0.5in !important;
+    -webkit-print-color-adjust: exact; print-color-adjust: exact;
+  }
+  .issue-hero h1 { color: #fff !important; font-size: 42pt !important; }
+  .issue-hero .subtitle, .issue-hero .issue-label, .issue-hero .issue-date { color: #fff !important; }
+  .neural-grid { opacity: 0.4; }
+  h1 { font-size: 28pt; page-break-after: avoid; }
+  h2 { font-size: 18pt; page-break-after: avoid; margin-top: 18pt; }
+  h3 { font-size: 13pt; page-break-after: avoid; }
+  p, li { orphans: 3; widows: 3; }
+  figure, .chart, svg, img, .ds-big-number, .callout { page-break-inside: avoid; }
+  article, .article-body, .story-section, section { page-break-inside: auto; }
+  .article-card, section.article-section { page-break-before: always; }
+  a { color: var(--vc-black) !important; text-decoration: underline; }
+  a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 7.5pt; color: #707175; word-break: break-all; }
+  .ai-notice { border: 1px solid var(--vc-black); padding: 10pt; background: #f5f5f3 !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  * { box-shadow: none !important; }
+  /* preserve brand color fills on charts/callouts */
+  [style*="background"], .ds-big-number, .story-section-intro {
+    -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important;
+  }
+}
 nav a {
   font-family: var(--font-primary); font-size: 0.85rem; font-weight: 500;
   color: var(--vc-charcoal); text-decoration: none; margin-left: 28px; letter-spacing: 0.02em;
@@ -852,6 +897,10 @@ if(sessionStorage.getItem('ai-city-auth')==='1'){
 <header class="site-header">
   <div class="header-inner">
     <a href="#" class="logo" onclick="event.preventDefault(); hideArticle();">The Algorithmic City</a>
+    <button type="button" class="print-btn" onclick="window.print()" aria-label="Print or save as PDF" title="Print / Save as PDF">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+      <span>Print / Save PDF</span>
+    </button>
   </div>
 </header>
 
