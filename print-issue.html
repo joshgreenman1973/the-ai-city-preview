@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Algorithmic City — Full issue (print)</title>
+<meta name="description" content="Full print / PDF edition: cover, table of contents, and all 16 essays.">
+<link rel="stylesheet" href="https://use.typekit.net/qqk2vto.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+<style>
+/* ============================================================
+   PRINT-ISSUE: screen styles (readable long scroll preview)
+   ============================================================ */
+.print-toolbar {
+  position: sticky; top: 0; z-index: 50;
+  background: #fff; border-bottom: 1px solid var(--vc-cloud);
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 12px 24px; font-family: "halyard-text", Inter, sans-serif;
+}
+.print-toolbar .logo {
+  font-family: "gascogne-serial", "Source Serif 4", serif;
+  font-size: 18px; color: var(--vc-black); text-decoration: none; letter-spacing: 0.02em;
+}
+.print-toolbar .toolbar-actions { display: flex; gap: 12px; align-items: center; }
+.print-toolbar a.back-link {
+  color: var(--vc-charcoal); text-decoration: none; font-size: 13px;
+  letter-spacing: 0.04em;
+}
+.print-toolbar a.back-link:hover { color: var(--vc-orange); }
+.print-toolbar .print-btn {
+  font-family: "halyard-text", Inter, sans-serif;
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 8px 14px; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--vc-black); background: transparent;
+  border: 1px solid var(--vc-black); border-radius: 2px; cursor: pointer;
+}
+.print-btn:hover { background: var(--vc-black); color: #fff; }
+
+.print-doc { max-width: 780px; margin: 0 auto; padding: 40px 24px 80px; }
+
+/* Cover */
+.pi-cover {
+  background: var(--vc-black); color: #fff;
+  padding: 72px 48px; border-bottom: 8px solid var(--vc-orange);
+  margin-bottom: 48px;
+}
+.pi-cover .pi-pill {
+  display: inline-block; padding: 4px 10px; background: var(--vc-orange); color: #fff;
+  font-family: "halyard-text", Inter, sans-serif; font-size: 11px;
+  letter-spacing: 0.12em; text-transform: uppercase;
+}
+.pi-cover h1 {
+  font-family: "gascogne-serial", "Source Serif 4", serif;
+  font-size: 56px; line-height: 1.05; margin: 20px 0 16px; color: #fff;
+}
+.pi-cover .pi-dek {
+  font-family: "Source Serif 4", serif; font-size: 20px; line-height: 1.45;
+  color: #fff; max-width: 560px; margin: 0 0 24px;
+}
+.pi-cover .pi-byline {
+  font-family: "halyard-text", Inter, sans-serif;
+  font-size: 13px; letter-spacing: 0.04em; color: #fff; opacity: 0.85;
+}
+.pi-cover .pi-date {
+  font-family: "halyard-text", Inter, sans-serif;
+  font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--vc-chartreuse); margin-bottom: 10px;
+}
+.pi-cover .pi-notice {
+  margin-top: 36px; padding-top: 18px; border-top: 1px solid rgba(255,255,255,0.25);
+  font-family: "halyard-text", Inter, sans-serif;
+  font-size: 13px; line-height: 1.55; color: #fff; opacity: 0.85; max-width: 560px;
+}
+
+/* TOC */
+.pi-toc {
+  padding: 24px 0 40px;
+  font-family: "halyard-text", Inter, sans-serif;
+}
+.pi-toc h2 {
+  font-family: "gascogne-serial", "Source Serif 4", serif;
+  font-size: 28px; margin: 0 0 24px; color: var(--vc-black);
+}
+.pi-toc-section { margin-bottom: 26px; }
+.pi-toc-section-label {
+  font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--vc-orange); margin-bottom: 10px;
+}
+.pi-toc ol { list-style: none; padding: 0; margin: 0; counter-reset: none; }
+.pi-toc li {
+  display: flex; align-items: baseline; gap: 14px;
+  padding: 8px 0; border-bottom: 1px dotted var(--vc-cloud);
+  font-size: 15px; color: var(--vc-black);
+}
+.pi-toc .pi-num {
+  font-family: "halyard-text", Inter, sans-serif;
+  font-weight: 600; color: var(--vc-charcoal); min-width: 32px;
+}
+.pi-toc .pi-title {
+  font-family: "Source Serif 4", serif; font-weight: 600; font-size: 17px;
+}
+.pi-toc .pi-sub {
+  display: block; font-family: "Source Serif 4", serif;
+  color: var(--vc-charcoal); font-size: 14px; font-weight: 400; margin-top: 2px;
+}
+
+/* Article blocks */
+.pi-article { padding: 36px 0 28px; border-top: 1px solid var(--vc-cloud); }
+.pi-article:first-of-type { border-top: none; }
+.pi-article .pi-cat {
+  display: inline-block; padding: 3px 10px;
+  font-family: "halyard-text", Inter, sans-serif;
+  font-size: 10.5px; letter-spacing: 0.12em; text-transform: uppercase;
+  color: #fff; background: var(--vc-black);
+}
+.pi-article h1 {
+  font-family: "gascogne-serial", "Source Serif 4", serif;
+  font-size: 36px; line-height: 1.1; margin: 14px 0 12px; color: var(--vc-black);
+}
+.pi-article .pi-art-dek {
+  font-family: "Source Serif 4", serif; font-style: italic;
+  font-size: 18px; line-height: 1.5; color: var(--vc-charcoal); margin: 0 0 14px;
+}
+.pi-article .pi-art-byline {
+  font-family: "halyard-text", Inter, sans-serif;
+  font-size: 12px; letter-spacing: 0.04em; color: var(--vc-charcoal);
+  margin-bottom: 20px;
+}
+.pi-article .pi-lead-visual {
+  margin: 12px 0 22px;
+}
+.pi-article .pi-lead-visual svg { max-width: 100%; height: auto; }
+.pi-article .pi-body {
+  font-family: "Source Serif 4", serif; font-size: 15.5px; line-height: 1.65;
+  color: var(--vc-black);
+}
+.pi-article .pi-body h2 {
+  font-family: "gascogne-serial", "Source Serif 4", serif;
+  font-size: 22px; margin: 28px 0 10px; color: var(--vc-black);
+}
+.pi-article .pi-body p { margin: 0 0 14px; }
+.pi-article .pi-body a { color: var(--vc-cerulean); text-decoration: underline; }
+.pi-article .pi-body .inline-infographic { margin: 22px 0; }
+.pi-article .pi-body .inline-infographic svg { max-width: 100%; height: auto; }
+.pi-article .pi-end-rule {
+  margin: 28px 0 0; text-align: center; color: var(--vc-charcoal);
+  letter-spacing: 0.4em; font-family: "halyard-text", Inter, sans-serif; font-size: 12px;
+}
+
+/* Section divider (between the 4 issue sections) */
+.pi-section-divider {
+  margin: 40px 0 0; padding: 28px 0 4px;
+  border-top: 2px solid var(--vc-orange);
+  font-family: "halyard-text", Inter, sans-serif;
+}
+.pi-section-divider .pi-sd-label {
+  font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--vc-orange);
+}
+.pi-section-divider h2 {
+  font-family: "gascogne-serial", "Source Serif 4", serif;
+  font-size: 28px; margin: 8px 0 0; color: var(--vc-black);
+}
+
+/* ============================================================
+   PRINT: the actual PDF layout
+   ============================================================ */
+@media print {
+  @page {
+    size: Letter; margin: 0.65in 0.55in;
+    @top-left { content: "The Algorithmic City"; font-family: "halyard-text", Inter, sans-serif; font-size: 9pt; color: #707175; letter-spacing: 0.08em; }
+    @bottom-right { content: counter(page); font-family: "halyard-text", Inter, sans-serif; font-size: 9pt; color: #707175; }
+  }
+  @page :first {
+    @top-left { content: ""; }
+    @bottom-right { content: ""; }
+  }
+
+  html, body { background: #fff !important; color: var(--vc-black) !important;
+    font-size: 10.5pt; line-height: 1.5; }
+
+  /* Hide on-screen chrome */
+  .print-toolbar, .site-header, .site-footer, .print-btn, .back-link,
+  #password-gate, .header-nav, button { display: none !important; }
+
+  .print-doc { max-width: none; margin: 0; padding: 0; }
+
+  /* Cover on its own page */
+  .pi-cover {
+    background: var(--vc-black) !important; color: #fff !important;
+    padding: 0.9in 0.5in !important;
+    border-bottom: 8px solid var(--vc-orange) !important;
+    margin: 0 !important;
+    page-break-after: always;
+    -webkit-print-color-adjust: exact; print-color-adjust: exact;
+    min-height: 8.5in; box-sizing: border-box;
+  }
+  .pi-cover h1 { color: #fff !important; font-size: 44pt !important; margin: 0.25in 0 0.18in; }
+  .pi-cover .pi-dek { font-size: 16pt !important; }
+  .pi-cover .pi-pill { background: var(--vc-orange) !important; color: #fff !important; }
+  .pi-cover .pi-date { color: var(--vc-chartreuse) !important; }
+
+  /* TOC on its own page(s) */
+  .pi-toc { page-break-after: always; padding: 0 !important; }
+  .pi-toc h2 { font-size: 22pt; margin-top: 0; }
+  .pi-toc li { font-size: 11pt; }
+  .pi-toc .pi-title { font-size: 12pt; }
+  .pi-toc .pi-sub { font-size: 10pt; }
+
+  /* Each article on a fresh page */
+  .pi-article {
+    page-break-before: always;
+    border-top: none !important;
+    padding: 0 !important;
+  }
+  .pi-section-divider { page-break-before: always; border-top: none !important; }
+
+  .pi-article h1 { font-size: 26pt; page-break-after: avoid; margin-top: 0; }
+  .pi-article .pi-body h2 { font-size: 15pt; page-break-after: avoid; margin-top: 16pt; }
+  .pi-article .pi-cat { background: var(--vc-black) !important; color: #fff !important;
+    -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+
+  .pi-article .pi-body p, .pi-article .pi-body li { orphans: 3; widows: 3; }
+  .pi-article .pi-lead-visual,
+  .pi-article .pi-body .inline-infographic,
+  .pi-article .pi-body figure,
+  .pi-article .pi-body svg,
+  .pi-article .pi-body img {
+    page-break-inside: avoid;
+  }
+
+  /* Show link URLs after anchor text (matches site convention) */
+  a { color: var(--vc-black) !important; text-decoration: underline; }
+  a[href^="http"]::after {
+    content: " (" attr(href) ")"; font-size: 7.5pt; color: var(--vc-charcoal);
+    word-break: break-all;
+  }
+
+  * { box-shadow: none !important; }
+}
+</style>
+</head>
+<body>
+
+<!-- Password gate (same mechanism as rest of site) -->
+<div id="password-gate">
+  <div class="pw-inner">
+    <h1>The Algorithmic City</h1>
+    <p class="pw-sub">Preview access</p>
+    <input id="pw-input" type="password" placeholder="Enter password" onkeydown="if(event.key==='Enter')checkPw()">
+    <button onclick="checkPw()">Enter</button>
+    <p id="pw-error" class="pw-error">Incorrect password</p>
+  </div>
+</div>
+<script>
+function checkPw(){
+  if(document.getElementById('pw-input').value==='vitalcity2026!'){
+    document.getElementById('password-gate').style.display='none';
+    document.getElementById('site').style.display='';
+    sessionStorage.setItem('ai-city-auth','1');
+    buildIssue();
+  } else { document.getElementById('pw-error').style.display='block'; }
+}
+if(sessionStorage.getItem('ai-city-auth')==='1'){
+  document.addEventListener('DOMContentLoaded',()=>{
+    document.getElementById('password-gate').style.display='none';
+    document.getElementById('site').style.display='';
+    buildIssue();
+  });
+}
+</script>
+
+<div id="site" style="display:none">
+
+<!-- On-screen toolbar (hidden in print) -->
+<div class="print-toolbar" role="toolbar" aria-label="Print controls">
+  <a class="logo" href="index.html">The Algorithmic City</a>
+  <div class="toolbar-actions">
+    <a class="back-link" href="index.html">Back to issue</a>
+    <button type="button" class="print-btn" onclick="window.print()">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+      <span>Print / Save PDF</span>
+    </button>
+  </div>
+</div>
+
+<main class="print-doc">
+
+  <!-- Cover -->
+  <section class="pi-cover" aria-label="Issue cover">
+    <span class="pi-pill">Special Issue · Spring 2026</span>
+    <div class="pi-date" style="margin-top:14px;">April 2026</div>
+    <h1>The Algorithmic City</h1>
+    <p class="pi-dek">Sixteen essays on how AI is reshaping city government — written by AI.</p>
+    <div class="pi-byline">By <strong>A. Bot</strong>, AI Assistant</div>
+    <p class="pi-notice">
+      This special issue was conceived, written, designed, and fact-checked by an AI assistant.
+      Every essay was generated by AI, drawing on real data and linking to real sources.
+      A proof of concept, a stress test, and an honest look in the mirror: using AI to examine
+      what AI means for cities.
+    </p>
+  </section>
+
+  <!-- Table of contents -->
+  <section class="pi-toc" id="pi-toc" aria-label="Table of contents">
+    <h2>Contents</h2>
+    <div id="pi-toc-body"></div>
+  </section>
+
+  <!-- All 16 essays injected here -->
+  <div id="pi-articles"></div>
+
+</main>
+
+</div><!-- /#site -->
+
+<!-- Data + visuals -->
+<script src="assets/visuals.js"></script>
+<script src="assets/articles.js"></script>
+<script>
+function buildIssue(){
+  if (window.__builtIssue) return;
+  window.__builtIssue = true;
+
+  const sectionOrder = ['The Promise', 'The Peril', 'The Disruption', 'The Governance Question'];
+  const sectionDescriptions = {
+    'The Promise':             'What AI is already doing well for cities',
+    'The Peril':               'Where AI is already doing harm',
+    'The Disruption':          'The transformations AI is accelerating in urban life',
+    'The Governance Question': 'What cities should actually do about all of this',
+  };
+
+  // Sort articles by section order, keeping original order within each section
+  const bySection = {};
+  sectionOrder.forEach(s => bySection[s] = []);
+  articles.forEach(a => { if (bySection[a.section]) bySection[a.section].push(a); });
+  const ordered = [];
+  sectionOrder.forEach(s => bySection[s].forEach(a => ordered.push(a)));
+
+  // ----- TOC -----
+  const tocBody = document.getElementById('pi-toc-body');
+  let n = 0;
+  sectionOrder.forEach((section, si) => {
+    const wrap = document.createElement('div');
+    wrap.className = 'pi-toc-section';
+    const label = document.createElement('div');
+    label.className = 'pi-toc-section-label';
+    label.textContent = 'Section ' + ['I','II','III','IV'][si] + ' — ' + section;
+    wrap.appendChild(label);
+    const ol = document.createElement('ol');
+    bySection[section].forEach(a => {
+      n += 1;
+      const li = document.createElement('li');
+      li.innerHTML =
+        '<span class="pi-num">' + String(n).padStart(2,'0') + '</span>' +
+        '<span><span class="pi-title">' + a.title + '</span>' +
+        '<span class="pi-sub">' + a.subtitle + '</span></span>';
+      ol.appendChild(li);
+    });
+    wrap.appendChild(ol);
+    tocBody.appendChild(wrap);
+  });
+
+  // ----- Articles -----
+  const host = document.getElementById('pi-articles');
+  let currentSection = null;
+  let counter = 0;
+  ordered.forEach((a) => {
+    // Section divider when section changes
+    if (a.section !== currentSection) {
+      currentSection = a.section;
+      const si = sectionOrder.indexOf(a.section);
+      const div = document.createElement('section');
+      div.className = 'pi-section-divider';
+      div.innerHTML =
+        '<div class="pi-sd-label">Section ' + ['I','II','III','IV'][si] + '</div>' +
+        '<h2>' + a.section + '</h2>' +
+        '<p style="font-family:Source Serif 4,serif;color:#707175;margin:6px 0 0;">' +
+          sectionDescriptions[a.section] + '</p>';
+      host.appendChild(div);
+    }
+
+    counter += 1;
+    const art = document.createElement('article');
+    art.className = 'pi-article';
+
+    // Insert infographic after 3rd paragraph (same pattern as article.js)
+    let body = a.body || '';
+    if (a.visual) {
+      const parts = body.split('</p>');
+      if (parts.length > 4) {
+        parts.splice(3, 0, '<div class="inline-infographic">' + a.visual + '</div>');
+        body = parts.join('</p>');
+      }
+    }
+
+    art.innerHTML =
+      '<span class="pi-cat">' + a.category + '</span>' +
+      '<h1>' + a.title + '</h1>' +
+      '<p class="pi-art-dek">' + a.subtitle + '</p>' +
+      '<div class="pi-art-byline">Essay ' + String(counter).padStart(2,'0') +
+        ' of 16 · By <strong>' + a.author + '</strong>, ' + a.authorTitle +
+        ' · April 2026 · ' + a.section + '</div>' +
+      (a.visual ? '<figure class="pi-lead-visual">' + a.visual + '</figure>' : '') +
+      '<div class="pi-body">' + body + '</div>' +
+      '<div class="pi-end-rule">* * *</div>';
+
+    host.appendChild(art);
+  });
+
+  // Auto-trigger print dialog after render settles
+  setTimeout(function(){
+    try { window.print(); } catch(e) {}
+  }, 800);
+}
+</script>
+
+</body>
+</html>

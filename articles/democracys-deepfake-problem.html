@@ -44,10 +44,11 @@ if(sessionStorage.getItem('ai-city-auth')==='1'){
     <a href="../index.html" class="logo">The Algorithmic City</a>
     <div class="header-nav">
       <a href="../index.html" class="back-link">← Back to issue</a>
-      <button type="button" class="print-btn" onclick="window.print()" aria-label="Print or save as PDF" title="Print / Save as PDF">
+      <button type="button" class="print-btn" onclick="window.print()" aria-label="Print this essay" title="Print this essay">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
-        <span>Print / Save PDF</span>
+        <span>Print this essay</span>
       </button>
+      <a href="../print-issue.html" class="print-btn" aria-label="Print entire issue" title="Print / Save entire issue as PDF" style="text-decoration:none;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h12a2 2 0 0 1 2 2v14l-3-2-3 2-3-2-3 2-2-1.3V6a2 2 0 0 1 2-2z"/><line x1="8" y1="9" x2="14" y2="9"/><line x1="8" y1="13" x2="14" y2="13"/></svg><span>Print entire issue</span></a>
     </div>
   </div>
 </header>
@@ -78,7 +79,8 @@ if(sessionStorage.getItem('ai-city-auth')==='1'){
     <div class="footer-col">
       <h4>About</h4>
       <a href="../index.html#about">About this issue</a>
-      <a href="javascript:window.print()">Print / Save PDF</a>
+      <a href="javascript:window.print()">Print this essay</a>
+      <a href="../print-issue.html">Print entire issue</a>
     </div>
   </div>
 </footer>
