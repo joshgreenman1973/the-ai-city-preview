@@ -87,182 +87,158 @@ if(sessionStorage.getItem('ai-city-auth')==='1'){
       </g>
 
       <!-- 21 bars (buildings). Plotted on a 1600-wide stage with 60px gutters and ~66px columns.
-           Each group includes an SVG <title> for hover/screen reader, and optional "window" rects.
+           Each bar is scaled to a headline number from its essay, mapped by log10 so
+           magnitudes spanning ~1 to ~$130B are legible on the same skyline.
+           Each group carries an SVG <title> for hover/screen-reader context and a
+           vertical <text> label rotated -90deg so it reads up the column.
            Data baseline y=540; top-of-bar = 540 - height. -->
       <g class="skyline-bars">
 
-        <!-- 1. 311 Revolution · 72 languages · h=232 -->
+        <!-- 1. The 311 Revolution · Denver Sunny chatbot, 72 languages · h=123 -->
         <g class="bar b-orange" style="--delay:.02s">
-          <title>311 chatbots: Denver's Sunny answers in 72 languages</title>
-          <rect x="72"  y="308" width="44" height="232"/>
-          <rect class="win" x="82"  y="360" width="6" height="4"/>
-          <rect class="win" x="98"  y="400" width="6" height="4"/>
-          <rect class="win" x="82"  y="470" width="6" height="4"/>
+          <title>Denver's Sunny 311 chatbot answers residents in 72 languages, around the clock</title>
+          <rect x="72"  y="417" width="44" height="123"/>
+          <text class="bar-label" x="94"  y="535" text-anchor="start" transform="rotate(-90 94 535)">72 LANGUAGES</text>
         </g>
 
-        <!-- 2. Six months to six days · 5 months compressed to 1 week · h=220 -->
+        <!-- 2. Six Months to Six Days · Honolulu 5 months to 1 week (~22x) · h=109 -->
         <g class="bar b-chartreuse" style="--delay:.06s">
-          <title>Honolulu permitting: five months compressed to one week</title>
-          <rect x="138" y="320" width="44" height="220"/>
-          <rect class="win" x="152" y="380" width="6" height="4"/>
-          <rect class="win" x="152" y="450" width="6" height="4"/>
+          <title>Honolulu AI permit pre-screening: from roughly five months to about one week, a ~22x speedup</title>
+          <rect x="138" y="431" width="44" height="109"/>
+          <text class="bar-label" x="160" y="535" text-anchor="start" transform="rotate(-90 160 535)">22x FASTER</text>
         </g>
 
-        <!-- 3. Neighborhood public health · 25% asthma block · h=180 -->
+        <!-- 3. Neighborhood public health · 25% asthma in a single block · h=110 -->
         <g class="bar b-cerulean" style="--delay:.10s">
-          <title>Block-level public health: 25% asthma rate in a single neighborhood</title>
-          <rect x="204" y="360" width="44" height="180"/>
-          <rect class="win" x="218" y="420" width="6" height="4"/>
+          <title>Block-level public health: a single neighborhood asthma rate of 25% masked by citywide averages</title>
+          <rect x="204" y="430" width="44" height="110"/>
+          <text class="bar-label" x="226" y="535" text-anchor="start" transform="rotate(-90 226 535)">25% ASTHMA</text>
         </g>
 
-        <!-- 4. Smarter streets · 25% congestion cut · h=168 -->
+        <!-- 4. Smarter Streets · Waymo 250K paid rides per week · h=221 -->
         <g class="bar b-magenta" style="--delay:.14s">
-          <title>AI traffic systems: 25% congestion reduction, tenfold fewer serious crashes</title>
-          <rect x="270" y="372" width="44" height="168"/>
-          <rect class="win" x="284" y="430" width="6" height="4"/>
+          <title>Waymo autonomous taxis: more than 250,000 paid rides per week across operating cities</title>
+          <rect x="270" y="319" width="44" height="221"/>
+          <text class="bar-label" x="292" y="535" text-anchor="start" transform="rotate(-90 292 535)">250K RIDES/WK</text>
         </g>
 
-        <!-- 5. Vital signs / climate · qualitative · h=140 -->
+        <!-- 5. Reading the City's Vital Signs · 70% of global carbon from cities · h=123 -->
         <g class="bar b-rose" style="--delay:.18s">
-          <title>Cities, carbon, and AI's own energy appetite</title>
-          <rect x="336" y="400" width="44" height="140"/>
+          <title>Cities are responsible for roughly 70% of global carbon emissions</title>
+          <rect x="336" y="417" width="44" height="123"/>
+          <text class="bar-label" x="358" y="535" text-anchor="start" transform="rotate(-90 358 535)">70% EMISSIONS</text>
         </g>
 
-        <!-- 6. Bias machine · predictive policing · h=280 (spire) -->
+        <!-- 6. The Bias Machine · Chicago Strategic Subject List, 398K+ scored · h=227 -->
         <g class="bar b-indigo" style="--delay:.22s">
-          <title>Predictive policing: biased data automated into biased forecasts</title>
-          <rect x="402" y="260" width="44" height="280"/>
-          <rect class="spire" x="420" y="240" width="8" height="20"/>
-          <rect class="win" x="416" y="310" width="6" height="4"/>
-          <rect class="win" x="416" y="380" width="6" height="4"/>
-          <rect class="win" x="416" y="470" width="6" height="4"/>
+          <title>Chicago's Strategic Subject List at peak included more than 398,000 people scored for threat</title>
+          <rect x="402" y="313" width="44" height="227"/>
+          <text class="bar-label" x="424" y="535" text-anchor="start" transform="rotate(-90 424 535)">398K SCORED</text>
         </g>
 
-        <!-- 7. Flagged at birth · child welfare · h=200 -->
+        <!-- 7. Flagged at Birth · Allegheny screen-in ~2x for Black families · h=80 -->
         <g class="bar b-periwinkle" style="--delay:.26s">
-          <title>Child-welfare scoring: poverty as "risk"</title>
-          <rect x="468" y="340" width="44" height="200"/>
-          <rect class="win" x="482" y="400" width="6" height="4"/>
-          <rect class="win" x="482" y="470" width="6" height="4"/>
+          <title>Allegheny Family Screening Tool: Black families screened in for investigation at roughly twice the rate of white families</title>
+          <rect x="468" y="460" width="44" height="80"/>
+          <text class="bar-label" x="490" y="535" text-anchor="start" transform="rotate(-90 490 535)">2x SCREENED IN</text>
         </g>
 
-        <!-- 8. Algorithm in the courtroom · COMPAS 44.9% · h=300 -->
+        <!-- 8. The Algorithm in the Courtroom · COMPAS 44.9% false positive (Black) · h=117 -->
         <g class="bar b-orange" style="--delay:.30s">
-          <title>COMPAS false-positive rate: 44.9% for Black defendants vs 23.5% for white</title>
-          <rect x="534" y="240" width="44" height="300"/>
-          <rect class="win" x="548" y="300" width="6" height="4"/>
-          <rect class="win" x="548" y="380" width="6" height="4"/>
-          <rect class="win" x="548" y="470" width="6" height="4"/>
+          <title>COMPAS risk scoring: Black defendants who did not reoffend flagged high-risk at nearly twice the rate of white defendants</title>
+          <rect x="534" y="423" width="44" height="117"/>
+          <text class="bar-label" x="556" y="535" text-anchor="start" transform="rotate(-90 556 535)">44.9% FALSE+</text>
         </g>
 
-        <!-- 9. Watched · 85M cameras (tallest) · h=380 -->
+        <!-- 9. Watched · 85 million surveillance cameras · h=292 -->
         <g class="bar b-chartreuse" style="--delay:.34s">
-          <title>Surveillance: 85 million cameras across American cities</title>
-          <rect x="600" y="160" width="44" height="380"/>
-          <rect class="spire" x="618" y="132" width="8" height="28"/>
-          <rect class="win" x="614" y="220" width="6" height="4"/>
-          <rect class="win" x="614" y="300" width="6" height="4"/>
-          <rect class="win" x="614" y="380" width="6" height="4"/>
-          <rect class="win" x="614" y="470" width="6" height="4"/>
-          <text class="bar-label" x="622" y="148" text-anchor="middle">85M cameras</text>
+          <title>Surveillance: more than 85 million cameras operating across American cities</title>
+          <rect x="600" y="248" width="44" height="292"/>
+          <text class="bar-label" x="622" y="535" text-anchor="start" transform="rotate(-90 622 535)">85M CAMERAS</text>
         </g>
 
-        <!-- 10. Clerk's lament · 92M displaced · h=328 -->
+        <!-- 10. The Clerk's Lament · 92M jobs displaced globally by 2030 · h=293 -->
         <g class="bar b-cerulean" style="--delay:.38s">
-          <title>Jobs: 92 million displaced, 170 million created — not the same people</title>
-          <rect x="666" y="212" width="44" height="328"/>
-          <rect class="win" x="680" y="260" width="6" height="4"/>
-          <rect class="win" x="680" y="340" width="6" height="4"/>
-          <rect class="win" x="680" y="440" width="6" height="4"/>
+          <title>WEF Future of Jobs: 92 million jobs displaced by AI globally by 2030 (170 million created — not the same people)</title>
+          <rect x="666" y="247" width="44" height="293"/>
+          <text class="bar-label" x="688" y="535" text-anchor="start" transform="rotate(-90 688 535)">92M DISPLACED</text>
         </g>
 
-        <!-- 11. Homework problem · 61.22% TOEFL false positive · h=272 -->
+        <!-- 11. The Homework Problem · 61.3% false-positive on non-native English writers · h=121 -->
         <g class="bar b-magenta" style="--delay:.42s">
-          <title>AI-detection in schools: 61.22% false-positive rate on TOEFL essays</title>
-          <rect x="732" y="268" width="44" height="272"/>
-          <rect class="win" x="746" y="320" width="6" height="4"/>
-          <rect class="win" x="746" y="400" width="6" height="4"/>
-          <rect class="win" x="746" y="480" width="6" height="4"/>
+          <title>AI-detection tools: 61.3% false-positive rate on non-native English speakers, vs 5.1% on native speakers</title>
+          <rect x="732" y="419" width="44" height="121"/>
+          <text class="bar-label" x="754" y="535" text-anchor="start" transform="rotate(-90 754 535)">61.3% FALSE+</text>
         </g>
 
-        <!-- 12. Deepfakes · 72-hour window, $1 + $150 · h=192 -->
+        <!-- 12. Democracy's Deepfake Problem · 500K elected offices in U.S. · h=230 -->
         <g class="bar b-rose" style="--delay:.46s">
-          <title>Local-election deepfakes: a 72-hour window, for a dollar plus a hundred and fifty</title>
-          <rect x="798" y="348" width="44" height="192"/>
-          <rect class="win" x="812" y="420" width="6" height="4"/>
-          <rect class="win" x="812" y="490" width="6" height="4"/>
+          <title>Roughly half a million elected offices in the United States — most of them local, and most of them low-scrutiny</title>
+          <rect x="798" y="310" width="44" height="230"/>
+          <text class="bar-label" x="820" y="535" text-anchor="start" transform="rotate(-90 820 535)">500K OFFICES</text>
         </g>
 
-        <!-- 13. Digital divide doubled · 80% workforce AI exposure · h=288 -->
+        <!-- 13. The Digital Divide, Doubled · $43B/yr racial gap widened by AI · h=367 -->
         <g class="bar b-indigo" style="--delay:.50s">
-          <title>AI exposure: roughly 80% of the U.S. workforce will feel some effect</title>
-          <rect x="864" y="252" width="44" height="288"/>
-          <rect class="win" x="878" y="310" width="6" height="4"/>
-          <rect class="win" x="878" y="400" width="6" height="4"/>
-          <rect class="win" x="878" y="490" width="6" height="4"/>
+          <title>Cornell analysis: generative AI could widen the racial economic gap by about $43 billion per year</title>
+          <rect x="864" y="173" width="44" height="367"/>
+          <text class="bar-label" x="886" y="535" text-anchor="start" transform="rotate(-90 886 535)">$43B GAP/YR</text>
         </g>
 
-        <!-- 14. DOGE · 270K workers cut, +$248B spend (second tallest) · h=352 -->
+        <!-- 14. What DOGE Got Wrong · 270K federal workers cut · h=222 -->
         <g class="bar b-periwinkle" style="--delay:.54s">
-          <title>DOGE: 270,000 federal workers cut, federal spending up $248 billion</title>
-          <rect x="930" y="188" width="44" height="352"/>
-          <rect class="spire" x="948" y="164" width="8" height="24"/>
-          <rect class="win" x="944" y="240" width="6" height="4"/>
-          <rect class="win" x="944" y="320" width="6" height="4"/>
-          <rect class="win" x="944" y="410" width="6" height="4"/>
-          <rect class="win" x="944" y="490" width="6" height="4"/>
-          <text class="bar-label" x="952" y="180" text-anchor="middle">270K · +$248B</text>
+          <title>DOGE cut more than 270,000 federal workers and still watched federal spending rise by $248 billion</title>
+          <rect x="930" y="318" width="44" height="222"/>
+          <text class="bar-label" x="952" y="535" text-anchor="start" transform="rotate(-90 952 535)">270K CUT</text>
         </g>
 
-        <!-- 15. Procurement trap · multi-year contracts · h=160 -->
+        <!-- 15. The Procurement Trap · $130B/yr state+local IT spend · h=380 (tallest) -->
         <g class="bar b-orange" style="--delay:.58s">
-          <title>Procurement: governance lever hiding in multi-year vendor contracts</title>
-          <rect x="996" y="380" width="44" height="160"/>
-          <rect class="win" x="1010" y="440" width="6" height="4"/>
+          <title>State and local governments spend roughly $130 billion a year on information technology — and increasingly on AI</title>
+          <rect x="996" y="160" width="44" height="380"/>
+          <text class="bar-label" x="1018" y="535" text-anchor="start" transform="rotate(-90 1018 535)">$130B IT/YR</text>
         </g>
 
-        <!-- 16. Bill of Rights · qualitative framework · h=120 -->
+        <!-- 16. A Municipal AI Bill of Rights · seven pillars · h=95 -->
         <g class="bar b-chartreuse" style="--delay:.62s">
-          <title>A municipal AI bill of rights: cities need not wait for Congress</title>
-          <rect x="1062" y="420" width="44" height="120"/>
+          <title>A seven-pillar municipal framework: transparency, accountability, community voice, due process, equity impact, sunset clauses, data minimization</title>
+          <rect x="1062" y="445" width="44" height="95"/>
+          <text class="bar-label" x="1084" y="535" text-anchor="start" transform="rotate(-90 1084 535)">7 PILLARS</text>
         </g>
 
-        <!-- 17. Sanctuary-city data / ICE · ALPR · h=152 -->
+        <!-- 17. Sanctuary-city data -> ICE · four data pipelines · h=88 -->
         <g class="bar b-cerulean" style="--delay:.66s">
-          <title>Sanctuary cities: ALPR and fusion-center data flows that bypass local policy</title>
-          <rect x="1128" y="388" width="44" height="152"/>
-          <rect class="win" x="1142" y="450" width="6" height="4"/>
+          <title>Four data routes by which sanctuary-city data reaches ICE: ALPR networks, jail data, fusion centers, analytics platforms</title>
+          <rect x="1128" y="452" width="44" height="88"/>
+          <text class="bar-label" x="1150" y="535" text-anchor="start" transform="rotate(-90 1150 535)">4 DATA ROUTES</text>
         </g>
 
-        <!-- 18. Fiscal cliff · ~$115B NYC budget, 20% knowledge-work exposure · h=312 -->
+        <!-- 18. Municipal fiscal cliff · ~$115B NYC total budget · h=379 -->
         <g class="bar b-magenta" style="--delay:.70s">
-          <title>Municipal fiscal cliff: ~$115B NYC budget exposed to AI-driven knowledge-work shifts</title>
-          <rect x="1194" y="228" width="44" height="312"/>
-          <rect class="win" x="1208" y="280" width="6" height="4"/>
-          <rect class="win" x="1208" y="370" width="6" height="4"/>
-          <rect class="win" x="1208" y="470" width="6" height="4"/>
-          <text class="bar-label" x="1216" y="220" text-anchor="middle">$115B at risk</text>
+          <title>New York City's total budget of roughly $115 billion rests on revenue lines exposed to AI-driven knowledge-work compression</title>
+          <rect x="1194" y="161" width="44" height="379"/>
+          <text class="bar-label" x="1216" y="535" text-anchor="start" transform="rotate(-90 1216 535)">$115B BUDGET</text>
         </g>
 
-        <!-- 19. Shelter bed · VI-SPDAT · h=132 -->
+        <!-- 19. Who gets the shelter bed · VI-SPDAT 0-20 scale · h=108 -->
         <g class="bar b-rose" style="--delay:.74s">
-          <title>Who gets the shelter bed: a clipboard survey decides priority</title>
-          <rect x="1260" y="408" width="44" height="132"/>
+          <title>The VI-SPDAT survey produces a score from 0 to 20 that decides who waits longest for housing</title>
+          <rect x="1260" y="432" width="44" height="108"/>
+          <text class="bar-label" x="1282" y="535" text-anchor="start" transform="rotate(-90 1282 535)">0-20 SCORE</text>
         </g>
 
-        <!-- 20. Shadow AI · unsanctioned AI use in city hall · h=176 -->
+        <!-- 20. Shadow AI in city hall · ~1 in 5 U.S. workers now use AI on the job · h=108 -->
         <g class="bar b-indigo" style="--delay:.78s">
-          <title>Shadow AI in city hall: unsanctioned ChatGPT use across municipal workforces</title>
-          <rect x="1326" y="364" width="44" height="176"/>
-          <rect class="win" x="1340" y="420" width="6" height="4"/>
-          <rect class="win" x="1340" y="490" width="6" height="4"/>
+          <title>Pew: about 1 in 5 U.S. workers now use AI in their job — most city halls have no policy or log for any of it</title>
+          <rect x="1326" y="432" width="44" height="108"/>
+          <text class="bar-label" x="1348" y="535" text-anchor="start" transform="rotate(-90 1348 535)">1 IN 5 WORKERS</text>
         </g>
 
-        <!-- 21. Procurement capture · contracts already signed · h=144 -->
+        <!-- 21. Procurement capture · ~10-year municipal contract lock-in · h=99 -->
         <g class="bar b-periwinkle" style="--delay:.82s">
-          <title>Procurement capture: the most consequential AI decisions were signed years ago</title>
-          <rect x="1392" y="396" width="44" height="144"/>
-          <rect class="win" x="1406" y="460" width="6" height="4"/>
+          <title>Municipal CAD and records-management contracts routinely run 7 to 10 years — long enough to embed vendor systems before any oversight arrives</title>
+          <rect x="1392" y="441" width="44" height="99"/>
+          <text class="bar-label" x="1414" y="535" text-anchor="start" transform="rotate(-90 1414 535)">10-YR LOCK-IN</text>
         </g>
 
       </g>

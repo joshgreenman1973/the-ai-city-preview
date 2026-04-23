@@ -144,15 +144,20 @@ h1, h2, h3, h4, h5 { line-height: 1.15; letter-spacing: -0.02em; }
   animation-delay: calc(var(--delay, 0s) + 0.6s);
 }
 .skyline-bars .bar-label {
-  fill: rgba(255,255,255,0.72);
+  fill: rgba(255,255,255,0.92);
   font-family: var(--font-primary, 'Inter', sans-serif);
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 0.06em;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
+  dominant-baseline: middle;
+  paint-order: stroke fill;
+  stroke: rgba(5,5,7,0.55);
+  stroke-width: 2px;
   opacity: 0;
   animation: skylineFade 0.8s ease forwards;
   animation-delay: calc(var(--delay, 0s) + 0.9s);
+  pointer-events: none;
 }
 
 /* Bar color classes — primary rect takes the fill, windows get a soft contrast. */
@@ -240,7 +245,7 @@ h1, h2, h3, h4, h5 { line-height: 1.15; letter-spacing: -0.02em; }
   .skyline-svg { max-height: 48vh; }
   .issue-hero h1 { white-space: normal; }
   .issue-hero-text { padding: 16px 20px 56px; }
-  .skyline-bars .bar-label { font-size: 18px; }
+  .skyline-bars .bar-label { font-size: 16px; letter-spacing: 0.06em; }
 }
 
 /* ── Editors' note (brief) ── */
