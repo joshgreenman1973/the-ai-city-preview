@@ -143,21 +143,42 @@ h1, h2, h3, h4, h5 { line-height: 1.15; letter-spacing: -0.02em; }
   animation: skylineFade 0.6s ease forwards;
   animation-delay: calc(var(--delay, 0s) + 0.6s);
 }
+.skyline-bars .bar rect.bar-hit,
+.skyline-bars .bar-hit {
+  fill: transparent !important;
+  cursor: pointer;
+  outline: none;
+  animation: none !important;
+  transform: none !important;
+}
+.skyline-bars .bar:hover rect:not(.bar-hit),
+.skyline-bars .bar:focus-within rect:not(.bar-hit) {
+  filter: brightness(1.15);
+}
 .skyline-bars .bar-label {
-  fill: rgba(255,255,255,0.92);
+  fill: #ffffff;
   font-family: var(--font-primary, 'Inter', sans-serif);
   font-size: 12px;
   font-weight: 700;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.09em;
   text-transform: uppercase;
-  dominant-baseline: middle;
+  dominant-baseline: alphabetic;
   paint-order: stroke fill;
-  stroke: rgba(5,5,7,0.55);
-  stroke-width: 2px;
+  stroke: #050507;
+  stroke-width: 4px;
+  stroke-linejoin: round;
   opacity: 0;
-  animation: skylineFade 0.8s ease forwards;
-  animation-delay: calc(var(--delay, 0s) + 0.9s);
+  transform: translateY(4px);
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: opacity 140ms ease, transform 140ms ease;
   pointer-events: none;
+}
+.skyline-bars .bar:hover .bar-label,
+.skyline-bars .bar:focus-within .bar-label,
+.skyline-bars .bar:focus-visible .bar-label {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* Bar color classes — primary rect takes the fill, windows get a soft contrast. */
@@ -192,8 +213,11 @@ h1, h2, h3, h4, h5 { line-height: 1.15; letter-spacing: -0.02em; }
 @media (prefers-reduced-motion: reduce) {
   .skyline-bars .bar rect,
   .skyline-bars .bar .win,
-  .skyline-bars .bar .spire,
-  .skyline-bars .bar-label { animation: none; transform: none; opacity: 1; }
+  .skyline-bars .bar .spire { animation: none; transform: none; opacity: 1; }
+  .skyline-bars .bar-label { transition: none; }
+}
+@media print {
+  .skyline-bars .bar-label { opacity: 1 !important; transform: none !important; }
 }
 
 .skyline-caption {
@@ -204,6 +228,10 @@ h1, h2, h3, h4, h5 { line-height: 1.15; letter-spacing: -0.02em; }
   color: rgba(255,255,255,0.5);
   text-align: center;
   margin-top: 8px;
+}
+.skyline-hint {
+  color: #707175;
+  margin-left: 10px;
 }
 
 .issue-hero-text {
@@ -245,7 +273,7 @@ h1, h2, h3, h4, h5 { line-height: 1.15; letter-spacing: -0.02em; }
   .skyline-svg { max-height: 48vh; }
   .issue-hero h1 { white-space: normal; }
   .issue-hero-text { padding: 16px 20px 56px; }
-  .skyline-bars .bar-label { font-size: 16px; letter-spacing: 0.06em; }
+  .skyline-bars .bar-label { font-size: 18px; letter-spacing: 0.06em; stroke-width: 5px; }
 }
 
 /* ── Editors' note (brief) ── */
