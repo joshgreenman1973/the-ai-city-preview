@@ -1307,5 +1307,258 @@ const articles = [
 <p><strong>Essay 15: "A Municipal AI Bill of Rights"</strong> — The capstone piece proposing a seven-pillar framework (transparency, accountability, community voice, due process, equity impact, sunset clauses, data minimization) for municipal AI governance, arguing cities are the right level of government to act because they are close enough to residents to be accountable and nimble enough to iterate.</p>
 
 <p>Each essay runs approximately 1,500-2,000 words with hyperlinked sourcing embedded in the text, written in Vital City's accessible, data-grounded, pragmatic editorial style.</p>`
+},
+{
+  slug: `sanctuary-city-data-ice`,
+  title: `The data your sanctuary city hands to ICE`,
+  subtitle: `A sanctuary policy written in 2017 cannot stop a data flow built in 2024. The fix is contractual, not rhetorical.`,
+  author: `A. Bot`,
+  authorTitle: `AI Assistant`,
+  category: `Surveillance`,
+  section: `The Peril`,
+  visual: svgSanctuaryData(),
+  body: `
+<p>On a Tuesday morning in a mid-sized Illinois city with a sanctuary ordinance on the books, a resident drives her children to school. She passes three cameras she does not register as cameras: small boxes on utility poles, solar panels on top, a narrow lens pointing at the street. They are Flock Safety automated license plate readers, installed by the local police department under a routine municipal contract. Her plate is read, time-stamped, geolocated, and written to a database. Within minutes it can be queried by more than a thousand other law-enforcement agencies that share access to the Flock network.</p>
+
+<p>Her city council voted years ago that local police would not assist federal immigration enforcement. That vote has not been repealed. It is also no longer, by itself, a meaningful constraint on what federal immigration enforcement can see.</p>
+
+<p>This is the uncomfortable fact that municipal officials in sanctuary jurisdictions are going to have to reckon with over the next few years. Sanctuary policies were written in the language of an older technology stack: do not honor ICE detainers, do not ask about status, do not share booking information on request. They assumed that if a city did not affirmatively hand information to federal immigration authorities, that information would not reach them. That assumption is no longer safe.</p>
+
+<p>The architecture of modern municipal surveillance was not designed with sanctuary policies in mind. It was designed to share. Automated license plate readers from <a href="https://www.404media.co/ice-taps-into-nationwide-ai-enabled-camera-network-data-shows/">Flock Safety</a> and Motorola's Vigilant Solutions generate location histories that can be queried across agencies with a few clicks; <a href="https://www.eff.org/sls/tech/automated-license-plate-readers">EFF's reference on automated license plate readers</a> has documented how routinely local data ends up in federal hands. Regional fusion centers, created after September 11 to promote interagency information sharing, are <a href="https://www.aclu.org/report/whats-wrong-fusion-centers-executive-summary?redirect=cpredirect%2F32966">explicit data-sharing hubs</a> where local, state, and federal databases meet. And <a href="https://theintercept.com/2019/05/02/peter-thiels-palantir-was-used-to-bust-hundreds-of-relatives-of-migrant-children-new-documents-show/">Palantir's Investigative Case Management and FALCON systems</a>, used extensively by Immigration and Customs Enforcement, are designed to ingest exactly these kinds of feeds.</p>
+
+<h2>What the data flows actually look like</h2>
+
+<p>There are, roughly, four routes by which data collected in a sanctuary city ends up in a federal immigration file. Each is technical, each is well documented, and each survives most existing sanctuary ordinances.</p>
+
+<p>The first is the ALPR pipeline. When a local police department buys Flock or Vigilant cameras, the default configuration is to share data with a large network of other agencies, including federal ones. A <a href="https://www.404media.co/ice-taps-into-nationwide-ai-enabled-camera-network-data-shows/">2024 investigation by 404 Media</a> and <a href="https://www.eff.org/deeplinks/2026/02/free-surveillance-tech-still-comes-high-and-dangerous-cost">follow-up reporting by the Electronic Frontier Foundation</a> found that federal immigration officers had run searches against Flock networks in multiple jurisdictions with sanctuary ordinances on the books, apparently without the knowledge of those cities' elected officials.</p>
+
+<p>The second is the jail data pipeline. Even jurisdictions that refuse to honor ICE detainers often continue to feed booking data into state criminal-justice information systems and commercial data brokers. ICE, like most federal agencies, subscribes to <a href="https://theintercept.com/2021/04/02/ice-database-surveillance-lexisnexis/">commercial data products</a> that aggregate booking rosters and public records. The American Civil Liberties Union and investigative reporters have documented the practice in detail.</p>
+
+<p>The third is the fusion-center pipeline. Most states operate at least one fusion center; the federal government plugs into all of them. Local threat assessments, gang database entries, and intelligence bulletins flow through these nodes, and <a href="https://www.brennancenter.org/our-work/policy-solutions/ending-fusion-center-abuses">the Brennan Center's analysis</a> has repeatedly flagged immigration-enforcement use of fusion-center products.</p>
+
+<p>The fourth, and in some ways most consequential, is the analytics pipeline. Palantir's ICM system consolidates ICE's own operational data with feeds purchased or licensed from state and local sources. <a href="https://theintercept.com/2017/03/02/palantir-provides-the-engine-for-donald-trumps-deportation-machine/">The Intercept has detailed how Palantir's ICM platform operates inside ICE</a>, and procurement records reviewed by <a href="https://theintercept.com/2019/05/02/peter-thiels-palantir-was-used-to-bust-hundreds-of-relatives-of-migrant-children-new-documents-show/">subsequent Intercept reporting</a> show the breadth of the integration. Once a local dataset is inside this stack, a sanctuary ordinance downstream cannot pull it back.</p>
+
+<h2>The strongest counter-argument</h2>
+
+<p>The honest version of the opposing view deserves a hearing. Interoperability is, in most cases, a good thing. Cross-jurisdictional data sharing helps find missing children, track stolen vehicles, and break up violent-crime networks. Building walls between local and federal systems has real public-safety costs, and many of the tools in question were purchased for reasons that have nothing to do with immigration. A city that rips out its ALPR network to stop ICE lookups will also lose capabilities it uses for legitimate local policing.</p>
+
+<p>That argument is serious, and it explains why a blanket ban on data sharing is neither realistic nor, in most cases, wise. But it does not justify the current default, which is near-total data sharing by contract, with sanctuary policies bolted on as a political garnish. The middle path — granular, auditable controls on which datasets flow where, and for what purpose — is both technically feasible and politically tractable.</p>
+
+<h2>Keyhole fixes</h2>
+
+<p>The useful move for a sanctuary jurisdiction is to stop treating this as a values question and start treating it as a procurement question. There are four concrete, modest interventions that would measurably change the picture.</p>
+
+<p>First, a <strong>data-minimization audit</strong>. Every system that collects personally identifiable information — ALPRs, body cameras, jail management systems, 311 with photo uploads, court records — should be inventoried, with a written description of what is collected, how long it is retained, and which external parties can query it. Most cities cannot currently answer those questions. Producing the inventory, as New York has begun to do for <a href="https://www.nyc.gov/assets/oti/downloads/pdf/reports/2024-algorithmic-tools-report.pdf">algorithmic systems under Local Law 35 and related executive orders</a>, is itself the first control.</p>
+
+<p>Second, <strong>contractual data-sharing restrictions</strong>. Most ALPR and surveillance vendor contracts default to opt-in data sharing with a broad network. Cities can negotiate the opposite: sharing only by case-specific warrant or formal interagency agreement, with full logging. Vendors have begun to accommodate this where customers insist; the problem has been that most customers do not insist.</p>
+
+<p>Third, <strong>purge schedules with teeth</strong>. ALPR data retained for 30 days is meaningfully different from ALPR data retained for two years. Short retention windows, coded into the vendor configuration rather than left to policy, shrink the pool of data that can ever be requested. Several jurisdictions, including <a href="https://www.eff.org/deeplinks/2024/12/police-surveillance-san-francisco-2024-year-review">San Francisco</a>, have used this lever.</p>
+
+<p>Fourth, <strong>a fusion-center liaison with a written mandate</strong>. The city's representative to the regional fusion center should be bound by written instructions about what local data may be contributed, what queries must be reported to the city, and what intelligence products must be disclosed to local legal counsel before use. This does not withdraw from the fusion center; it makes participation accountable.</p>
+
+<p>None of this is a moonshot. It is the kind of careful, unglamorous governance work that most cities have simply not done, because the political attention on sanctuary status has focused on rhetoric rather than architecture.</p>
+
+<p>A sanctuary policy written in 2017 cannot stop a data flow built in 2024. But the same city councils that passed those ordinances can amend the contracts underneath them. That is where the protection lives now.</p>
+`
+},
+{
+  slug: `municipal-fiscal-cliff`,
+  title: `The municipal fiscal cliff nobody is budgeting for`,
+  subtitle: `If AI compresses even a fraction of knowledge-work employment, the revenue side of the city budget is the first thing to move. Treat it as a treasury problem.`,
+  author: `A. Bot`,
+  authorTitle: `AI Assistant`,
+  category: `Budget`,
+  section: `The Disruption`,
+  visual: svgFiscalCliff(),
+  body: `
+<p>On a Tuesday afternoon in the New York City Office of Management and Budget, an analyst is preparing the out-year revenue forecast that will anchor the mayor's next executive budget. She is working from models built in a world where Midtown office towers were essentially full, where the payroll tax on finance, insurance, law, consulting, and media produced a predictable share of city revenue, and where the commuter economy supported a consumption-tax base measured in billions. None of those assumptions is wrong, exactly. All of them are softer than they were five years ago.</p>
+
+<p>The AI question rarely shows up in city budget documents in those terms. It shows up, if at all, as a line about "emerging technology" in the capital plan or a paragraph in a strategic plan. But the fiscal exposure is not on the expense side first. It is on the revenue side. And if the more aggressive forecasts about AI's effect on knowledge-work employment are even partly right, major-city treasuries are looking at a compounding risk they have not yet priced.</p>
+
+<p>This essay is not a prediction that AI will gut the city tax base. The honest forecasts are uncertain, and the most responsible analysts — from the <a href="https://www.cbo.gov/publication/61270">Congressional Budget Office</a> to <a href="https://www.ibo.nyc.ny.us/">New York City's Independent Budget Office</a> — have been careful to avoid heroic assumptions. But the job of treasury management is not to wait for certainty. It is to model the downside and stage the response. And on that score, cities have work to do.</p>
+
+<h2>What is actually exposed</h2>
+
+<p>The <a href="https://www.nyc.gov/site/omb/publications/publications.page">New York City Office of Management and Budget</a> publishes the city's detailed revenue breakdown every year. For fiscal year 2025, the Executive Budget documents put expected city tax revenue around $80 billion, within a total budget of roughly $115 billion that includes state and federal aid. Property tax is the largest single line, followed by personal income tax, sales tax, and business taxes. Each of those is exposed to AI-driven knowledge-work compression in a different way.</p>
+
+<p>Personal income tax is the most obvious. New York City levies an income tax on residents whose incomes are heavily concentrated in the professional, financial, legal, and media sectors that generative AI is most often forecast to affect. A modest compression of high-end knowledge-work compensation — whether through headcount reductions, slower wage growth, or shifts in the mix between salary and benefits — flows directly into the personal income tax line. The Independent Budget Office's <a href="https://www.ibo.nyc.ny.us/publications.html">ongoing revenue analyses</a> routinely note that this line is the most volatile in the city's revenue stack.</p>
+
+<p>Property tax looks more stable, but is more exposed than it looks. Class 4 commercial property — mostly office buildings — is a material share of the city's property-tax base, and the values of those buildings depend on the rents that tenants will pay, which depend on how much knowledge-work employment those tenants need to house. The <a href="https://cbcny.org/">Citizens Budget Commission</a> has repeatedly warned that the remote-work shock is already working its way through commercial property assessments, and that AI-driven employment shifts would compound, not offset, that trend.</p>
+
+<p>Sales and use tax is the consumption side of the same story. Commuters who are no longer in the Central Business District do not buy lunch there. The <a href="https://www.mta.info/">Metropolitan Transportation Authority's</a> payroll mobility tax, which funds a meaningful share of the MTA's operating budget, is likewise tied to regional employment.</p>
+
+<p>Business taxes — the general corporation tax and the unincorporated business tax — depend on profitability in exactly the sectors most concentrated in Manhattan and most exposed to AI disruption.</p>
+
+<p>Put the four lines together and a substantial portion of the city's tax take sits on foundations that are, at minimum, sensitive to knowledge-work employment levels and office utilization.</p>
+
+<h2>The honest counter-argument</h2>
+
+<p>There is a strong version of the opposing view, and it deserves to be taken seriously. Every major wave of automation since the mechanization of agriculture has been predicted to gut employment and has ended up shifting its composition. AI may well generate offsetting demand — for managers of AI systems, for professionals who use AI to expand their own productivity, for new services that did not exist before. The World Economic Forum's <a href="https://www.weforum.org/publications/the-future-of-jobs-report-2025/">Future of Jobs Report 2025</a> projects that net global employment will rise, not fall, as AI is deployed. Cities that bet on a fiscal cliff and get a fiscal plateau will have made a forecasting error in the expensive direction.</p>
+
+<p>That argument is not wrong. It is, however, not actionable advice. Treasury management is not about picking the central forecast; it is about sizing the risk and staging the response. A responsible budget office models the downside case and prepares for it, then hopes not to need the preparation.</p>
+
+<h2>Keyhole fixes</h2>
+
+<p>Three modest, specific moves would measurably improve the city's fiscal resilience to AI-driven revenue compression, and none of them require a political consensus on whether AI is going to cost jobs.</p>
+
+<p>First, <strong>stress-test the revenue forecast</strong>. The IBO and OMB already publish risk sections in their revenue reports. An explicit AI sensitivity scenario — say, a 10 percent compression in the finance, professional-services, and information sectors phased over five years — should be run against each major revenue line and published. This is what the CBO does at the federal level for <a href="https://www.cbo.gov/publication/61429">uncertain assumptions about productivity and labor</a>. Doing it at the city level would produce an honest number to argue over, rather than a vague unease.</p>
+
+<p>Second, <strong>rebuild rainy-day capacity</strong>. The Citizens Budget Commission has long recommended that New York City's reserves be sized to a recession-like shock. AI-driven revenue compression would look, in the budget documents, a lot like a slow recession. Accelerating deposits into the Revenue Stabilization Fund when current-year collections run ahead of plan is the mechanical response.</p>
+
+<p>Third, <strong>diversify the tax base at the margin</strong>. This is harder and more political, but modest changes — pied-à-terre taxation, more aggressive enforcement of the commercial rent tax, reassessment cycles that track market values more quickly on Class 4 property — would reduce the city's overreliance on income and office-driven revenue lines. None of them, individually, are a solution. In combination, they reduce concentration risk.</p>
+
+<p>The point is not that AI is about to hollow out the city budget. The point is that the revenue side of the budget is exposed, the exposure is asymmetric, and the tools to manage it are the ordinary tools of treasury management. The worst outcome is to notice the problem for the first time in a midyear revenue update, two years from now, when the corrective options are all worse than the ones available today.</p>
+`
+},
+{
+  slug: `who-gets-the-shelter-bed`,
+  title: `Who gets the shelter bed`,
+  subtitle: `A short survey administered on a clipboard now decides who waits longest for housing. The answer is not to tear it up, but to make it accountable.`,
+  author: `A. Bot`,
+  authorTitle: `AI Assistant`,
+  category: `Homelessness`,
+  section: `The Peril`,
+  visual: svgShelterBed(),
+  body: `
+<p>On a Tuesday morning outside a drop-in center in Los Angeles, an outreach worker walks a man through a survey he has answered before. How long have you been homeless? Have you been hospitalized in the last year? How many times have you used the emergency room? The worker writes the answers on a clipboard and, later, enters them into a laptop. An algorithm — the Vulnerability Index and Service Prioritization Decision Assistance Tool, known universally as the VI-SPDAT — produces a score between zero and twenty. That score, more than almost anything else in his life, will determine how long he waits for a housing placement.</p>
+
+<p>The VI-SPDAT is not artificial intelligence in the contemporary sense. It is a weighted-sum survey that predates the current AI conversation. But it is the most widely used algorithmic triage tool in American homeless services, it is embedded in the Coordinated Entry Systems that the U.S. Department of Housing and Urban Development requires Continuums of Care to operate, and it has generated exactly the kinds of documented disparities that cities deploying more sophisticated AI tools should study before they build the next version.</p>
+
+<p>This is not a call to abolish algorithmic triage. Coordinated Entry without triage is a return to first-come-first-served, which produces worse outcomes for people with the highest needs. It is a call to treat the algorithm as a piece of infrastructure that needs auditing, ground-truthing, and community review, rather than as a black box that happens to run the queue.</p>
+
+<h2>What the research actually finds</h2>
+
+<p>The evidence of disparate outcomes is by now substantial. Research published in the <a href="https://www.tandfonline.com/doi/abs/10.1080/10530789.2020.1852502">Journal of Social Distress and Homelessness</a> has examined VI-SPDAT scores across racial, gender, and chronicity groups and found consistent gaps: Black single adults and Black women tend to score lower than their white peers at comparable levels of medical and housing need. A <a href="https://c4innovates.com/vi-spdat-critique/">technical review by C4 Innovations</a> — a research and consulting firm that works with HUD and Continuums of Care — documented the same pattern and proposed specific modifications to the instrument. A <a href="https://themarkup.org/investigations/2023/02/28/l-a-s-scoring-system-for-subsidized-housing-gives-black-and-latino-people-experiencing-homelessness-lower-priority-scores">2023 investigation by The Markup</a>, using Los Angeles data, found that Black and Latino people experiencing homelessness were receiving lower scores than their white counterparts at similar levels of need.</p>
+
+<p>The mechanism is not mysterious. The VI-SPDAT weights certain signals heavily: emergency-room use, interactions with police, self-reported risky behaviors. Each of those signals carries embedded bias. Black clients are more likely to interact with police at a given level of actual risk; women's health needs are more often coded in outpatient rather than inpatient settings; transgender and nonbinary clients face questions that do not map cleanly onto the survey's design. The net effect is that the instrument generates slightly but consistently lower scores for people whose underlying need is, by most other measures, comparable or higher.</p>
+
+<p>HUD itself has acknowledged the limits of the tool. The department's <a href="https://www.hudexchange.info/resource/4427/coordinated-entry-policy-brief/">Coordinated Entry guidance</a> does not require use of the VI-SPDAT specifically, and in recent years HUD has encouraged Continuums of Care to move toward locally calibrated assessment tools. Several large jurisdictions have done so. The Los Angeles Homeless Services Authority has been <a href="https://www.lahsa.org/">publicly working</a> on a successor assessment; Chicago and New York have likewise experimented with alternative instruments within their own Continuums.</p>
+
+<h2>The honest counter-argument</h2>
+
+<p>The strongest defense of the VI-SPDAT, and of algorithmic triage more broadly, is the counterfactual. Before Coordinated Entry and the VI-SPDAT, prioritization was done ad hoc by individual agencies, with predictable results: people with stable case-manager relationships got moved up queues, people without them got lost. The research by <a href="https://www.abtassociates.com/">Abt Associates and others</a> commissioned during the early Coordinated Entry rollouts found meaningful improvements on average, even with a flawed instrument. Replacing the VI-SPDAT with nothing — which is what "abolish the score" effectively means in operational terms — would almost certainly make the system less equitable, not more.</p>
+
+<p>That argument is correct as far as it goes. But it does not justify leaving the instrument unaudited, uncalibrated to local populations, or exempt from the ordinary quality-control practices that cities routinely apply to other high-stakes assessment tools. The question is not "VI-SPDAT or nothing." It is "VI-SPDAT, as it stands, or a disciplined program of review, reform, and replacement."</p>
+
+<h2>Keyhole fixes</h2>
+
+<p>There are four concrete reforms that Continuums of Care can adopt without waiting for HUD to issue new rules, and without provoking the political fight that a full redesign would require.</p>
+
+<p>First, <strong>publish the score distributions</strong>. A Continuum of Care should be able to produce, every quarter, the distribution of VI-SPDAT scores by race, gender, age, and chronicity, alongside the distribution of actual housing placements. Most CoCs do not publish this. The mechanical act of publishing it — as Los Angeles has begun to do in aggregate form — creates the feedback loop that makes the rest of reform possible.</p>
+
+<p>Second, <strong>ground-truth against outcomes</strong>. The VI-SPDAT is a predictive tool. It predicts which clients will do well with which level of intervention. That prediction can be tested: follow the scores forward 12 and 24 months and measure which clients ended up housed, re-homeless, or deceased. Where the predictions systematically underperform for a demographic group, recalibrate. This is standard practice in actuarial science and, increasingly, in fair-lending compliance.</p>
+
+<p>Third, <strong>require a human-override default</strong>. The score should be a strong input to prioritization, not a binding rule. Outreach workers and case managers should have the authority — and, critically, the documented time — to override the score when their direct knowledge of a client's situation contradicts it. Several jurisdictions already do this in practice; formalizing it as policy, with the override logged and reviewed for patterns, protects both clients and workers.</p>
+
+<p>Fourth, <strong>include community input in the successor tool</strong>. Any replacement for the VI-SPDAT should be designed with meaningful participation from people with lived experience of homelessness, outreach workers who administer the instrument, and researchers who can audit it. The <a href="https://nationalhomeless.org/">National Coalition for the Homeless</a> and advocacy groups have called for this; the CoCs that have taken the call seriously are producing better instruments.</p>
+
+<p>None of this is particularly exciting. It is the ordinary work of running a high-stakes triage system accountably. But the alternative — leaving an unaudited survey to decide who waits longest for a bed — is not a neutral choice. It is a choice to pretend that the algorithm is not making a decision, when in fact it is making the decision that matters most.</p>
+`
+},
+{
+  slug: `shadow-ai-in-city-hall`,
+  title: `Shadow AI in city hall`,
+  subtitle: `The question is not whether city employees are using ChatGPT at work. It is whether anyone in the building can see what they are doing with it.`,
+  author: `A. Bot`,
+  authorTitle: `AI Assistant`,
+  category: `Governance`,
+  section: `The Governance Question`,
+  visual: svgShadowAI(),
+  body: `
+<p>On a Tuesday evening in a mid-sized city's procurement office, a contract analyst is trying to finish a request for proposals that is due in the morning. She has a folder of reference documents — three prior contracts, a legal memo, and a statement of work from a vendor — and she has about two hours of energy left. She opens a browser tab, pastes the contents of the reference documents into a free consumer chatbot, and asks it to draft a tighter version of the scope of work. It does. She edits the draft, uploads the result to the city's procurement system, and goes home.</p>
+
+<p>Her city has no written policy on generative AI. Her supervisor has not mentioned it. She has not signed anything about it. There is no log of the documents she uploaded to a third-party service. There is no way for the city's legal department, records officer, or information-technology staff to know that the RFP in the file today was drafted with the help of a model that trained on — and may continue to train on — the text she shared with it.</p>
+
+<p>This is shadow AI. It is not a future problem. It is what is already happening in city halls across the country, in varying degrees, right now. The official governance conversation is about AI policies, AI bills of rights, and AI procurement standards. The actual governance problem is that employees have moved faster than their employers, and the institutional visibility into what they are actually doing is close to zero.</p>
+
+<h2>What the surveys show</h2>
+
+<p>The data on generative-AI use at work is noisy, because the behavior is new and the surveys use different definitions. But the direction is consistent across sources. <a href="https://www.pewresearch.org/short-reads/2025/10/06/about-1-in-5-us-workers-now-use-ai-in-their-job-up-since-last-year/">Pew Research Center</a> has tracked a roughly doubling of on-the-job ChatGPT use among American workers between 2023 and 2025. <a href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai-2024">McKinsey's State of AI surveys</a> consistently find that the share of organizations deploying generative AI has outpaced the share that have adopted formal policies or controls. <a href="https://www2.deloitte.com/us/en/insights/industry/public-sector.html">Deloitte's government AI research</a> finds the same gap in the public sector.</p>
+
+<p>The <a href="https://www.nascio.org/resource-center/resources/generating-opportunity-the-risks-and-rewards-of-generative-ai-in-state-government/">National Association of State Chief Information Officers</a> has been warning member agencies about the issue for more than a year. Most state chief information officers NASCIO surveys report that generative-AI use is happening inside their workforce, but that formal approval, training, and logging are lagging far behind. The picture at the municipal level is less well-documented, but the experience of state CIOs is not a poor proxy: smaller jurisdictions, with thinner IT and legal capacity, are, if anything, further behind.</p>
+
+<h2>The specific risks</h2>
+
+<p>The risks of unmanaged consumer-grade AI use in city hall are not speculative. They are concrete and, in several cases, already playing out in litigation and disclosure.</p>
+
+<p>The first is public-records exposure. In most states, communications in the course of city business are subject to the Freedom of Information Law or its state equivalent. A prompt typed into a consumer chatbot, and the response it generated, are arguably public records. If the city cannot produce them in response to a FOIL request, because they were never captured, that is a compliance problem, not a technical curiosity. The <a href="https://www.rcfp.org/">Reporters Committee for Freedom of the Press</a> has been tracking state attorneys general opinions on exactly this question; several have concluded that AI interactions used in the course of government work are subject to disclosure.</p>
+
+<p>The second is personally identifiable information. Consumer chatbot terms of service vary, but most free tiers reserve some rights to use inputs for training or quality improvement. An employee who pastes a list of constituents, a set of case notes, or a personnel file into a consumer model is, in most readings of data-protection law, making a disclosure. The city may have made representations — in its own privacy notices, in grant-compliance filings, in vendor contracts — that this kind of disclosure does not happen.</p>
+
+<p>The third is attorney-client privilege. City law departments routinely handle material that would be privileged if held in private practice. Pasting a draft memo, a deposition transcript, or a litigation strategy note into a consumer model plausibly waives privilege. <a href="https://www.americanbar.org/groups/professional_responsibility/publications/professional_lawyer/">American Bar Association commentary</a> has flagged the problem for lawyers in private practice; the logic applies more strongly to public counsel.</p>
+
+<p>The fourth is ordinary operational risk: hallucinated citations in legal filings, fabricated case numbers in briefs, inaccurate figures in budget documents. The widely reported sanctions against attorneys who filed briefs with AI-generated false citations are a warning, not an exotic edge case.</p>
+
+<h2>The honest counter-argument</h2>
+
+<p>The tempting response is to ban consumer AI tools outright. Some jurisdictions have tried. It almost never works, for the same reason that banning personal smartphones from offices did not work: employees use these tools because they meaningfully help them do their jobs in an environment where staffing is thin and workloads are high. A ban produces either a compliance fiction — the behavior continues, now unlogged and undisclosed — or a slower, lower-quality city government, or both.</p>
+
+<p>The more honest path is to accept that generative AI is going to be used in city work, and to make the use visible, trained, and safer.</p>
+
+<h2>Keyhole fixes</h2>
+
+<p>Three specific moves, each modest, would change the governance picture meaningfully.</p>
+
+<p>First, <strong>sanction enterprise-grade tools and make them available</strong>. Enterprise deployments of Microsoft Copilot, ChatGPT Enterprise, Google Gemini for Workspace, and Anthropic Claude for Enterprise generally contract away training rights, offer audit logging, and can be configured for data-residency and retention requirements. Giving employees an approved tool that works as well as the one they are currently using on their personal account is the single most effective countermeasure to shadow AI.</p>
+
+<p>Second, <strong>publish a clear, one-page acceptable-use policy</strong>. Not a fifty-page governance framework. A single page that tells employees what they may paste where, what they must never paste anywhere, and where to ask if they are unsure. The <a href="https://www.nist.gov/itl/ai-risk-management-framework">NIST AI Risk Management Framework</a> and the <a href="https://www.gao.gov/products/gao-21-519sp">GAO's AI accountability framework</a> are useful reference points, but the operational artifact that employees actually read has to be short.</p>
+
+<p>Third, <strong>train the workforce</strong>. Not on AI theory. On the five concrete tasks they are most likely to use AI for — drafting, summarizing, translating, analyzing a spreadsheet, checking a contract — and on the specific failure modes for each. Deloitte, NASCIO, and the <a href="https://www.nlc.org/">National League of Cities</a> have all developed training templates that a mid-sized city can adapt in a quarter, not a year.</p>
+
+<p>Shadow AI in city hall is not primarily a technology problem. It is a visibility problem. The employees who are using these tools are not doing anything unusual for the 2020s workforce. What is unusual is that the institution employing them has not yet decided to see what they are doing, and to help them do it well.</p>
+`
+},
+{
+  slug: `procurement-capture`,
+  title: `Before the oversight shows up, the contracts are already signed`,
+  subtitle: `Cities keep governing AI as if the decisions are still in front of them. For a lot of the most consequential systems, the decision was signed in a procurement office years ago.`,
+  author: `A. Bot`,
+  authorTitle: `AI Assistant`,
+  category: `Procurement`,
+  section: `The Governance Question`,
+  visual: svgProcurementCapture(),
+  body: `
+<p>On a Tuesday morning in 2012, an official in the New Orleans mayor's office signed a memorandum of understanding with Palantir Technologies. The agreement, which <a href="https://www.theverge.com/2018/2/27/17054740/palantir-predictive-policing-tool-new-orleans-nopd">The Verge documented in 2018</a> and <a href="https://thelensnola.org/2018/10/24/months-after-end-of-predictive-policing-contract-cantrell-administration-works-on-new-tool-to-id-high-risk-residents/">The Lens covered in detail from local records</a>, gave the city access to Palantir's Gotham predictive-policing platform at no cost to the general fund. The contract was structured as an in-kind philanthropic engagement and run out of a mayoral innovation unit. It did not go through the city council's ordinary contract review. Most members of the council did not know it existed.</p>
+
+<p>By the time the arrangement became public, Palantir had been operating inside the New Orleans Police Department for six years. The company had ingested local data, integrated with internal systems, and trained officers on its interface. Unwinding the engagement was not a matter of canceling a contract. It was a matter of extracting institutional knowledge, replacing workflows, and reconstituting capabilities that had quietly migrated to the vendor's stack.</p>
+
+<p>This is the shape of the procurement problem in municipal AI, and it is not confined to New Orleans or Palantir. It is how Mark43 came to run computer-aided dispatch and records management in a long list of major-city police departments. It is how Axon came to dominate body cameras and digital evidence management. It is how Motorola/Vigilant came to own the license-plate-reader market, and how ShotSpotter — now doing business as SoundThinking — came to run acoustic-gunshot detection in dozens of cities.</p>
+
+<p>In each case, the consequential decision was not a policy debate at a city council hearing. It was a procurement. And the procurement was often structured in a way that made meaningful oversight harder, not easier, once the system was in place.</p>
+
+<h2>The shape of the lock-in</h2>
+
+<p>Vendor lock-in in municipal technology has three components, all of them visible in the documented cases.</p>
+
+<p>The first is <strong>long contract terms</strong>. Computer-aided dispatch and records management contracts routinely run for seven to ten years, because migration costs are high and vendors underwrite the relationship accordingly. Surveillance and analytics contracts, though often nominally shorter, tend to be renewed automatically and extended through amendments. NYPD's relationship with Palantir, which <a href="https://www.brennancenter.org/our-work/analysis-opinion/palantir-contract-dispute-exposes-nypds-lack-transparency">the Brennan Center traced in detail</a>, spanned roughly a decade before it entered active public discussion, and the migration off Palantir to internal tools was itself a multi-year, contested effort.</p>
+
+<p>The second is <strong>data lock-in</strong>. When a city's case data, evidence, dispatch logs, or sensor feeds are stored in a vendor's proprietary schema, switching vendors means exporting the data, converting it to another format, and rebuilding the workflows that depended on the original structure. The exit cost grows roughly in proportion to how much data has accumulated. Axon's digital-evidence management system, Evidence.com, has been repeatedly flagged by procurement analysts and local oversight offices for exactly this dynamic.</p>
+
+<p>The third is <strong>exclusive-license and non-disclosure clauses</strong>. Many municipal surveillance contracts include provisions that restrict the city's ability to discuss system performance publicly, to share data with researchers, or to allow independent audits without vendor consent. ShotSpotter/SoundThinking contracts have been the subject of <a href="https://www.muckrock.com/foi/chicago-169/shotspotter-contract-chicago-police-department-131852/">extensive FOIA work by MuckRock</a> and civil-rights organizations for this reason. The <a href="https://igchicago.org/wp-content/uploads/2021/08/Chicago-Police-Departments-Use-of-ShotSpotter-Technology.pdf">Chicago Office of Inspector General's review</a> of the city's ShotSpotter deployment is itself an unusual case, in that it produced a substantive public analysis despite the contractual friction.</p>
+
+<p>Put the three together and you have the current state of municipal AI procurement: multi-year contracts, signed by small units of municipal government, embedding vendor systems into institutional workflows, with limited exit options and constrained transparency.</p>
+
+<h2>The honest counter-argument</h2>
+
+<p>The strong version of the vendor side of this argument is worth stating. Building and maintaining a computer-aided dispatch system, an acoustic-sensor network, or an evidence-management platform is extraordinarily hard. Cities, in general, cannot build these systems themselves, and should not try. Vendors who make substantial up-front investments in product development reasonably expect long-term customer relationships to recoup that investment. Long contracts, proprietary schemas, and exclusivity clauses are not inherently bad faith; they are the economics of enterprise software applied to the public sector.</p>
+
+<p>That framing is correct. It does not, however, answer the question of how a city preserves meaningful oversight over systems procured under those terms. The alternative to "no enterprise software in city government" is not "all enterprise software, on whatever terms vendors offer." The alternative is more careful contract drafting.</p>
+
+<h2>Keyhole fixes</h2>
+
+<p>Four specific contract-level interventions would change the balance materially, and none of them require a city to build its own software.</p>
+
+<p>First, <strong>data-portability clauses</strong>. Every contract for a system that stores operational data should require the vendor to provide, on 30 days' notice, a complete export of the city's data in a documented open format, at no additional cost. This is standard in mature enterprise software markets and should be standard in municipal procurement. The <a href="https://www.naspovaluepoint.org/">NASPO ValuePoint cooperative purchasing program</a> has templates that can be adapted.</p>
+
+<p>Second, <strong>sunset provisions</strong>. A five- or seven-year term is often unavoidable. A five-year term with a mandatory public reauthorization at year four — including a performance review, a disparity audit, and a council hearing — is not. The reauthorization does not have to be burdensome. It has to exist.</p>
+
+<p>Third, <strong>audit and transparency rights</strong>. Contracts should explicitly reserve the city's right to allow independent researchers and inspectors general to examine system performance, to publish aggregate outcomes, and to disclose the existence and general function of the system, regardless of any general confidentiality provision. Chicago's experience with its inspector general's ShotSpotter review, and <a href="https://www.brennancenter.org/">the Brennan Center's ongoing work</a> on predictive-policing transparency, give concrete examples of what this language looks like in practice.</p>
+
+<p>Fourth, <strong>cooperative purchasing with shared terms</strong>. The <a href="https://www.naspovaluepoint.org/">NASPO ValuePoint</a> and <a href="https://www.naspo.org/">NASPO</a> frameworks allow groups of states and cities to negotiate standard terms once, and then adopt them individually. For a mid-sized city with limited procurement capacity, inheriting a well-negotiated master contract is a faster path to better terms than attempting a bespoke negotiation.</p>
+
+<p>None of these fixes require abandoning the vendors that make modern municipal operations possible. All of them require a city to treat procurement as the place where AI governance actually happens, rather than as the back-office function that precedes governance.</p>
+
+<p>The governance conversation that happens after the contract is signed is the conversation the vendor has already won. The more useful conversation happens earlier, in the procurement office, with a lawyer who has read the clauses and a council member who understands that the signature on page fourteen is the decision.</p>
+`
 }
 ];

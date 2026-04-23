@@ -817,3 +817,162 @@ function svgBillOfRights() {
 }
 
 
+
+// ── Card Visual: Sanctuary City Data to ICE ──
+function svgSanctuaryData() {
+  const flows = [
+    { src: 'Local ALPR camera', mid: 'Regional fusion center', dest: 'ICE / HSI', color: COLORS.red },
+    { src: 'Jail booking roster', mid: 'Nlets / commercial broker', dest: 'ICE / HSI', color: COLORS.orange },
+    { src: 'DMV / license data', mid: 'State database share', dest: 'ICE / HSI', color: COLORS.purple },
+    { src: 'Gang / intel DB', mid: 'Fusion center bulletin', dest: 'ICE / HSI', color: COLORS.teal },
+  ];
+  return `<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+    <rect width="400" height="300" fill="#fafafa"/>
+    <text x="200" y="24" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="${COLORS.dark}" text-anchor="middle" letter-spacing="0.02em">Four routes sanctuary-city data still reaches ICE</text>
+    <text x="200" y="40" font-family="Inter,sans-serif" font-size="9" fill="${COLORS.gray}" text-anchor="middle">Documented data flows that survive most sanctuary ordinances</text>
+    <!-- Column headers -->
+    <text x="70" y="62" font-family="Inter,sans-serif" font-size="8" fill="${COLORS.gray}" text-anchor="middle" font-weight="600" letter-spacing="0.05em">LOCAL SOURCE</text>
+    <text x="200" y="62" font-family="Inter,sans-serif" font-size="8" fill="${COLORS.gray}" text-anchor="middle" font-weight="600" letter-spacing="0.05em">INTERMEDIARY</text>
+    <text x="330" y="62" font-family="Inter,sans-serif" font-size="8" fill="${COLORS.gray}" text-anchor="middle" font-weight="600" letter-spacing="0.05em">FEDERAL ENDPOINT</text>
+    ${flows.map((f, i) => {
+      const y = 88 + i * 48;
+      return `
+        <rect x="12" y="${y - 14}" width="116" height="28" fill="#fff" stroke="${f.color}" stroke-width="1.2" rx="2"/>
+        <text x="70" y="${y + 4}" font-family="Inter,sans-serif" font-size="9" fill="${COLORS.dark}" text-anchor="middle" font-weight="500">${f.src}</text>
+        <rect x="140" y="${y - 14}" width="120" height="28" fill="#fff" stroke="${COLORS.gray}" stroke-width="1" rx="2"/>
+        <text x="200" y="${y + 4}" font-family="Inter,sans-serif" font-size="9" fill="${COLORS.dark}" text-anchor="middle">${f.mid}</text>
+        <rect x="272" y="${y - 14}" width="116" height="28" fill="${f.color}" opacity="0.9" rx="2"/>
+        <text x="330" y="${y + 4}" font-family="Inter,sans-serif" font-size="9" fill="#fff" text-anchor="middle" font-weight="600">${f.dest}</text>
+        <line x1="128" y1="${y}" x2="140" y2="${y}" stroke="${f.color}" stroke-width="1.2"/>
+        <line x1="260" y1="${y}" x2="272" y2="${y}" stroke="${f.color}" stroke-width="1.2"/>
+      `;
+    }).join('')}
+    <text x="200" y="292" font-family="Inter,sans-serif" font-size="7.5" fill="#bbb" text-anchor="middle">Sources: EFF Atlas of Surveillance; Brennan Center; ACLU reporting on fusion centers</text>
+  </svg>`;
+}
+
+// ── Card Visual: Municipal Fiscal Cliff ──
+function svgFiscalCliff() {
+  const lines = [
+    { label: 'Personal income tax', value: 16.8, color: COLORS.red },
+    { label: 'Property tax', value: 33.5, color: COLORS.purple },
+    { label: 'Sales & use tax', value: 9.6, color: COLORS.orange },
+    { label: 'Business taxes', value: 7.4, color: COLORS.teal },
+  ];
+  const total = lines.reduce((s, l) => s + l.value, 0);
+  const chartL = 40, chartT = 80, chartW = 320, rowH = 34;
+  return `<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+    <rect width="400" height="300" fill="#fafafa"/>
+    <text x="200" y="24" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="${COLORS.dark}" text-anchor="middle" letter-spacing="0.02em">NYC's tax base is exposed to knowledge-work compression</text>
+    <text x="200" y="40" font-family="Inter,sans-serif" font-size="9" fill="${COLORS.gray}" text-anchor="middle">FY2025 NYC tax revenue, selected categories (billions of dollars)</text>
+    <text x="200" y="56" font-family="Inter,sans-serif" font-size="8" fill="${COLORS.gray}" text-anchor="middle">Every category shown is sensitive to white-collar employment, office occupancy, or consumer spending</text>
+    ${lines.map((l, i) => {
+      const y = chartT + i * rowH;
+      const w = (l.value / 40) * chartW;
+      return `
+        <text x="${chartL}" y="${y}" font-family="Inter,sans-serif" font-size="9" fill="${COLORS.dark}" font-weight="500">${l.label}</text>
+        <rect class="anim-bar" style="animation-delay:${i * 80}ms" x="${chartL}" y="${y + 4}" width="${w}" height="14" fill="${l.color}"/>
+        <text x="${chartL + w + 6}" y="${y + 14}" font-family="Inter,sans-serif" font-size="9" fill="${l.color}" font-weight="700">$${l.value}B</text>
+      `;
+    }).join('')}
+    <line x1="${chartL}" y1="${chartT + lines.length * rowH + 4}" x2="${chartL + chartW}" y2="${chartT + lines.length * rowH + 4}" stroke="#ddd"/>
+    <text x="${chartL}" y="${chartT + lines.length * rowH + 22}" font-family="Inter,sans-serif" font-size="9" fill="${COLORS.dark}" font-weight="700">Exposed revenue shown</text>
+    <text x="${chartL + chartW}" y="${chartT + lines.length * rowH + 22}" font-family="Inter,sans-serif" font-size="11" fill="${COLORS.dark}" text-anchor="end" font-weight="700">~$${total.toFixed(1)}B</text>
+    <text x="${chartL}" y="${chartT + lines.length * rowH + 38}" font-family="Inter,sans-serif" font-size="8" fill="${COLORS.gray}">Out of roughly $80B in city tax revenue; ~$115B total budget including state and federal aid</text>
+    <text x="200" y="292" font-family="Inter,sans-serif" font-size="7.5" fill="#bbb" text-anchor="middle">Sources: NYC Office of Management and Budget; NYC Independent Budget Office; Citizens Budget Commission</text>
+  </svg>`;
+}
+
+// ── Card Visual: Who Gets the Shelter Bed ──
+function svgShelterBed() {
+  const bars = [
+    { label: 'White single adults', score: 7.2, color: COLORS.purple },
+    { label: 'Black single adults', score: 5.9, color: COLORS.red },
+    { label: 'White women', score: 6.8, color: COLORS.purple },
+    { label: 'Black women', score: 5.3, color: COLORS.red },
+  ];
+  const chartL = 150, chartT = 80, chartW = 200, rowH = 34;
+  return `<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+    <rect width="400" height="300" fill="#fafafa"/>
+    <text x="200" y="24" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="${COLORS.dark}" text-anchor="middle" letter-spacing="0.02em">The vulnerability score gap, at the same level of need</text>
+    <text x="200" y="40" font-family="Inter,sans-serif" font-size="9" fill="${COLORS.gray}" text-anchor="middle">Illustrative VI-SPDAT scores from a peer-reviewed Los Angeles cohort study</text>
+    <text x="200" y="56" font-family="Inter,sans-serif" font-size="8" fill="${COLORS.gray}" text-anchor="middle">Higher score = higher priority for housing; researchers found consistent racial gaps after adjustment</text>
+    ${bars.map((b, i) => {
+      const y = chartT + i * rowH;
+      const w = (b.score / 10) * chartW;
+      return `
+        <text x="${chartL - 6}" y="${y + 14}" font-family="Inter,sans-serif" font-size="9" fill="${COLORS.dark}" text-anchor="end" font-weight="500">${b.label}</text>
+        <rect class="anim-bar" style="animation-delay:${i * 80}ms" x="${chartL}" y="${y + 4}" width="${w}" height="16" fill="${b.color}"/>
+        <text x="${chartL + w + 6}" y="${y + 16}" font-family="Inter,sans-serif" font-size="9" fill="${b.color}" font-weight="700">${b.score.toFixed(1)}</text>
+      `;
+    }).join('')}
+    <line x1="${chartL}" y1="${chartT}" x2="${chartL}" y2="${chartT + bars.length * rowH}" stroke="#ccc"/>
+    <text x="${chartL}" y="${chartT + bars.length * rowH + 18}" font-family="Inter,sans-serif" font-size="8" fill="${COLORS.gray}">0</text>
+    <text x="${chartL + chartW}" y="${chartT + bars.length * rowH + 18}" font-family="Inter,sans-serif" font-size="8" fill="${COLORS.gray}" text-anchor="end">10 (highest need)</text>
+    <text x="200" y="${chartT + bars.length * rowH + 40}" font-family="Inter,sans-serif" font-size="9" fill="${COLORS.dark}" text-anchor="middle" font-weight="500">Same medical and housing situations; different scores</text>
+    <text x="200" y="292" font-family="Inter,sans-serif" font-size="7.5" fill="#bbb" text-anchor="middle">Sources: Cronley (2022) in Journal of Social Distress and Homelessness; C4 Innovations VI-SPDAT review</text>
+  </svg>`;
+}
+
+// ── Card Visual: Shadow AI in City Hall ──
+function svgShadowAI() {
+  const bars = [
+    { label: 'Use AI tools at work', val: 75, color: COLORS.orange },
+    { label: 'Use tools not approved by IT', val: 46, color: COLORS.red },
+    { label: 'Paste work data into AI', val: 38, color: COLORS.red },
+    { label: 'Employer has written policy', val: 27, color: COLORS.teal },
+    { label: 'Received formal training', val: 14, color: COLORS.teal },
+  ];
+  const chartL = 170, chartT = 78, chartW = 180, rowH = 30;
+  return `<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+    <rect width="400" height="300" fill="#fafafa"/>
+    <text x="200" y="24" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="${COLORS.dark}" text-anchor="middle" letter-spacing="0.02em">Use is racing ahead of policy, training, and approval</text>
+    <text x="200" y="40" font-family="Inter,sans-serif" font-size="9" fill="${COLORS.gray}" text-anchor="middle">Knowledge workers reporting generative-AI behaviors at work, 2024-2025 surveys</text>
+    <text x="200" y="56" font-family="Inter,sans-serif" font-size="8" fill="${COLORS.gray}" text-anchor="middle">Ranges shown reflect variation across Pew, McKinsey, Deloitte, and vendor surveys</text>
+    ${bars.map((b, i) => {
+      const y = chartT + i * rowH;
+      const w = (b.val / 100) * chartW;
+      return `
+        <text x="${chartL - 6}" y="${y + 12}" font-family="Inter,sans-serif" font-size="9" fill="${COLORS.dark}" text-anchor="end" font-weight="500">${b.label}</text>
+        <rect class="anim-bar" style="animation-delay:${i * 80}ms" x="${chartL}" y="${y + 2}" width="${w}" height="14" fill="${b.color}"/>
+        <text x="${chartL + w + 6}" y="${y + 13}" font-family="Inter,sans-serif" font-size="9" fill="${b.color}" font-weight="700">~${b.val}%</text>
+      `;
+    }).join('')}
+    <line x1="${chartL}" y1="${chartT}" x2="${chartL}" y2="${chartT + bars.length * rowH}" stroke="#ccc"/>
+    <text x="200" y="${chartT + bars.length * rowH + 28}" font-family="Inter,sans-serif" font-size="9" fill="${COLORS.dark}" text-anchor="middle" font-weight="500">The gap between the top bar and the bottom is the shadow-AI problem</text>
+    <text x="200" y="292" font-family="Inter,sans-serif" font-size="7.5" fill="#bbb" text-anchor="middle">Sources: Pew Research 2025; McKinsey State of AI 2024; Deloitte GovAI 2024; NASCIO 2024</text>
+  </svg>`;
+}
+
+// ── Card Visual: Procurement Capture ──
+function svgProcurementCapture() {
+  const contracts = [
+    { label: 'NOLA Palantir Gotham (2012-18)', years: 6, color: COLORS.red },
+    { label: 'NYPD Palantir (2008-17+)', years: 9, color: COLORS.red },
+    { label: 'Chicago ShotSpotter (2018-24)', years: 6, color: COLORS.orange },
+    { label: 'LAPD Axon body cams (multi-yr)', years: 5, color: COLORS.purple },
+    { label: 'Typical CAD/RMS contract', years: 10, color: COLORS.teal },
+  ];
+  const chartL = 180, chartT = 78, chartW = 170, rowH = 32;
+  return `<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+    <rect width="400" height="300" fill="#fafafa"/>
+    <text x="200" y="24" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="${COLORS.dark}" text-anchor="middle" letter-spacing="0.02em">Long contracts lock cities in before anyone reviews them</text>
+    <text x="200" y="40" font-family="Inter,sans-serif" font-size="9" fill="${COLORS.gray}" text-anchor="middle">Duration of selected municipal surveillance and analytics contracts, in years</text>
+    ${contracts.map((c, i) => {
+      const y = chartT + i * rowH;
+      const w = (c.years / 12) * chartW;
+      return `
+        <text x="${chartL - 6}" y="${y + 12}" font-family="Inter,sans-serif" font-size="9" fill="${COLORS.dark}" text-anchor="end" font-weight="500">${c.label}</text>
+        <rect class="anim-bar" style="animation-delay:${i * 80}ms" x="${chartL}" y="${y + 2}" width="${w}" height="14" fill="${c.color}"/>
+        <text x="${chartL + w + 6}" y="${y + 13}" font-family="Inter,sans-serif" font-size="9" fill="${c.color}" font-weight="700">${c.years} yrs</text>
+      `;
+    }).join('')}
+    <line x1="${chartL}" y1="${chartT}" x2="${chartL}" y2="${chartT + contracts.length * rowH}" stroke="#ccc"/>
+    ${[0,3,6,9,12].map(v => {
+      const x = chartL + (v / 12) * chartW;
+      return `<text x="${x}" y="${chartT + contracts.length * rowH + 14}" font-family="Inter,sans-serif" font-size="7.5" fill="${COLORS.gray}" text-anchor="middle">${v}</text>`;
+    }).join('')}
+    <text x="200" y="${chartT + contracts.length * rowH + 34}" font-family="Inter,sans-serif" font-size="9" fill="${COLORS.dark}" text-anchor="middle" font-weight="500">Multi-year terms outlast the mayors and councils that approved them</text>
+    <text x="200" y="292" font-family="Inter,sans-serif" font-size="7.5" fill="#bbb" text-anchor="middle">Sources: The Verge / The Lens on NOLA-Palantir; MuckRock; Chicago Inspector General; city contract filings</text>
+  </svg>`;
+}
