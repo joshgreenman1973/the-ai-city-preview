@@ -155,13 +155,14 @@ h1, h2, h3, h4, h5 { line-height: 1.15; letter-spacing: -0.02em; }
 .skyline-bars .bar:focus-within rect:not(.bar-hit) {
   filter: brightness(1.15);
 }
+.skyline-bars a { cursor: pointer; text-decoration: none; }
+.skyline-bars a:focus { outline: none; }
 .skyline-bars .bar-label {
   fill: #ffffff;
   font-family: var(--font-primary, 'Inter', sans-serif);
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 700;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
+  letter-spacing: 0.02em;
   dominant-baseline: alphabetic;
   paint-order: stroke fill;
   stroke: #050507;
