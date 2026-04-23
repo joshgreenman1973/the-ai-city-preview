@@ -58,17 +58,227 @@ if(sessionStorage.getItem('ai-city-auth')==='1'){
   </div>
 </header>
 
-<!-- ═══ FEATURED HERO (VC-style split card) ═══ -->
+<!-- ═══ FEATURED HERO (data-skyline cover) ═══ -->
 <section class="issue-hero" id="top">
-  <div class="issue-hero-inner">
-    <div class="issue-hero-text">
-      <span class="issue-pill">Special Issue · Spring 2026</span>
-      <div class="issue-month">April 2026</div>
-      <h1>The Algorithmic City</h1>
-      <p class="issue-dek">Twenty-one essays on how AI is reshaping city government — written by AI.</p>
-      <div class="issue-byline">By <strong>A. Bot</strong>, AI Assistant · April 2026</div>
-    </div>
-    <div class="issue-hero-image" role="img" aria-label="Abstract composition for The Algorithmic City"></div>
+  <figure class="skyline-figure" aria-labelledby="skyline-caption">
+    <svg class="skyline-svg" viewBox="0 0 1600 600" preserveAspectRatio="xMidYMax meet" role="img" aria-labelledby="skyline-title skyline-desc">
+      <title id="skyline-title">The Algorithmic City — a skyline drawn from its numbers</title>
+      <desc id="skyline-desc">Twenty-one vertical bars, one per essay in the issue, each sized to a headline statistic from that essay.</desc>
+
+      <!-- faint starfield / datapoint grid -->
+      <g class="skyline-stars" aria-hidden="true">
+        <circle cx="80"   cy="60"  r="1"/>
+        <circle cx="220"  cy="110" r="1"/>
+        <circle cx="360"  cy="42"  r="1"/>
+        <circle cx="510"  cy="92"  r="1.2"/>
+        <circle cx="640"  cy="50"  r="1"/>
+        <circle cx="780"  cy="130" r="1"/>
+        <circle cx="910"  cy="70"  r="1.2"/>
+        <circle cx="1060" cy="38"  r="1"/>
+        <circle cx="1210" cy="104" r="1"/>
+        <circle cx="1340" cy="58"  r="1.2"/>
+        <circle cx="1470" cy="88"  r="1"/>
+        <circle cx="1540" cy="42"  r="1"/>
+        <circle cx="140"  cy="170" r="1"/>
+        <circle cx="430"  cy="180" r="1"/>
+        <circle cx="730"  cy="200" r="1"/>
+        <circle cx="1130" cy="168" r="1"/>
+        <circle cx="1420" cy="190" r="1"/>
+      </g>
+
+      <!-- 21 bars (buildings). Plotted on a 1600-wide stage with 60px gutters and ~66px columns.
+           Each group includes an SVG <title> for hover/screen reader, and optional "window" rects.
+           Data baseline y=540; top-of-bar = 540 - height. -->
+      <g class="skyline-bars">
+
+        <!-- 1. 311 Revolution · 72 languages · h=232 -->
+        <g class="bar b-orange" style="--delay:.02s">
+          <title>311 chatbots: Denver's Sunny answers in 72 languages</title>
+          <rect x="72"  y="308" width="44" height="232"/>
+          <rect class="win" x="82"  y="360" width="6" height="4"/>
+          <rect class="win" x="98"  y="400" width="6" height="4"/>
+          <rect class="win" x="82"  y="470" width="6" height="4"/>
+        </g>
+
+        <!-- 2. Six months to six days · 5 months compressed to 1 week · h=220 -->
+        <g class="bar b-chartreuse" style="--delay:.06s">
+          <title>Honolulu permitting: five months compressed to one week</title>
+          <rect x="138" y="320" width="44" height="220"/>
+          <rect class="win" x="152" y="380" width="6" height="4"/>
+          <rect class="win" x="152" y="450" width="6" height="4"/>
+        </g>
+
+        <!-- 3. Neighborhood public health · 25% asthma block · h=180 -->
+        <g class="bar b-cerulean" style="--delay:.10s">
+          <title>Block-level public health: 25% asthma rate in a single neighborhood</title>
+          <rect x="204" y="360" width="44" height="180"/>
+          <rect class="win" x="218" y="420" width="6" height="4"/>
+        </g>
+
+        <!-- 4. Smarter streets · 25% congestion cut · h=168 -->
+        <g class="bar b-magenta" style="--delay:.14s">
+          <title>AI traffic systems: 25% congestion reduction, tenfold fewer serious crashes</title>
+          <rect x="270" y="372" width="44" height="168"/>
+          <rect class="win" x="284" y="430" width="6" height="4"/>
+        </g>
+
+        <!-- 5. Vital signs / climate · qualitative · h=140 -->
+        <g class="bar b-rose" style="--delay:.18s">
+          <title>Cities, carbon, and AI's own energy appetite</title>
+          <rect x="336" y="400" width="44" height="140"/>
+        </g>
+
+        <!-- 6. Bias machine · predictive policing · h=280 (spire) -->
+        <g class="bar b-indigo" style="--delay:.22s">
+          <title>Predictive policing: biased data automated into biased forecasts</title>
+          <rect x="402" y="260" width="44" height="280"/>
+          <rect class="spire" x="420" y="240" width="8" height="20"/>
+          <rect class="win" x="416" y="310" width="6" height="4"/>
+          <rect class="win" x="416" y="380" width="6" height="4"/>
+          <rect class="win" x="416" y="470" width="6" height="4"/>
+        </g>
+
+        <!-- 7. Flagged at birth · child welfare · h=200 -->
+        <g class="bar b-periwinkle" style="--delay:.26s">
+          <title>Child-welfare scoring: poverty as "risk"</title>
+          <rect x="468" y="340" width="44" height="200"/>
+          <rect class="win" x="482" y="400" width="6" height="4"/>
+          <rect class="win" x="482" y="470" width="6" height="4"/>
+        </g>
+
+        <!-- 8. Algorithm in the courtroom · COMPAS 44.9% · h=300 -->
+        <g class="bar b-orange" style="--delay:.30s">
+          <title>COMPAS false-positive rate: 44.9% for Black defendants vs 23.5% for white</title>
+          <rect x="534" y="240" width="44" height="300"/>
+          <rect class="win" x="548" y="300" width="6" height="4"/>
+          <rect class="win" x="548" y="380" width="6" height="4"/>
+          <rect class="win" x="548" y="470" width="6" height="4"/>
+        </g>
+
+        <!-- 9. Watched · 85M cameras (tallest) · h=380 -->
+        <g class="bar b-chartreuse" style="--delay:.34s">
+          <title>Surveillance: 85 million cameras across American cities</title>
+          <rect x="600" y="160" width="44" height="380"/>
+          <rect class="spire" x="618" y="132" width="8" height="28"/>
+          <rect class="win" x="614" y="220" width="6" height="4"/>
+          <rect class="win" x="614" y="300" width="6" height="4"/>
+          <rect class="win" x="614" y="380" width="6" height="4"/>
+          <rect class="win" x="614" y="470" width="6" height="4"/>
+          <text class="bar-label" x="622" y="148" text-anchor="middle">85M cameras</text>
+        </g>
+
+        <!-- 10. Clerk's lament · 92M displaced · h=328 -->
+        <g class="bar b-cerulean" style="--delay:.38s">
+          <title>Jobs: 92 million displaced, 170 million created — not the same people</title>
+          <rect x="666" y="212" width="44" height="328"/>
+          <rect class="win" x="680" y="260" width="6" height="4"/>
+          <rect class="win" x="680" y="340" width="6" height="4"/>
+          <rect class="win" x="680" y="440" width="6" height="4"/>
+        </g>
+
+        <!-- 11. Homework problem · 61.22% TOEFL false positive · h=272 -->
+        <g class="bar b-magenta" style="--delay:.42s">
+          <title>AI-detection in schools: 61.22% false-positive rate on TOEFL essays</title>
+          <rect x="732" y="268" width="44" height="272"/>
+          <rect class="win" x="746" y="320" width="6" height="4"/>
+          <rect class="win" x="746" y="400" width="6" height="4"/>
+          <rect class="win" x="746" y="480" width="6" height="4"/>
+        </g>
+
+        <!-- 12. Deepfakes · 72-hour window, $1 + $150 · h=192 -->
+        <g class="bar b-rose" style="--delay:.46s">
+          <title>Local-election deepfakes: a 72-hour window, for a dollar plus a hundred and fifty</title>
+          <rect x="798" y="348" width="44" height="192"/>
+          <rect class="win" x="812" y="420" width="6" height="4"/>
+          <rect class="win" x="812" y="490" width="6" height="4"/>
+        </g>
+
+        <!-- 13. Digital divide doubled · 80% workforce AI exposure · h=288 -->
+        <g class="bar b-indigo" style="--delay:.50s">
+          <title>AI exposure: roughly 80% of the U.S. workforce will feel some effect</title>
+          <rect x="864" y="252" width="44" height="288"/>
+          <rect class="win" x="878" y="310" width="6" height="4"/>
+          <rect class="win" x="878" y="400" width="6" height="4"/>
+          <rect class="win" x="878" y="490" width="6" height="4"/>
+        </g>
+
+        <!-- 14. DOGE · 270K workers cut, +$248B spend (second tallest) · h=352 -->
+        <g class="bar b-periwinkle" style="--delay:.54s">
+          <title>DOGE: 270,000 federal workers cut, federal spending up $248 billion</title>
+          <rect x="930" y="188" width="44" height="352"/>
+          <rect class="spire" x="948" y="164" width="8" height="24"/>
+          <rect class="win" x="944" y="240" width="6" height="4"/>
+          <rect class="win" x="944" y="320" width="6" height="4"/>
+          <rect class="win" x="944" y="410" width="6" height="4"/>
+          <rect class="win" x="944" y="490" width="6" height="4"/>
+          <text class="bar-label" x="952" y="180" text-anchor="middle">270K · +$248B</text>
+        </g>
+
+        <!-- 15. Procurement trap · multi-year contracts · h=160 -->
+        <g class="bar b-orange" style="--delay:.58s">
+          <title>Procurement: governance lever hiding in multi-year vendor contracts</title>
+          <rect x="996" y="380" width="44" height="160"/>
+          <rect class="win" x="1010" y="440" width="6" height="4"/>
+        </g>
+
+        <!-- 16. Bill of Rights · qualitative framework · h=120 -->
+        <g class="bar b-chartreuse" style="--delay:.62s">
+          <title>A municipal AI bill of rights: cities need not wait for Congress</title>
+          <rect x="1062" y="420" width="44" height="120"/>
+        </g>
+
+        <!-- 17. Sanctuary-city data / ICE · ALPR · h=152 -->
+        <g class="bar b-cerulean" style="--delay:.66s">
+          <title>Sanctuary cities: ALPR and fusion-center data flows that bypass local policy</title>
+          <rect x="1128" y="388" width="44" height="152"/>
+          <rect class="win" x="1142" y="450" width="6" height="4"/>
+        </g>
+
+        <!-- 18. Fiscal cliff · ~$115B NYC budget, 20% knowledge-work exposure · h=312 -->
+        <g class="bar b-magenta" style="--delay:.70s">
+          <title>Municipal fiscal cliff: ~$115B NYC budget exposed to AI-driven knowledge-work shifts</title>
+          <rect x="1194" y="228" width="44" height="312"/>
+          <rect class="win" x="1208" y="280" width="6" height="4"/>
+          <rect class="win" x="1208" y="370" width="6" height="4"/>
+          <rect class="win" x="1208" y="470" width="6" height="4"/>
+          <text class="bar-label" x="1216" y="220" text-anchor="middle">$115B at risk</text>
+        </g>
+
+        <!-- 19. Shelter bed · VI-SPDAT · h=132 -->
+        <g class="bar b-rose" style="--delay:.74s">
+          <title>Who gets the shelter bed: a clipboard survey decides priority</title>
+          <rect x="1260" y="408" width="44" height="132"/>
+        </g>
+
+        <!-- 20. Shadow AI · unsanctioned AI use in city hall · h=176 -->
+        <g class="bar b-indigo" style="--delay:.78s">
+          <title>Shadow AI in city hall: unsanctioned ChatGPT use across municipal workforces</title>
+          <rect x="1326" y="364" width="44" height="176"/>
+          <rect class="win" x="1340" y="420" width="6" height="4"/>
+          <rect class="win" x="1340" y="490" width="6" height="4"/>
+        </g>
+
+        <!-- 21. Procurement capture · contracts already signed · h=144 -->
+        <g class="bar b-periwinkle" style="--delay:.82s">
+          <title>Procurement capture: the most consequential AI decisions were signed years ago</title>
+          <rect x="1392" y="396" width="44" height="144"/>
+          <rect class="win" x="1406" y="460" width="6" height="4"/>
+        </g>
+
+      </g>
+
+      <!-- horizon line -->
+      <line class="skyline-horizon" x1="40" y1="540" x2="1560" y2="540"/>
+    </svg>
+
+    <figcaption id="skyline-caption" class="skyline-caption">A skyline drawn from the issue's numbers — 21 essays, 21 bars.</figcaption>
+  </figure>
+
+  <div class="issue-hero-text">
+    <span class="issue-pill">Special Issue · April 2026</span>
+    <h1>The Algorithmic City</h1>
+    <p class="issue-dek">Twenty-one essays on how AI is reshaping city government — written by AI.</p>
+    <div class="issue-byline">By <strong>A. Bot</strong> · AI Assistant</div>
   </div>
 </section>
 

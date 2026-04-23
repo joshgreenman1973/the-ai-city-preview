@@ -107,25 +107,105 @@ h1, h2, h3, h4, h5 { line-height: 1.15; letter-spacing: -0.02em; }
   color: #fff;
   padding: 0;
   border-bottom: 8px solid var(--vc-orange);
-}
-.issue-hero-inner {
-  display: grid;
-  grid-template-columns: 1.1fr 1fr;
-  max-width: 1200px; margin: 0 auto;
-  min-height: 520px;
-}
-.issue-hero-text {
-  padding: 72px 56px 80px;
-  display: flex; flex-direction: column; justify-content: center;
-}
-.issue-hero-image {
-  background: linear-gradient(135deg, rgba(255,124,83,0.15), rgba(221,228,76,0.12)), url('../images/cover.png') center/cover no-repeat;
-  min-height: 420px;
   position: relative;
+  overflow: hidden;
 }
-.issue-hero-image::after {
-  content: ''; position: absolute; inset: 0;
-  background: linear-gradient(to right, rgba(5,5,7,0.25), transparent 20%);
+
+/* ── Data-skyline cover ── */
+.skyline-figure {
+  margin: 0;
+  padding: 44px 24px 8px;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.skyline-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 62vh;
+}
+.skyline-horizon {
+  stroke: rgba(255,255,255,0.22);
+  stroke-width: 1;
+}
+.skyline-stars circle { fill: rgba(255,255,255,0.35); }
+
+.skyline-bars .bar rect {
+  transform-origin: center 540px; /* grow from baseline */
+  transform: scaleY(0);
+  animation: skylineGrow 0.9s cubic-bezier(.2,.7,.2,1) forwards;
+  animation-delay: var(--delay, 0s);
+}
+.skyline-bars .bar .win,
+.skyline-bars .bar .spire {
+  opacity: 0;
+  animation: skylineFade 0.6s ease forwards;
+  animation-delay: calc(var(--delay, 0s) + 0.6s);
+}
+.skyline-bars .bar-label {
+  fill: rgba(255,255,255,0.72);
+  font-family: var(--font-primary, 'Inter', sans-serif);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  opacity: 0;
+  animation: skylineFade 0.8s ease forwards;
+  animation-delay: calc(var(--delay, 0s) + 0.9s);
+}
+
+/* Bar color classes — primary rect takes the fill, windows get a soft contrast. */
+.bar.b-orange     rect { fill: #ff7c53; }
+.bar.b-orange     .win { fill: #050507; }
+.bar.b-chartreuse rect { fill: #dde44c; }
+.bar.b-chartreuse .win { fill: #050507; }
+.bar.b-cerulean   rect { fill: #217ebe; }
+.bar.b-cerulean   .win { fill: #dde44c; }
+.bar.b-magenta    rect { fill: #e7466d; }
+.bar.b-magenta    .win { fill: #dde44c; }
+.bar.b-rose       rect { fill: #cea9be; }
+.bar.b-rose       .win { fill: #050507; }
+.bar.b-indigo     rect { fill: #394882; }
+.bar.b-indigo     .win { fill: #ff7c53; }
+.bar.b-periwinkle rect { fill: #9b9fbc; }
+.bar.b-periwinkle .win { fill: #050507; }
+/* Spire inherits bar color for continuity */
+.bar .spire { fill: inherit; }
+.bar.b-orange     .spire { fill: #ff7c53; }
+.bar.b-chartreuse .spire { fill: #dde44c; }
+.bar.b-periwinkle .spire { fill: #9b9fbc; }
+
+@keyframes skylineGrow {
+  from { transform: scaleY(0); }
+  to   { transform: scaleY(1); }
+}
+@keyframes skylineFade {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .skyline-bars .bar rect,
+  .skyline-bars .bar .win,
+  .skyline-bars .bar .spire,
+  .skyline-bars .bar-label { animation: none; transform: none; opacity: 1; }
+}
+
+.skyline-caption {
+  font-family: var(--font-primary, 'Inter', sans-serif);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.5);
+  text-align: center;
+  margin-top: 8px;
+}
+
+.issue-hero-text {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 24px 32px 72px;
+  text-align: left;
 }
 .issue-pill {
   display: inline-flex; align-items: center; gap: 8px;
@@ -135,21 +215,18 @@ h1, h2, h3, h4, h5 { line-height: 1.15; letter-spacing: -0.02em; }
   padding: 7px 12px; border-radius: 2px; margin-bottom: 22px;
   width: fit-content;
 }
-.issue-month {
-  font-family: var(--font-primary); font-size: 0.78rem; font-weight: 500;
-  color: rgba(255,255,255,0.6); letter-spacing: 0.1em; text-transform: uppercase;
-  margin-bottom: 18px;
-}
 .issue-hero h1 {
   font-family: var(--font-secondary);
   font-weight: 300;
-  font-size: clamp(2.8rem, 5.4vw, 4.8rem);
+  font-size: clamp(2.4rem, 6.2vw, 5.4rem);
   letter-spacing: -0.02em; line-height: 1.02;
-  color: #fff; margin-bottom: 20px;
+  color: #fff;
+  margin: 0 0 20px;
+  white-space: nowrap;
 }
 .issue-dek {
   font-size: 1.15rem; line-height: 1.55; color: rgba(255,255,255,0.82);
-  margin-bottom: 28px; font-weight: 300; max-width: 520px;
+  margin-bottom: 28px; font-weight: 300; max-width: 620px;
 }
 .issue-byline {
   font-family: var(--font-primary); font-size: 0.78rem;
@@ -159,9 +236,11 @@ h1, h2, h3, h4, h5 { line-height: 1.15; letter-spacing: -0.02em; }
 .issue-byline strong { color: #fff; font-weight: 600; }
 
 @media (max-width: 900px) {
-  .issue-hero-inner { grid-template-columns: 1fr; }
-  .issue-hero-text  { padding: 52px 28px 56px; order: 2; }
-  .issue-hero-image { min-height: 260px; order: 1; }
+  .skyline-figure { padding: 28px 12px 4px; }
+  .skyline-svg { max-height: 48vh; }
+  .issue-hero h1 { white-space: normal; }
+  .issue-hero-text { padding: 16px 20px 56px; }
+  .skyline-bars .bar-label { font-size: 18px; }
 }
 
 /* ── Editors' note (brief) ── */
