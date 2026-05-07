@@ -32,6 +32,8 @@ const articles = [
 
 <p>The multilingual capability is particularly significant. Cities like Denver, Phoenix, and New York serve populations that speak dozens of languages. Traditional 311 systems relied on a limited number of bilingual operators or cumbersome translation services. AI chatbots can switch languages instantly, which means a Haitian Creole speaker in Miami or a Tagalog speaker in San Francisco can get the same quality of service as an English speaker — a quiet revolution in equity that would be ruinously expensive to achieve through staffing alone.</p>
 
+<p>Stephen Goldsmith, a former deputy mayor under Mike Bloomberg, has <a href="https://www.vitalcitynyc.org/nyc-government-ai-accountability-discretion/">argued in Vital City</a> that the larger prize is a "single AI-powered front door" — one entry point capable of guiding, say, a Bronx restaurant family chasing permits across a dozen agencies, in whatever language they speak. The chatbot is the early, visible draft of that idea.</p>
+
 <h2>The Trap</h2>
 
 <p>But here’s where city leaders need to be honest about what they’re building — and what they’re not.</p>
@@ -121,6 +123,8 @@ const articles = [
 
 <p>Beyond the major cities, smaller jurisdictions are finding that AI tools can solve a problem that has bedeviled them for years: the difficulty of maintaining specialized plan-review expertise with limited budgets. SwiftGov’s work with Hernando County illustrates the point — a mid-sized county that could never afford to staff a building department the way New York or Chicago can, but that can subscribe to an AI platform providing comparable review capabilities.</p>
 
+<p>The same logic extends to the procurement office. <a href="https://www.vitalcitynyc.org/nyc-government-ai-accountability-discretion/">Goldsmith imagines</a> a contracting officer weighing a vendor's past performance — late deliveries, complaint history, change-order patterns — against a low bid, with that comparison built into the workflow rather than buried in a binder. It is the same compression of judgment that AI is bringing to permit review, applied one step upstream.</p>
+
 <h2>Beyond Permits: Code Enforcement</h2>
 
 <p>The same AI capabilities that accelerate permit reviews are being applied to another chronic municipal headache: code enforcement.</p>
@@ -205,6 +209,8 @@ const articles = [
 <p>Traditional epidemiology works in broad strokes: citywide disease rates, county-level mortality statistics, statewide vaccination coverage. These numbers are useful for setting policy, but they can obscure enormous variation within a city. A citywide asthma rate of 8 percent might mask the reality that one neighborhood, downwind from an industrial facility and adjacent to a highway, has a rate of 25 percent while a wealthier neighborhood two miles away has a rate of 3 percent.</p>
 
 <p><a href="https://www.mdpi.com/2227-7390/13/12/1911">Research on AI-assisted real-time monitoring of infectious diseases in urban areas</a> has demonstrated that AI models integrating environmental data — air quality measurements, proximity to pollution sources, housing quality indicators, green space availability — with health records can identify hyper-local disease clusters that traditional surveillance systems miss entirely.</p>
+
+<p>Stephen Goldsmith has <a href="https://www.vitalcitynyc.org/nyc-government-ai-accountability-discretion/">offered a useful frame</a> for what this enables: a spike from a South Bronx air-quality sensor that triggers a coordinated response before the first asthma complaint reaches 311. The point is not the algorithm; it is the chance to intervene early in the life cycle of a developing problem, instead of waiting for the complaint cycle to catch up.</p>
 
 <p>This capability is transforming how cities think about health interventions. Instead of launching citywide campaigns that spread resources thinly, health departments can target interventions with surgical precision: deploying lead-testing kits to the specific blocks where housing age and condition suggest the highest risk, directing asthma outreach to the census tracts where air quality data indicates the greatest exposure, or concentrating Legionnaires’ disease prevention efforts on the buildings where TowerScout has identified unregistered cooling towers.</p>
 
@@ -338,6 +344,8 @@ const articles = [
 
 <p>Air quality monitoring enables cities to move beyond limited fixed monitoring stations. By integrating data from low-cost sensors, satellite imagery, traffic patterns, and weather models, AI systems can generate high-resolution air quality maps that reveal pollution hotspots at the block level. This granular data allows cities to target interventions — rerouting truck traffic, increasing tree canopy, adjusting industrial operating hours — with a precision that was previously impossible.</p>
 
+<p>Stephen Goldsmith has <a href="https://www.vitalcitynyc.org/nyc-government-ai-accountability-discretion/">framed this kind of capacity</a> as an "intervention in the life cycle of a developing problem": anonymized sentiment, sensor spikes and service patterns surfacing dissatisfaction earlier than the complaint cycle. A 2026 chapter in the <a href="https://law.stanford.edu/press/how-will-ai-reshape-politics-new-volume-co-edited-by-stanford-laws-nathaniel-persily-explores-the-stakes/">American Political Science Association task force volume</a> on AI in the public sector makes a parallel case: the value of these systems lies less in the predictions themselves than in the early-warning posture they make possible.</p>
+
 <h2>The Paradox: AI’s Energy Appetite</h2>
 
 <p>Now for the uncomfortable part.</p>
@@ -408,6 +416,8 @@ const articles = [
 
 <p>The Brennan Center's research documented a striking governance gap: most departments using predictive or AI-assisted tools have no publicly available use policies, no independent auditing requirements, and no mechanism for community input. In many cases, residents do not even know that an algorithm is shaping the police presence in their neighborhood. The lack of transparency is not incidental. Vendors routinely claim that the details of their algorithms are proprietary trade secrets, shielding them from public scrutiny. When a police officer decides to stop someone based on a hunch, that decision is at least theoretically subject to constitutional review. When an algorithm directs officers to saturate a particular block, the decision-making process is opaque by design.</p>
 
+<p>A 2026 chapter on AI, race and politics in the <a href="https://law.stanford.edu/press/how-will-ai-reshape-politics-new-volume-co-edited-by-stanford-laws-nathaniel-persily-explores-the-stakes/">American Political Science Association task force volume</a> (Gillum, Leslie and Wong) puts the consequence plainly: when errors are opaque and correction procedures complex, the burden of contestation shifts from the state to the individual. That is precisely the burden a young man stopped on a flagged block is asked to carry.</p>
+
 <p>The <a href="https://naacp.org/resources/artificial-intelligence-policing">NAACP's issue brief on artificial intelligence in policing</a> details the cumulative harm this opacity produces. Communities that are already over-policed experience intensified surveillance. Residents are stopped more frequently, searched more often, and arrested at higher rates — not because their behavior has changed, but because an algorithm has designated their neighborhood as high-risk. The brief documents how this cycle erodes trust in law enforcement, discourages crime reporting, and ultimately makes communities less safe.</p>
 
 <h2>The Human Cost</h2>
@@ -462,6 +472,8 @@ const articles = [
 <p>New York is not the only jurisdiction to discover the dangers of algorithmic child welfare. Oregon's Department of Human Services deployed a similar tool, only to find that it <a href="https://cascw.umn.edu/portfolio_tag/ai-in-child-welfare/">disproportionately flagged Black and multiracial children</a> for investigation. The state's own analysis revealed that the algorithm was significantly more likely to assign high-risk scores to families of color, even after controlling for other variables. Following public scrutiny and an external review, Oregon was cautioned to stop using the tool in its existing form.</p>
 
 <p>The Oregon experience is instructive because the state did something unusual: it examined its own algorithm for racial bias and made the findings public. Most jurisdictions do not. The result is that communities cannot know whether the tools shaping life-altering decisions about their families are fair, accurate, or discriminatory.</p>
+
+<p>There is a precedent for what comes next when these systems fail. A 2026 chapter in the <a href="https://law.stanford.edu/press/how-will-ai-reshape-politics-new-volume-co-edited-by-stanford-laws-nathaniel-persily-explores-the-stakes/">American Political Science Association task force volume</a> on AI and the public sector (Zhang et al.) walks through the MiDAS automated unemployment-determination case in Michigan, in which courts ultimately had to confront the accountability vacuum left by an algorithm operating at scale on a vulnerable population. Child-welfare scoring sits in the same accountability lineage.</p>
 
 <h2>Pittsburgh and the Federal Lens</h2>
 
@@ -542,6 +554,8 @@ const articles = [
 
 <p>This is not a problem that better data or smarter engineers can fix. It is a structural feature of prediction in a society marked by profound racial inequality. Black Americans are arrested at higher rates than white Americans — not only because of differences in criminal behavior but because of <a href="https://www.brennancenter.org/our-work/research-reports/racial-disparities-criminal-justice">decades of disparate policing</a>. When an algorithm is trained on arrest data, it inherits that disparity. And the resulting prediction — "this person is high-risk" — carries within it both genuine risk factors and the accumulated consequences of living in a neighborhood saturated with police.</p>
 
+<p>The pattern shows up far from the courtroom too. A 2026 chapter on AI, race and politics in the <a href="https://law.stanford.edu/press/how-will-ai-reshape-politics-new-volume-co-edited-by-stanford-laws-nathaniel-persily-explores-the-stakes/">American Political Science Association task force volume</a> (Gillum, Leslie and Wong) examines how signature-matching algorithms used to validate mail ballots vary by name structure and signature style, raising the prospect of disproportionate ballot rejection for minority voters. Different domain, same architecture: a model trained on the residue of unequal treatment, projected forward as objective risk.</p>
+
 <p>The fairness impossibility theorem does not tell us that risk assessment tools should never be used. It tells us that every tool embeds a choice about whose errors matter more. Currently, that choice is made by the developers and validated by statisticians. It is rarely made by the communities bearing the consequences.</p>
 
 <h2>The Governance Gap</h2>
@@ -615,6 +629,8 @@ const articles = [
 
 <p>The London example is particularly instructive because the United Kingdom has a legal framework for data protection — the UK GDPR — that is substantially more robust than anything in the United States. If comprehensive facial recognition surveillance can expand rapidly under that framework, the constraints facing American cities are even weaker.</p>
 
+<p>The disparate impact extends beyond the booking room. A 2026 chapter on AI, race and politics in the <a href="https://law.stanford.edu/press/how-will-ai-reshape-politics-new-volume-co-edited-by-stanford-laws-nathaniel-persily-explores-the-stakes/">American Political Science Association task force volume</a> (Gillum, Leslie and Wong) traces how histories of state surveillance — and the certainty that biometric systems carry higher error rates for darker-skinned faces — depress civic participation in minority and immigrant communities. The chilling effect is part of the cost.</p>
+
 <h2>Function Creep</h2>
 
 <p>Privacy scholars have long warned about "function creep" — the tendency for data collected for one purpose to be used for another. AI-powered surveillance dramatically accelerates this phenomenon.</p>
@@ -669,6 +685,8 @@ const articles = [
   body: `<p>In January 2026, American employers announced <a href="https://www.almcorp.com/blog/january-2026-layoffs/">108,000 job cuts</a> — the worst start to a year since 2009, when the economy was hemorrhaging jobs in the aftermath of a financial crisis. This time, the economy was not in recession. Corporate profits were strong. Consumer spending was steady. What was different was the reason companies gave for the layoffs. Increasingly, the answer was artificial intelligence.</p>
 
 <p>The headline numbers tell a story of aggregate optimism. The <a href="https://www.weforum.org/publications/the-future-of-jobs-report-2025/">World Economic Forum's Future of Jobs Report 2025</a> projects that AI and related technologies will displace 92 million jobs globally by 2030 while creating 170 million new ones — a net gain of 78 million. Goldman Sachs has estimated that generative AI could eventually <a href="https://www.goldmansachs.com/insights/articles/generative-ai-could-raise-global-gdp-by-7-percent">raise global GDP by 7 percent</a>. The long sweep of economic history supports the optimists: every major technological revolution — mechanized agriculture, electrification, computing — destroyed old jobs and created new ones, and the new ones generally paid better.</p>
+
+<p>How seriously to take any of these forecasts is its own question. As a 2026 chapter on AI and the economy in the <a href="https://law.stanford.edu/press/how-will-ai-reshape-politics-new-volume-co-edited-by-stanford-laws-nathaniel-persily-explores-the-stakes/">American Political Science Association task force volume</a> (Boix, Becher, González-Rostani and Stegmueller) notes, current models of occupational vulnerability differ widely in their forecasts — which is part of why public opinion about AI's economic effects remains unsettled, swinging with each new headline.</p>
 
 <p>But the long sweep of economic history is cold comfort to a 52-year-old accounts payable clerk in Syracuse who just received a layoff notice. The transition problem — the gap between the jobs that disappear and the jobs that emerge, between the workers displaced and the workers hired — is the defining workforce challenge of the next decade. And cities are where that challenge will play out.</p>
 
@@ -848,6 +866,8 @@ const articles = [
 
 <p>The pattern is consistent: operatives deploy AI-generated content in races with low media coverage, test what works, refine their techniques, and scale. By the time the same tactics appear in high-profile national races, they have already been battle-tested in dozens of local contests.</p>
 
+<p>The threat extends to the basic information voters use to cast a ballot. A 2024 Columbia University workshop reported in a 2026 chapter of the <a href="https://law.stanford.edu/press/how-will-ai-reshape-politics-new-volume-co-edited-by-stanford-laws-nathaniel-persily-explores-the-stakes/">American Political Science Association task force volume</a> (Flanigan, Foos, Fung, Stewart) tested unmodified commercial chatbots on basic voting questions; participants rated half the answers inaccurate and 40 percent harmful, including a striking case in which four of five chatbots wrongly told Nevada voters they would be blocked from registering weeks before Election Day, despite the state's same-day registration law. That is why, as the chapter notes, the prevailing wisdom in the election-administration field is to refrain from using generative tools to answer voter questions and to rely on rule-based systems instead.</p>
+
 <h2>The American Vulnerability</h2>
 
 <p>The United States holds roughly <a href="https://ballotpedia.org/Number_of_governmental_jurisdictions_in_the_United_States">half a million elected offices</a>, the vast majority of them at the local level. City council members, school board trustees, county commissioners, judges, sheriffs, water district board members — these are the officials who make decisions about policing, zoning, education, and public health that directly shape daily life. And the elections that choose them are, from an information-security standpoint, extraordinarily vulnerable.</p>
@@ -953,6 +973,8 @@ const articles = [
 
 <p>The residents of a public housing complex may not have access to ChatGPT, but there is a good chance that an AI system is involved in determining their eligibility for benefits, the frequency of building inspections, the deployment of police in their neighborhood, and the approval or denial of their credit applications. They are not users of AI. They are subjects of it.</p>
 
+<p>The pattern reaches into the act of voting itself. A 2026 chapter on AI, race and politics in the <a href="https://law.stanford.edu/press/how-will-ai-reshape-politics-new-volume-co-edited-by-stanford-laws-nathaniel-persily-explores-the-stakes/">American Political Science Association task force volume</a> (Gillum, Leslie and Wong) describes how automated voter-roll maintenance can flag minority voters as inactive at higher rates because of the residential mobility associated with economic precarity, and how algorithms used to allocate voting machines, poll workers and early-voting locations can entrench historical inequities when they lean on outdated turnout data. Civic infrastructure, like every other infrastructure, can be sorted.</p>
+
 <p>This asymmetry — AI as a tool for the privileged, AI as a system of control for the marginalized — is the defining feature of the new digital divide. And it is far more dangerous than the old one, because it is largely invisible. When you lack internet access, you know it. When an AI system denies your housing application or flags your neighborhood for increased surveillance, you may never learn that a machine was involved, let alone have the ability to challenge its decision.</p>
 
 <h2>The Climate Intersection</h2>
@@ -1029,6 +1051,8 @@ const articles = [
 <p>The result was paradoxical. DOGE cut workers aggressively but <a href="https://www.cato.org/blog/doge-produced-largest-peacetime-workforce-cut-record-spending-kept-rising-0">had "no noticeable effect on the trajectory of spending,"</a> according to Cato. Federal spending actually increased during DOGE's tenure, driven by the same entitlement obligations and debt service costs that no amount of workforce reduction or regulatory streamlining could address.</p>
 
 <p>This is the central lesson of the DOGE experiment, and it applies directly to cities: cutting staff is not the same thing as cutting costs. Firing people is not efficiency. And AI, no matter how powerful, cannot solve problems that are fundamentally political rather than technical.</p>
+
+<p>A 2026 chapter on AI and the public sector in the <a href="https://law.stanford.edu/press/how-will-ai-reshape-politics-new-volume-co-edited-by-stanford-laws-nathaniel-persily-explores-the-stakes/">American Political Science Association task force volume</a> (Zhang et al.) puts the underlying diagnosis bluntly: the deficit of accountability around public-sector AI is primarily institutional, not technical. As of January 2025, the federal government had documented 2,133 active AI use cases across 41 agencies, and of the cases reporting a development model, only 40 percent were built in-house, with 42 percent under contract and the remaining 18 percent partnerships — a sprawl that no slogan about "efficiency" can manage on its own.</p>
 
 <h2>What Went Wrong</h2>
 
@@ -1113,6 +1137,8 @@ const articles = [
 <p>Vendors exploit this gap — not always intentionally, but inevitably. They demonstrate systems in controlled environments that do not reflect the messiness of real municipal data. They make performance claims that are technically accurate on their training data but meaningless for the city’s population. They wrap their systems in trade-secret protections that prevent independent evaluation. And they structure contracts to maximize lock-in: proprietary data formats, limited interoperability, and renewal terms that make switching costs prohibitive.</p>
 
 <p>The result is a market in which the buyer cannot meaningfully evaluate what it is purchasing, cannot verify that the product works as promised, and cannot easily leave when it doesn’t.</p>
+
+<p>A 2026 chapter on AI and the public sector in the <a href="https://law.stanford.edu/press/how-will-ai-reshape-politics-new-volume-co-edited-by-stanford-laws-nathaniel-persily-explores-the-stakes/">American Political Science Association task force volume</a> (Zhang et al.) calls procurement an understudied governance mechanism — the channel through which private actors quietly accumulate power and exert influence over public administration. Mid-November 2023 brought one of the first organized institutional pushbacks: San José, joined by roughly fifty other agencies, launched the GovAI Coalition, whose vendor-excluded committees draft governance frameworks and let smaller members "piggyback" onto cooperative procurements led by larger governments. It is the kind of buyer-side scaffolding that a single fifty-thousand-person city negotiating alone with a billion-dollar vendor can never assemble on its own.</p>
 
 <h2>The Black Box in the Contract</h2>
 
@@ -1203,6 +1229,8 @@ const articles = [
 <p>Third, cities are close enough to residents to be accountable. When a federal agency deploys an AI system that harms people, the feedback loop between the affected community and the decision-maker is attenuated to the point of uselessness. When a city deploys the same system, the affected residents live in the same jurisdiction as the mayor, the city council, and the agency head. They can show up at public meetings, organize politically, and demand accountability in ways that are impossible at the federal level.</p>
 
 <p>New York City demonstrated both the potential and the limitations of municipal AI governance with <a href="https://www.nyc.gov/site/dca/about/automated-employment-decision-tools.page">Local Law 144</a>, enacted in 2021, which requires bias audits of automated employment decision tools. The law was imperfect — its scope was narrow, its enforcement mechanisms weak, and its audit requirements less rigorous than advocates wanted. But it was the first law of its kind in the country, and it established the principle that cities can and should regulate AI. The task now is to build on that foundation.</p>
+
+<p>A 2026 chapter on AI and the public sector in the <a href="https://law.stanford.edu/press/how-will-ai-reshape-politics-new-volume-co-edited-by-stanford-laws-nathaniel-persily-explores-the-stakes/">American Political Science Association task force volume</a> (Zhang et al.) names three structural challenges any such framework has to confront: the conflict between public service values and algorithmic optimization, the information and power asymmetry between private vendors and the agencies that buy from them, and the accountability gaps that open when those two pressures meet. Stephen Goldsmith, writing in <a href="https://www.vitalcitynyc.org/nyc-government-ai-accountability-discretion/">Vital City</a>, makes the affirmative case for what governance is meant to protect: accountable discretion, he argues, only works with strong human oversight, clear limits on surveillance, serious investment in staff training and straightforward ways for residents to question a decision and push back. The pillars below are an attempt to translate that diagnosis into rules a city can actually enforce.</p>
 
 <h2>The Framework</h2>
 
@@ -1344,6 +1372,8 @@ const articles = [
 
 <p>That argument is serious, and it explains why a blanket ban on data sharing is neither realistic nor, in most cases, wise. But it does not justify the current default, which is near-total data sharing by contract, with sanctuary policies bolted on as a political garnish. The middle path — granular, auditable controls on which datasets flow where, and for what purpose — is both technically feasible and politically tractable.</p>
 
+<p>The institutional context is what makes the difference. A 2026 chapter on AI and the public sector in the <a href="https://law.stanford.edu/press/how-will-ai-reshape-politics-new-volume-co-edited-by-stanford-laws-nathaniel-persily-explores-the-stakes/">American Political Science Association task force volume</a> (Zhang et al.) describes the recurring pattern: vendor power asymmetry and accountability gaps mean that cities often discover, after the fact, that the contracts they signed bind them to data flows their elected officials never authorized. Sanctuary jurisdictions are an extreme version of a problem every city has.</p>
+
 <h2>Keyhole fixes</h2>
 
 <p>The useful move for a sanctuary jurisdiction is to stop treating this as a values question and start treating it as a procurement question. There are four concrete, modest interventions that would measurably change the picture.</p>
@@ -1397,6 +1427,8 @@ const articles = [
 
 <p>That argument is not wrong. It is, however, not actionable advice. Treasury management is not about picking the central forecast; it is about sizing the risk and staging the response. A responsible budget office models the downside case and prepares for it, then hopes not to need the preparation.</p>
 
+<p>A 2026 chapter on AI and the economy in the <a href="https://law.stanford.edu/press/how-will-ai-reshape-politics-new-volume-co-edited-by-stanford-laws-nathaniel-persily-explores-the-stakes/">American Political Science Association task force volume</a> (Boix, Becher, González-Rostani and Stegmueller) makes both ends of that uncertainty concrete. Current models of occupational vulnerability differ widely in their forecasts, the chapter notes — which is precisely why public opinion on AI's economic effects has not settled. The same chapter also flags the macro-political backdrop that should worry treasurers: AI's training and computing demands have magnified capital concentration and business investment in fixed assets, intensifying the technological sector's interest in regulatory capture, even as several large technology companies have shelved the liberal-leaning agendas they cultivated in the 2010s and built direct ties to the current administration. A city budget that depends on knowledge-work tax revenue is exposed not only to the labor-market shock but to the policy turbulence that comes with it.</p>
+
 <h2>Keyhole fixes</h2>
 
 <p>Three modest, specific moves would measurably improve the city's fiscal resilience to AI-driven revenue compression, and none of them require a political consensus on whether AI is going to cost jobs.</p>
@@ -1433,6 +1465,8 @@ const articles = [
 <p>The mechanism is not mysterious. The VI-SPDAT weights certain signals heavily: emergency-room use, interactions with police, self-reported risky behaviors. Each of those signals carries embedded bias. Black clients are more likely to interact with police at a given level of actual risk; women's health needs are more often coded in outpatient rather than inpatient settings; transgender and nonbinary clients face questions that do not map cleanly onto the survey's design. The net effect is that the instrument generates slightly but consistently lower scores for people whose underlying need is, by most other measures, comparable or higher.</p>
 
 <p>HUD itself has acknowledged the limits of the tool. The department's <a href="https://www.hudexchange.info/resource/4427/coordinated-entry-policy-brief/">Coordinated Entry guidance</a> does not require use of the VI-SPDAT specifically, and in recent years HUD has encouraged Continuums of Care to move toward locally calibrated assessment tools. Several large jurisdictions have done so. The Los Angeles Homeless Services Authority has been <a href="https://www.lahsa.org/">publicly working</a> on a successor assessment; Chicago and New York have likewise experimented with alternative instruments within their own Continuums.</p>
+
+<p>Los Angeles has also begun moving in the opposite direction along the same axis. A 2026 chapter on AI and the public sector in the <a href="https://law.stanford.edu/press/how-will-ai-reshape-politics-new-volume-co-edited-by-stanford-laws-nathaniel-persily-explores-the-stakes/">American Political Science Association task force volume</a> (Zhang et al.) describes Los Angeles County's use of a predictive algorithm that identifies the people most vulnerable to becoming homeless so the county can offer them assistance before they hit the street. Coordinated Entry is the back end of the same pipeline. Both deserve the same standard of audit.</p>
 
 <h2>The honest counter-argument</h2>
 
@@ -1476,6 +1510,8 @@ const articles = [
 <p>The data on generative-AI use at work is noisy, because the behavior is new and the surveys use different definitions. But the direction is consistent across sources. <a href="https://www.pewresearch.org/short-reads/2025/10/06/about-1-in-5-us-workers-now-use-ai-in-their-job-up-since-last-year/">Pew Research Center</a> has tracked a roughly doubling of on-the-job ChatGPT use among American workers between 2023 and 2025. <a href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai-2024">McKinsey's State of AI surveys</a> consistently find that the share of organizations deploying generative AI has outpaced the share that have adopted formal policies or controls. <a href="https://www2.deloitte.com/us/en/insights/industry/public-sector.html">Deloitte's government AI research</a> finds the same gap in the public sector.</p>
 
 <p>The <a href="https://www.nascio.org/resource-center/resources/generating-opportunity-the-risks-and-rewards-of-generative-ai-in-state-government/">National Association of State Chief Information Officers</a> has been warning member agencies about the issue for more than a year. Most state chief information officers NASCIO surveys report that generative-AI use is happening inside their workforce, but that formal approval, training, and logging are lagging far behind. The picture at the municipal level is less well-documented, but the experience of state CIOs is not a poor proxy: smaller jurisdictions, with thinner IT and legal capacity, are, if anything, further behind.</p>
+
+<p>The federal picture gives a sense of the scale this sprawl can reach. A 2026 chapter on AI and the public sector in the <a href="https://law.stanford.edu/press/how-will-ai-reshape-politics-new-volume-co-edited-by-stanford-laws-nathaniel-persily-explores-the-stakes/">American Political Science Association task force volume</a> (Zhang et al.) reports that as of January 23, 2025, the federal government had documented 2,133 active AI use cases across 41 agencies; of the 1,147 cases that disclosed a development model, roughly 40 percent were built in-house, 42 percent under contract, and 18 percent in agency-vendor partnerships. There is no equivalent census for cities yet, but the institutional posture in most city halls — heavier on contracted and consumer-grade tools, lighter on in-house capacity — suggests the visibility problem is, if anything, worse.</p>
 
 <h2>The specific risks</h2>
 
@@ -1543,6 +1579,8 @@ const articles = [
 <p>The strong version of the vendor side of this argument is worth stating. Building and maintaining a computer-aided dispatch system, an acoustic-sensor network, or an evidence-management platform is extraordinarily hard. Cities, in general, cannot build these systems themselves, and should not try. Vendors who make substantial up-front investments in product development reasonably expect long-term customer relationships to recoup that investment. Long contracts, proprietary schemas, and exclusivity clauses are not inherently bad faith; they are the economics of enterprise software applied to the public sector.</p>
 
 <p>That framing is correct. It does not, however, answer the question of how a city preserves meaningful oversight over systems procured under those terms. The alternative to "no enterprise software in city government" is not "all enterprise software, on whatever terms vendors offer." The alternative is more careful contract drafting.</p>
+
+<p>It is also worth naming the structural reason this fight is so uneven. A 2026 chapter on AI and the public sector in the <a href="https://law.stanford.edu/press/how-will-ai-reshape-politics-new-volume-co-edited-by-stanford-laws-nathaniel-persily-explores-the-stakes/">American Political Science Association task force volume</a> (Zhang et al.) calls procurement an understudied governance mechanism through which private actors quietly accumulate power and exert influence over public administration; OECD figures it cites suggest governments spend on average about 30 percent of total expenditures on procurement, with the United States in the mid-twenties, which gives a sense of how much policy is settled at the contract stage. A companion chapter on AI and the economy (Boix, Becher, González-Rostani and Stegmueller) describes the macro corollary: AI's training and computing demands have magnified capital concentration and intensified the technological sector's interest in regulatory capture. The procurement office is where those two pressures meet a mid-sized city. In November 2023, San José and roughly fifty other agencies launched the GovAI Coalition partly to even up that match — a vendor-excluded committee structure and a "piggyback" model that lets smaller members inherit the terms larger governments negotiate.</p>
 
 <h2>Keyhole fixes</h2>
 
