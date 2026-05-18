@@ -273,7 +273,7 @@ const articles = [
 
 <p><a href="https://www.smartcitiesdive.com/news/how-cities-using-ai-2026/810905/">Waymo, the autonomous vehicle subsidiary of Alphabet, is now providing more than 250,000 paid rides per week</a> across its operating cities. The company expanded from three to five cities in 2025 and has announced plans to enter twenty additional metropolitan areas in 2026. These are not test rides with a safety driver ready to grab the wheel. They are commercial taxi services, operating on public roads, carrying paying passengers, with no human driver in the vehicle.</p>
 
-<p>The safety data is striking. <a href="https://waymo.com/research/waymos-autonomous-vehicles-are-significantly-safer/">Analysis of Waymo’s crash data</a> shows that the company’s autonomous vehicles are involved in serious-injury crashes at roughly one-tenth the rate of human-driven vehicles. Given that approximately <a href="https://www.nhtsa.gov/press-releases/traffic-crashes-fatalities-2023-702">40,000 Americans die in traffic crashes every year</a>, the safety implications of widespread autonomous vehicle adoption are difficult to overstate.</p>
+<p>The safety data is striking. <a href="https://waymo.com/safety/impact/">Waymo’s own safety analysis</a>, corroborated by peer-reviewed research covering 56.7 million rider-only miles, finds the company’s autonomous vehicles produce dramatically lower rates of serious-injury and airbag-deployment crashes than human-driven benchmarks — by orders of magnitude on the worst-injury categories. Given that approximately <a href="https://www.nhtsa.gov/press-releases/traffic-crashes-fatalities-2023-702">40,000 Americans die in traffic crashes every year</a>, the safety implications of widespread autonomous vehicle adoption are difficult to overstate.</p>
 
 <p>The environmental case is similarly compelling. Autonomous vehicles, which accelerate and brake more smoothly than human drivers and can be optimized for fuel efficiency, have demonstrated <a href="https://www.articsledge.com/post/ai-transportation">fuel consumption reductions of approximately 40 percent</a> compared to human-driven vehicles in comparable conditions.</p>
 
@@ -402,7 +402,7 @@ const articles = [
 
 <p>A <a href="https://www.technologyreview.com/2024/03/05/1089478/predictive-policing-racist-data/">2024 investigation by MIT Technology Review</a> documented what researchers have long warned about: the training data feeding predictive policing systems is shot through with racial bias. The investigation found that systems trained on drug arrest data, for example, disproportionately flagged Black and Latino neighborhoods — not because drug use is higher in those areas (<a href="https://www.samhsa.gov/data/report/2023-nsduh-annual-national-report">national surveys</a> consistently show roughly equal rates of drug use across racial groups), but because those neighborhoods have historically been subject to more aggressive drug enforcement. The algorithm was not detecting a pattern of crime. It was detecting a pattern of policing.</p>
 
-<p>This is not a subtle statistical nuance. It is the central flaw of the entire enterprise. When you train a machine learning model on the outputs of a biased system, the model learns the bias. It then produces recommendations that reinforce the original disparity. Officers are sent disproportionately to communities of color, where they make more arrests, which generates more data, which further convinces the algorithm that those neighborhoods are crime hot spots. Researchers call this a feedback loop. A more honest term might be a bias amplifier.</p>
+<p>This is not a subtle statistical nuance. It is the central flaw of the entire enterprise. When you train a machine learning model on the outputs of a biased system, the model learns the bias. It then produces recommendations that reinforce the original disparity. Officers are sent disproportionately to communities of color, where they make more arrests, which generates more data, which further convinces the algorithm that those neighborhoods are crime hot spots. Researchers call this a feedback loop. A more honest term might be a bias amplifier. A 2024 <a href="https://counciloncj.org/the-implications-of-ai-for-criminal-justice/">Council on Criminal Justice convening of leading stakeholders</a> framed the underlying risk plainly: AI in criminal justice can become a "false solution" that creates an illusion of progress while reinforcing or exacerbating the systemic problems it was supposed to address.</p>
 
 <h2>The Mathematical Trap</h2>
 
@@ -568,7 +568,7 @@ const articles = [
 
 <p>The practical effect is a widening regulatory vacuum. Neither the Department of Justice nor the Administrative Office of the U.S. Courts has issued comprehensive policies governing the use of AI tools in judicial decision-making. As the <a href="https://www.americanbar.org/groups/criminal_justice/publications/criminal-justice-magazine/2024/winter/artificial-intelligence-and-criminal-justice/">American Bar Association has noted</a>, individual jurisdictions are left to develop their own frameworks — or, as is more common, to adopt tools with no framework at all.</p>
 
-<p>The <a href="https://epic.org/issues/ai/ai-in-the-criminal-justice-system/">Electronic Privacy Information Center (EPIC)</a> has documented the consequences: defendants assessed by algorithmic tools frequently do not know that an algorithm influenced their case, do not have access to the tool's methodology, and have no meaningful ability to challenge the assessment. In a legal system premised on the right to confront the evidence against you, the algorithmic black box represents a fundamental due process concern.</p>
+<p>The <a href="https://epic.org/issues/ai/ai-in-the-criminal-justice-system/">Electronic Privacy Information Center (EPIC)</a> has documented the consequences: defendants assessed by algorithmic tools frequently do not know that an algorithm influenced their case, do not have access to the tool's methodology, and have no meaningful ability to challenge the assessment. In a legal system premised on the right to confront the evidence against you, the algorithmic black box represents a fundamental due process concern. A 2024 <a href="https://counciloncj.org/the-implications-of-ai-for-criminal-justice/">Council on Criminal Justice convening</a> warned that the resource gap compounds the problem: an imbalanced availability of AI tools between prosecution and defense, or between well-funded agencies and those on modest budgets, threatens due process precisely where liberty interests — arrest, bail, sentencing, parole — are on the line.</p>
 
 <h2>The Right Question</h2>
 
@@ -665,7 +665,7 @@ const articles = [
 
 <p>Public registries of AI surveillance tools. Every city should maintain a publicly accessible registry of every AI-powered surveillance technology deployed by any government agency, including a description of the tool's capabilities, the data it collects, and the purposes for which it is authorized. The <a href="https://www.brennancenter.org/our-work/research-reports/surveillance-technology-oversight-project">Brennan Center's surveillance technology oversight recommendations</a> provide a useful model. Residents should not have to file a FOIA request to learn that their city is scanning their faces.</p>
 
-<p>Mandatory bias audits. Every facial recognition or AI identification system should be subject to regular, independent testing for accuracy disparities across racial, gender, and age groups. Audit results should be public, and systems that fail to meet minimum accuracy standards for any demographic group should be suspended until the deficiency is corrected.</p>
+<p>Mandatory bias audits. Every facial recognition or AI identification system should be subject to regular, independent testing for accuracy disparities across racial, gender, and age groups. Audit results should be public, and systems that fail to meet minimum accuracy standards for any demographic group should be suspended until the deficiency is corrected. A 2024 <a href="https://counciloncj.org/the-implications-of-ai-for-criminal-justice/">Council on Criminal Justice convening</a> reached a similar conclusion from a different direction: it called for prioritizing AI tools whose inner workings can be examined and validated, with protocols for democratic oversight built in from the start.</p>
 
 <p>Sunset clauses. No AI surveillance deployment should be permanent by default. Authorizations should expire after a defined period — two years is a reasonable starting point — and should require affirmative renewal through a public process. This forces periodic democratic review and prevents the quiet accumulation of surveillance infrastructure.</p>
 
@@ -959,7 +959,7 @@ const articles = [
 
 <h2>The Benefits Layer</h2>
 
-<p>Even where access exists, the benefits of AI are flowing disproportionately to those who already have the most. A <a href="https://news.cornell.edu/stories/2024/06/ai-could-widen-racial-economic-gap">Cornell University analysis</a> found that generative AI has the potential to widen the racial economic gap by \$43 billion per year. The mechanism is straightforward: AI tools boost productivity most for workers in knowledge-economy jobs — lawyers, consultants, software developers, financial analysts — fields where white workers are disproportionately represented. Workers in service, manual labor, and care jobs — disproportionately Black and Latino — see fewer productivity gains and face higher risks of displacement.</p>
+<p>Even where access exists, the benefits of AI are flowing disproportionately to those who already have the most. A <a href="https://www.mckinsey.com/institute-for-economic-mobility/our-insights/the-impact-of-generative-ai-on-black-communities">McKinsey Institute for Black Economic Mobility analysis</a> found that generative AI has the potential to widen the racial wealth gap between Black and white Americans by approximately \$43 billion per year. The mechanism is straightforward: AI tools boost productivity most for workers in knowledge-economy jobs — lawyers, consultants, software developers, financial analysts — fields where white workers are disproportionately represented. Workers in service, manual labor, and care jobs — disproportionately Black and Latino — see fewer productivity gains and face higher risks of displacement.</p>
 
 <p>This is not a bug in the technology. It is a feature of how technology interacts with an already unequal economy. AI amplifies existing advantages. A lawyer who uses AI to draft contracts in half the time becomes more productive and more valuable. A home health aide whose job requires physical presence, emotional intelligence, and human touch gets nothing from AI except, perhaps, an automated scheduling system that makes her shifts more unpredictable.</p>
 
@@ -1052,7 +1052,7 @@ const articles = [
 
 <p>This is the central lesson of the DOGE experiment, and it applies directly to cities: cutting staff is not the same thing as cutting costs. Firing people is not efficiency. And AI, no matter how powerful, cannot solve problems that are fundamentally political rather than technical.</p>
 
-<p>A 2026 chapter on AI and the public sector in the <a href="https://law.stanford.edu/press/how-will-ai-reshape-politics-new-volume-co-edited-by-stanford-laws-nathaniel-persily-explores-the-stakes/">American Political Science Association task force volume</a> (Zhang et al.) puts the underlying diagnosis bluntly: the deficit of accountability around public-sector AI is primarily institutional, not technical. As of January 2025, the federal government had documented 2,133 active AI use cases across 41 agencies, and of the cases reporting a development model, only 40 percent were built in-house, with 42 percent under contract and the remaining 18 percent partnerships — a sprawl that no slogan about "efficiency" can manage on its own.</p>
+<p>A 2026 chapter on AI and the public sector in the <a href="https://law.stanford.edu/press/how-will-ai-reshape-politics-new-volume-co-edited-by-stanford-laws-nathaniel-persily-explores-the-stakes/">American Political Science Association task force volume</a> (Zhang et al.) puts the underlying diagnosis bluntly: the deficit of accountability around public-sector AI is primarily institutional, not technical. The chapter notes that OECD figures put government procurement at roughly 30 percent of total expenditures on average across member countries, with the U.S. share at about 25.4 percent — a reminder that most of the consequential choices about what government does, including how it deploys AI, are settled at the contract stage, not in headline reform initiatives.</p>
 
 <h2>What Went Wrong</h2>
 
@@ -1320,21 +1320,7 @@ const articles = [
 
 <p>The alternative is to let the technology shape the city. The better path is to let the city shape the technology.</p>
 
-<p>It is time to choose.</p>
-
-<p>Here are the five completed essays for the "AI City" special issue:</p>
-
-<p><strong>Essay 11: "The Homework Problem"</strong> — Covers the crisis of AI cheating in schools, the equity problems with detection tools (61.3% false positive rate for non-native English speakers), and argues for redesigning assessment around demonstrated thinking rather than banning AI.</p>
-
-<p><strong>Essay 12: "Democracy's Deepfake Problem"</strong> — Examines the vulnerability of local elections to AI-generated disinformation, the global pattern of subnational elections as testing grounds, the 26-state legislative response, and argues for local-level defenses including media literacy, rapid-response fact-checking, and local journalism funding.</p>
-
-<p><strong>Essay 13: "The Digital Divide, Doubled"</strong> — Traces three layers of the AI divide (access, benefits, governance), the potential \$43 billion annual widening of the racial economic gap, and argues that AI equity requires action on infrastructure, literacy, and community power over AI systems deployed on them.</p>
-
-<p><strong>Essay 14: "What DOGE Got Wrong"</strong> — Analyzes the federal AI-efficiency experiment that cut 270,000+ workers but failed to reduce spending (per Cato Institute), and draws lessons for cities: start with problems not solutions, invest in people alongside technology, maintain human oversight, and measure outcomes not inputs.</p>
-
-<p><strong>Essay 15: "A Municipal AI Bill of Rights"</strong> — The capstone piece proposing a seven-pillar framework (transparency, accountability, community voice, due process, equity impact, sunset clauses, data minimization) for municipal AI governance, arguing cities are the right level of government to act because they are close enough to residents to be accountable and nimble enough to iterate.</p>
-
-<p>Each essay runs approximately 1,500-2,000 words with hyperlinked sourcing embedded in the text, written in Vital City's accessible, data-grounded, pragmatic editorial style.</p>`
+<p>It is time to choose.</p>`
 },
 {
   slug: `sanctuary-city-data-ice`,
