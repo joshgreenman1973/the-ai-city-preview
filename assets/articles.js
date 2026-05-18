@@ -275,7 +275,7 @@ const articles = [
 
 <p>The safety data is striking. <a href="https://waymo.com/safety/impact/">Waymo’s own safety analysis</a>, corroborated by peer-reviewed research covering 56.7 million rider-only miles, finds the company’s autonomous vehicles produce dramatically lower rates of serious-injury and airbag-deployment crashes than human-driven benchmarks — by orders of magnitude on the worst-injury categories. Given that approximately <a href="https://www.nhtsa.gov/press-releases/traffic-crashes-fatalities-2023-702">40,000 Americans die in traffic crashes every year</a>, the safety implications of widespread autonomous vehicle adoption are difficult to overstate.</p>
 
-<p>The environmental case is harder to quantify but directionally favorable. Autonomous vehicles accelerate and brake more smoothly than human drivers and can be tuned for fuel efficiency; <a href="https://www.energy.gov/eere/vehicles/articles/connected-and-automated-vehicles">Department of Energy modeling</a> suggests that smoother automated driving profiles can reduce energy use meaningfully in mixed urban traffic, though real-world fleet figures vary widely with route, vehicle, and powertrain.</p>
+<p>The environmental case is harder to quantify but directionally favorable. Autonomous vehicles accelerate and brake more smoothly than human drivers and can be tuned for fuel efficiency; the Department of Energy's <a href="https://afdc.energy.gov/conserve/intelligent-transportation">Alternative Fuels Data Center</a> and Argonne National Laboratory analyses suggest that connected and automated driving profiles can reduce energy use meaningfully in mixed urban traffic, though real-world fleet figures vary widely with route, vehicle, and powertrain.</p>
 
 <h2>The Governance Gap</h2>
 
