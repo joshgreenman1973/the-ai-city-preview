@@ -98,6 +98,7 @@ C18. In Los Angeles County's version of the pilot, AI check results could take u
 C19. Los Angeles says it eliminated 70 percent of the clearances required for single-family rebuild permits, and set a 30-day target for departments to review complete rebuild applications.
 - Source: "Rebuilding," City of Los Angeles recovery site (fetched Oct. 19, 2026) — https://recovery.lacity.gov/rebuilding
 - Quote: "The City of LA has streamlined the permitting process and eliminated 70% of clearances required for single family rebuild permits." ; "Expedites the rebuilding of homes damaged or destroyed in the wildfires by requiring City Departments to review complete applications within 30 days and issue permit clearances within 5 days..."
+- Re-fetched Oct. 20, 2026, in response to the outside review (which said the 70% cut is not limited to single-family rebuilds and that the 30-day rule could not be found): both quotes above are still on the page verbatim. The essay cites this city page, not a mayoral release.
 - Same page: "The ArchiStar portal is for preliminary AI plan review only... as ArchiStar does not replace or initiate the official LADBS plan check process."
 
 C20. A year after the Palisades fire, Los Angeles' building department reported an average of 49 days from application to permit for Palisades rebuild permits; a builder described needing 16 clearances for one house; a land-use lawyer said approvals from more than a dozen departments remained the bottleneck.
@@ -133,7 +134,7 @@ C26. DOB has not appeared in the City's Local Law 35 algorithmic tools reports: 
 - Query result: 218 rows (confirmed by `$select=count(*)` → "218"); by year 2025: 86, 2024: 55, 2023: 46, 2022: 31. The 23 agencies listed are Administration for Children's Services, Campaign Finance Board, Commission on Racial Equity, Department of City Planning, Department of Consumer and Worker Protection, Department of Correction, Department of Environmental Protection, Department of Health and Mental Hygiene, Department of Investigation, Department of Social Services, Department of Transportation, Department of Youth and Community Development, Fire Department, Health + Hospitals, Mayor's Office, Mayor's Office of Contract Services, NYC Emergency Management, NYC Public Schools, New York Police Department, Office of Chief Medical Examiner, Office of Technology and Innovation, Office of the Comptroller, School Construction Authority. No row has "Buildings" in the agency or department field.
 
 C27. Vital City's "Just Fix It" column of May 7, 2026 urged the Mamdani administration to use AI in permitting, noted that permitting was absent from the City's AI Action Plan, and said a permit needs sign-off from 10-plus agencies.
-- Source: "8 Policy Tweaks City Hall Can Make to Speed Up the Permitting Process," Melissa O'Shaughnessy, Vital City, May 7, 2026 — https://www.vitalcitynyc.org/nyc-housing-permits-fast-track-construction-mamdani/
+- Source: "8 Policy Tweaks City Hall Can Make to Speed Up the Permitting Process," bylined Vital City (prepared with the help of John Surico; illustration by Melissa O'Shaughnessy), Just Fix It, May 7, 2026 (byline corrected Oct. 20, 2026; see C32) — https://www.vitalcitynyc.org/nyc-housing-permits-fast-track-construction-mamdani/
 - Quote: "The Mamdani administration should: Aggressively explore all the ways in which AI could be used to streamline processes." ; "Permitting was not mentioned in the AI Action Plan, but there are two areas where it could yield real dividends." ; "From pre-filing to occupancy, a building's permit needs sign-off from a total of 10-plus city agencies, including the Department of Buildings (DOB), the Department of City Planning (DCP), the Department of Transportation (DOT), the Fire Department (FDNY) and others." ; "It can take one to two years for as-of-right development to acquire the appropriate permits."
 - Note: these are the column's own claims; the essay attributes them to the column.
 
@@ -156,6 +157,19 @@ C31. (Added by fact-checker, Oct. 19, 2026.) A Jan. 31, 2026 LA County/City/Arch
 - Source: "Rebuilding Together Using AI-Assisted Plan Check," LA County Department of Public Works, Jan. 31, 2026 — https://file.lacounty.gov/SDSInter/dpw/recovery/1201690_RebuildingTogether_ArchistarDRAFTPPT12226.pdf (saved to _rebuild/checks/pdfs/plan-review/lacounty-archistar-ppt.pdf)
 - Quote (vendor slide, a claim not a finding): "Reduces number of technical reviews from 3+ to 1"
 - Note: no numbers of users, reports or permits appear in the 85-page deck.
+
+C32. (Added Oct. 20, 2026.) The May 7, 2026 Just Fix It column is bylined Vital City, not Melissa O'Shaughnessy. It was prepared with the help of John Surico; O'Shaughnessy is credited only in the caption of the lead illustration.
+- Source: https://www.vitalcitynyc.org/nyc-housing-permits-fast-track-construction-mamdani/ (fetched with curl Oct. 20, 2026)
+- Quote (byline markup): `<span class="post-info__authors">  <a href="/author/vital-city/">Vital City</a>  </span>  <time datetime="2026-05-07">May. 07 2026</time>`
+- Quote (lead image caption): `<figcaption><span style="white-space:pre-wrap">Melissa O'Shaughnessy</span></figcaption>` on the image file "OShaughnessy_Construction-Wall.jpg"
+- Quote (end note): "This installment was prepared with the help of John Surico."
+- Page title: "Vital City | Just Fix It: 8 Policy Tweaks the Mamdani Administration Can Make to Speed Up the Permitting Process"
+- Also re-confirmed verbatim on the same fetch: "Aggressively explore all the ways in which AI could be used to streamline processes"; "a building's permit needs sign-off from a total of 10-plus city agencies"; "It can take one to two years for as-of-right development to acquire the appropriate permits."
+
+C33. (Added Oct. 20, 2026.) Honolulu DPP announced Priority Review in a news release issued Tuesday, June 30, 2026, not in July.
+- Source: Government Technology / Honolulu Star-Advertiser (TNS), datePublished "July 02" 2026 — https://www.govtech.com/artificial-intelligence/honolulu-launches-ai-assisted-fast-track-permit-review (fetched Oct. 20, 2026)
+- Quote: "Called Priority Review, the program encourages applicants to use the AI-guided platform, CivCheck, by offering a faster, more efficient permitting process, according to a DPP news release issued Tuesday."
+- Note: July 2, 2026 is a Thursday, so "Tuesday" is June 30, 2026. This matches the outside review's date (it cited Spectrum News). The essay now says "at the end of June."
 
 ## Could not confirm
 - Any count of how many Los Angeles city or county applicants used Archistar's eCheck, or any measured effect on review time. City, county and vendor pages describe the program; none publishes outcomes. Archistar's marketing claims (e.g., cutting approval times "by up to 55%") are vendor claims and are not used.

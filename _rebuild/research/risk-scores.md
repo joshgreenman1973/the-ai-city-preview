@@ -234,6 +234,20 @@ C47. (Added by fact-checker.) The Chicago OIG says risk scores were included in 
 - Source: Chicago OIG advisory (C1 URL), p. 6-7
 - Quote: "The briefings may include a description of the event and, as of January 8, 2019, sometimes included whether or not the victim or offender had an SSL score." ; "In July 2015, CPD signed a data sharing agreement with CCSO."
 
+C48. (Added in fix pass, Oct. 20, 2026.) DCJ: in violent felony cases recommended for ROR, judges followed the recommendation 30% of the time and set bail or remand in 41%. The DCJ report's racial bail figures (44/39/29) belong to the "bail or remand" category: the executive summary describes the 15-point Black-white gap as "imposing bail or remand," and Model 3 predicts "setting bail or remand."
+- Source: DCJ report, https://datacollaborativeforjustice.org/wp-content/uploads/2025/09/Release_Assessment_Report.pdf (local copy checks/pdfs/risk-scores/Release_Assessment_Report.pdf, re-read Oct. 20, 2026)
+- Quotes: "judges set bail or remand in 41% of cases where the Release Assessment had recommended ROR" ; "when the assessment recommended ROR, besides only setting it 30% of the time, judges set bail or remand in 41% of the cases, while setting supervised release in the remaining 29%" ; "Judges set ROR at a rate 17 percentage points less often for Black than white people, while, conversely, imposing bail or remand 15 percentage points more often on Black than white people" ; "this last model predicted judges' likelihood of setting bail or remand"
+- Note: the same report's narrative also says judges were "more likely to set bail for Black people (44%)"; the category behind the number is bail or remand.
+
+C49. (Added in fix pass, Oct. 20, 2026.) Development data: CJA started from a file of 1.6 million summary arrests (2009-2015), cut to an analysis file of 1,000,169 records; the "development sample" against which the 2025 revalidation compares its accuracy is 70,250 prosecuted cases, half of those arraigned in 2014.
+- Sources: CJA Brief 46 (C13 URL); CJA revalidation (C15 URL), re-read Oct. 20, 2026
+- Quotes: Brief 46: "Two independent research teams analyzed a dataset of over 1.6 million arrests in New York City between 2009 and 2015" ; "The final dataset used for the analysis included 1,000,169 records." Revalidation: "The development sample consists of 70,250 prosecuted court cases, representing half of all cases arraigned in 2014. This dataset was used to calculate the final model metrics during the creation of the current CJA release assessment."
+
+C50. (Added in fix pass, Oct. 20, 2026.) The published version of Kleinberg et al. (Quarterly Journal of Economics 133(1), February 2018) reports crime reductions up to 24.7% with no change in jailing, or jailing reductions up to 41.9% with no increase in crime, while reducing racial disparities.
+- Source: https://academic.oup.com/qje/article/133/1/237/4095198 (WebFetch, Oct. 20, 2026)
+- Quotes: "one policy simulation shows crime reductions up to 24.7% with no change in jailing rates" ; "or jailing rate reductions up to 41.9% with no increase in crime rates" ; "can be achieved while simultaneously reducing racial disparities"
+- Note: the QJE abstract does not contain the "noise" quote from the NBER working paper; the essay no longer uses that quote.
+
 ## Could not confirm
 - RAND's own findings on Chicago's SSL pilot (Saunders, Hunt and Hollywood, Journal of Experimental Criminology, 2016; DOI 10.1007/s11292-016-9272-0, confirmed as existing via Crossref). Springer redirected to a login flow, RAND's page returned 403, and abstract services elided the abstract. The often-repeated finding (people on the list were no more or less likely to be shot, but more likely to be arrested for a shooting) is left out of the essay.
 - A 2019 bail-law provision requiring any pretrial risk assessment instrument to be public or nonpresumptive. I believed such language existed but could not find it in current CPL 500.10 or 510.10; left out.

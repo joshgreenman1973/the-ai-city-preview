@@ -148,6 +148,26 @@ C28. (Added by fact-checker.) DYCD's chatbot was upgraded in 2025 to Microsoft A
 - Quote: updated_desc "The DYCD Virtual Assistant Chatbot was upgraded in 2025 to use the Microsoft Azure Language ... the chatbot uses the Custom Question Answering and Conventional Language Understanding components."; data_output "...searches the knowledge base, ranks the possible answers and returns the best match."; autonomy "Fully autonomous".
 - Last checked: Oct. 19, 2026.
 
+C29. (Added Oct. 20, 2026, fix pass.) The MyCity chatbot launched on OpenAI's GPT-3.5 Turbo; the City's 2024 Local Law 35 filing says the model was upgraded to GPT-4o that year. So the bot The Markup tested in March 2024 was not running GPT-4o.
+- Source: Algorithmic Tools Compliance Report, NYC Open Data dataset jaw4-yuem, queried Oct. 20, 2026 — https://data.cityofnewyork.us/resource/jaw4-yuem.json?$limit=1000
+- Quote (2023 row, "MyCity Chatbot"): purpose_desc "...The chatbot is using Microsoft's Azure AI technology and OpenAI's ChatGPT 3.5 Turbo LLM."; vendor_name "Microsoft, Nuvalence". (2024 row): updated_desc "Security updates and LLM upgraded to use ChatGPT 4-o."; vendor_name "Microsoft, EY".
+- Last checked: Oct. 20, 2026.
+
+C30. (Added Oct. 20, 2026, fix pass.) Fraser's own words in March 2025 included "all the content that comes from 311" (re-fetched to answer the outside review, which said "all" was the essay's word).
+- Source: City & State, March 19, 2025, fetched Oct. 20, 2026 — https://www.cityandstateny.com/personality/2025/03/matt-fraser-still-wants-expand-mycity-and-ai-chatbot/403899/
+- Quote: "We're currently expanding scope to go beyond small business, to include all the content that comes from 311."
+- Last checked: Oct. 20, 2026.
+
+C31. (Added Oct. 20, 2026, fix pass.) Westword's Sunny article is dated June 1, 2024; the 12% share is the city's figure "so far" as of that date. Denver's own Sunny page names only Denvergov.org as Sunny's source; Westword names denvergov.org and the 311 knowledge base.
+- Source: Westword, fetched Oct. 20, 2026 — https://www.westword.com/news/denver-ai-chatbot-sunny-knows-basics-cant-help-on-hot-topics-20891202 (page metadata: "datePublished 2024-06-01T08:30:00"); Denver, fetched Oct. 20, 2026 — https://denvergov.org/Sunny
+- Quote (Westword): "it only pulls from denvergov.org and the city's 311 knowledge base rather than the entire internet" ... "So far, Sunny engagements account for 12 percent of all 311 inquiries, according to the city." (Denver): "Sunny uses information from Denvergov.org to answer questions about city services"
+- Last checked: Oct. 20, 2026. (The revised essay no longer uses the source scope or the 12% figure.)
+
+C32. (Added Oct. 20, 2026, fix pass.) Currency check on Sunny: a Google News search for "Denver Sunny chatbot" on Oct. 20, 2026 returned nothing newer than Oct. 14, 2026 (Denverite, The Denver Post, 9News on the vote). No deal or reversal reported. GovTech page re-fetched; quotes in C21 and C27 unchanged.
+- Source: https://news.google.com/rss/search?q=Denver+Sunny+chatbot ; https://www.govtech.com/artificial-intelligence/denver-ai-chatbot-sunny-may-go-dark-after-contract-vote
+- Quote (GovTech): "A spokesman for his administration said Johnston's office will meet with the council in the next few days to find a solution to keep the service active. The contract for Sunny is paid for through the end of October."
+- Last checked: Oct. 20, 2026.
+
 ## Could not confirm
 - Any successor to the MyCity chatbot under Mamdani. I found none in the Local Law 35 data, City & State's July 2026 reporting or the City's chat.nyc.gov page; a final search for later announcements could not be run because the shared web-search budget ran out. The essay says only what City & State reported in July and what the chat page shows.
 - Whether Denver's Sunny survives past October 2026. Coverage through Oct. 15 says the outcome is open.

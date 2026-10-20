@@ -181,6 +181,30 @@ C34. Erin Dalton is commissioner of the NYC Department of Social Services, appoi
 C35. CourtListener's indexed docket for Forest (1:23-cv-00743) shows entries "2026-07-14 Fairness Hearing," "2026-09-14 143 Extension of Time," "2026-09-17 144 Order on Motion for Extension of Time," "dateTerminated": null. The RECAP index is incomplete (only entries someone has purchased or that were pushed), so absence of a final approval order there is not proof none exists.
 - Source: https://www.courtlistener.com/api/rest/v4/search/?type=r&q=docket_id%3A66767812 (queried Oct. 19, 2026). Legal Aid notice page (https://legalaidnyc.org/notice/forest-v-the-city-of-new-york-class-action-settlement/) still says only "preliminary approval," last updated April 21, 2026.
 
+## Claims added in second-round fix (Oct. 20, 2026)
+
+C36. The farm bill the Senate Agriculture Committee passed on Sept. 16, 2026 would delay the SNAP benefit cost share by one year but would not delay the administrative cost share.
+- Source: National Association of Counties (NACo), "Senate Agriculture Committee passes Farm Bill," Sept. 16, 2026 — https://www.naco.org/news/senate-agriculture-committee-passes-farm-bill
+- Quotes: "the bill would delay implementation of the SNAP benefit cost share by one year" / "would not delay changes to the administrative cost share" / "The bill passed out of committee on party lines."
+- Fetched: Oct. 20, 2026.
+
+C37. KFF's wording on automated renewals: the 61% is a share of people whose coverage was renewed, not of all renewal cases.
+- Source: KFF, Medicaid Enrollment and Unwinding Tracker — https://www.kff.org/medicaid/medicaid-enrollment-and-unwinding-tracker/
+- Quote: "Of the people whose coverage has been renewed as of September 12, 2024, 61% were renewed on an ex parte basis" / "Across all states with available data, 69% of all people disenrolled had their coverage terminated for procedural reasons."
+- Fetched: Oct. 20, 2026.
+
+C38. WLOS (Sinclair national desk), Sept. 16, 2026, re-fetched: committee approval "on a 12-11 vote along party lines"; "Committee Chair John Boozman proposed a one-year delay to that requirement, according to the material"; "It still must pass the full Senate, be reconciled with the House version and be signed by the president."
+- Source: https://wlos.com/news/nation-world/mcconnell-returns-to-back-senate-farm-bill-as-panel-advances-it-on-party-line-vote
+- Corroboration: NY1, Sept. 29, 2026 (C14 URL): "Senate Republicans have proposed a one-year delay of the state SNAP benefit cost-share requirement" ... "as the Senate's version of the 2026 Farm Bill moves to the floor." One web search Oct. 20, 2026 found no report of a Senate floor vote.
+- Fetched: Oct. 20, 2026.
+
+C39. CMS press release re-fetched: the $200 million is in "Government Efficiency Grants"; the $600 million is support pledged by vendors, not federal money.
+- Source: https://www.cms.gov/newsroom/press-releases/cms-launches-nationwide-framework-implement-medicaid-work-requirements (June 1, 2026)
+- Quote: "This includes $200 million in Government Efficiency Grants authorized under the WFTC legislation to support state system modernization and administrative capacity, as well as more than $600 million in committed support from private-sector technology vendors to help states update eligibility and enrollment systems, and support for outreach to Medicaid beneficiaries."
+- Fetched: Oct. 20, 2026. Essay now uses only the $600 million, described as vendor-pledged support.
+
+C40. Re-checked from saved copies Oct. 20, 2026: USDA FY2025 table row "NEW YORK 12.06 1.12 13.18" (Dated: June 24, 2026; checks/pdfs/benefits-backlog/snap-qcfy25-per.pdf); Code for America: "Stage 3 (Implementation): Early 26, Developing 14, Established 11, Advanced 0 ● Stage 4 (Impact): Early 29, Developing 15, Established 7, Advanced 0" and "The first operational AI systems tend to address backlog reduction, document processing, fraud detection, eligibility triage, and internal workflow automation." (checks/pdfs/benefits-backlog/cfa.pdf)
+
 ## Could not confirm
 - Final court approval of the Forest settlement. The docket (via CourtListener API, Oct. 19, 2026) shows a July 14 "Fairness Hearing" entry and September extension orders but no approval order; the docket text itself was not readable. Essay says the settlement is still before the judge.
 - Whether Congress has delayed the SNAP state cost share. A one-year Senate proposal was reported Sept. 29, 2026 (NY1); the web-search budget ran out before I could check for passage. Editor should recheck the Farm Bill before publication.

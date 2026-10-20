@@ -40,3 +40,13 @@ Branch `rebuild-2026-10` in `vital-city-tools/the-ai-city-preview`. Nothing is p
 - block-by-block: two sentences rest on the checker's reading of a source (what Bisnow did not report; the two possible readings of the Chicago inspector variable).
 - sanctuary-data: the identifying-information law is quoted from its 2017 text; compare with the current Administrative Code after the 2022 amendment.
 - the-inventory: "one entry gives a measured result" is Vital City's own review of the 86 entries; consider a short methods note.
+
+## Round 2 (Oct. 20): outside review applied
+
+Josh's review doc ("The Algorithmic City: AI-Writing Review and Fact-Check") is saved as `_rebuild/REVIEW.md`. Each essay's response, item by item, with the quote that settled each point, is in `_rebuild/checks/<slug>-fix.md`.
+
+Confirmed and fixed: the Just Fix It byline (Vital City, not O'Shaughnessy), the Biden robocall wording, the Cuomo ad sequence, the fiscal reserve restoration, DCWP's rejection of the "research and other leads" recommendation, the 2023 CAPS manual, the Sept. 1 tower-registry announcement and the September South Bronx cluster, MyCity's original model, the separate $46.1 million CaseBuilder contract, Jiahao Chen's resignation, Waymo's mileage, the Hunter retraction's cause and smaller points.
+
+Where the review was wrong (kept, with sources): "rejected 14" (the inspector general's own words), Stanford's "descriptive patterns" wording, the USC 8.5% figure, the comptroller's Shockwave comparison, the RealPage May 19 judgment, Zone F's grid grouping, Mamdani's "disabling" quote, New Jersey's 20,000 users, the CMS $200 million and the farm-bill delay, Fraser's "all," the APSA editors, and the claim that sanctuary-data was unchecked.
+
+Writing: the shared template is gone (no "case against" sections or First/Second/Third endings; five essays have no subheads), about half the figures were cut, the summing-up closers were dropped, only three imperative headlines remain, and several essays now argue harder (don't renew ShotSpotter in 2027 without a confirmed-shooting standard; don't pass Int. 3 as written; pay for enough cooling-tower inspectors to visit every tower; suspend tools with no measured result). Those stronger positions are the essays' own arguments; each fix report flags them for you.

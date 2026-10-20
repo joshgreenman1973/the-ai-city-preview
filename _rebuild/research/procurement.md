@@ -199,3 +199,20 @@ C33. (Added by fact-checker; context.) The 2025 progress report renamed Action 6
 - schools: Chalkbeat's ed-tech freeze and $25,000 review threshold (C24) — I use it as a procurement case.
 - the-desk: Mamdani's PIT Crews (C29) as the in-house alternative to vendors.
 - preemption: OMB M-26-04 "Unbiased AI Principles" for federal LLM purchases (C19).
+
+## Added Oct. 20, 2026 (second-round fix)
+
+C34. Checkbook NYC lists a separate NYPD contract with SoundThinking, CT105620258806462, "Casebuilder Proprietary Software Support & Services," award method "SOLE SOURCE," current amount $46,097,543, spent to date $24,069,462.52, running Nov. 1, 2024, to Oct. 31, 2027, registered March 19, 2025. Combined with C7, SoundThinking's registered NYPD contracts total about $122.6 million.
+- Source: Checkbook NYC API, registered expense contracts, agency 056, purpose containing "casebuilder," queried Oct. 20, 2026 — https://www.checkbooknyc.com/api (response saved at `_rebuild/checks/pdfs/procurement/cb-casebuilder.xml`)
+- Quote (API record fields): "<prime_contract_id>CT105620258806462</prime_contract_id>" "<prime_vendor>SoundThinking Inc</prime_vendor>" "<prime_contract_purpose>Casebuilder Proprietary Software Support &amp; Services</prime_contract_purpose>" "<prime_contract_current_amount>46097543.00</prime_contract_current_amount>" "<prime_contract_start_date>2024-11-01</prime_contract_start_date>" "<prime_contract_end_date>2027-10-31</prime_contract_end_date>" "<prime_contract_registration_date>2025-03-19</prime_contract_registration_date>" "<prime_contract_award_method>SOLE SOURCE</prime_contract_award_method>"
+- Also checked Oct. 20: agency 056 purpose searches for "shotspotter," "detection," "proprietary," "crimetracer," "coplink" and "Leeds" turned up no other SoundThinking/ShotSpotter prime contracts beyond C7 and C34 (zero-dollar rows are duplicate version records of the same contract IDs).
+
+C35. At the Oct. 5, 2026, hearing, Speaker Julie Menin cited City & State's report that Jiahao Chen had resigned in frustration over positions held up by OMB (the City's Office of Management and Budget); OTI's Sarah Milstein said Chen served as director of AI and ML at OTI for two and a half years and that OTI looked forward to announcing a director for the office "quite soon."
+- Source: Hearing transcript, Council Committee of the Whole, Oct. 5, 2026, pp. 265-267 — https://nyc.legistar.com/View.ashx?M=F&ID=16072121&GUID=B2DB4127-3040-4B2C-9BDC-5DE47D30860D (saved: `_rebuild/checks/pdfs/inventory/hearing-transcript-2026-10-05.txt`)
+- Quote: "I, I am concerned by news that city and state reported on Friday that the AI Zar Jiahao Chen, who is our chief technology officer resigned, I think a week to a week and a half ago, and reports saying that he resigned in frustration that a lot of positions were being not hired or being held up by OMB." ... "Jiahao Chen served as director of AI and ML at OTA– at OTI for two and a half years." ... "we've been actively working to hire for the roles, um, for the director role for OAA and look forward to announcing something quite soon."
+- Fetched/read: Oct. 20, 2026. The City & State story itself was not fetched; the essay attributes the resignation account to Menin citing press reports, and uses Milstein's title for Chen.
+
+C36. Chalkbeat re-fetched Oct. 20, 2026 (same URL as C24): the "disabling" quote is attributed to Mamdani, and Chalkbeat calls Brady "Mamdani's education adviser."
+- Source: https://www.chalkbeat.org/newyork/2026/09/02/what-to-know-about-nyc-public-schools-generative-ai-ban-screen-time-limits/
+- Quote: "Mamdani said Wednesday that the Education Department is "disabling" AI features in 38 existing citywide ed tech contracts." ... "But Mamdani's education adviser Ailish Brady said ..."
+- One web search (Oct. 20) for Brady's title as "senior education adviser to the first deputy mayor" found no confirming source. The essay now says "a mayoral education adviser" without her name.

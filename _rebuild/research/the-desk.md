@@ -191,6 +191,30 @@ C35. (Added by fact-checker.) CSEA's Jan. 9, 2026, legislative update, verbatim 
 C36. (Added by fact-checker.) A Manhattan Institute issue brief (Sean Speer, Sept. 10, 2026) lists Civil Service Law 80(10) as expiring July 1, 2028, and says a generative-AI drafting assistant might fall outside the "directly impacts the public" definition on a narrow reading; no court or agency has interpreted it.
 - Source: https://manhattan.institute/article/new-yorks-loading-act-protecting-public-sector-jobs-from-ai (read via WebFetch summary; verbatim text not captured)
 
+C37. (Added Oct. 20, 2026, second-round fix.) Carnegie Mellon University and OpenAI took part in shaping Pennsylvania's ChatGPT pilot; the savings figure is participants' own report.
+- Source: "ICYMI: Shapiro Administration's Generative AI Pilot for State Workers...," Pennsylvania Office of Administration, March 28, 2025 — https://www.pa.gov/agencies/oa/newsroom/icymi--shapiro-administration-s-generative-ai-pilot-for-state-wo.html (fetched Oct. 20, 2026, via WebFetch)
+- Quote: Carnegie Mellon President Farnam Jahanian said the pilot was "shaped by some of the world's finest scientists and engineers here at Carnegie Mellon University and OpenAI." ... "The employees reported saving an average of 95 minutes" [on days they used generative AI].
+
+C38. (Added Oct. 20, 2026.) Pennsylvania's April 2026 release restates the pilot result without the "on days they used" qualifier.
+- Source: https://www.pa.gov/agencies/oa/newsroom/shapiro-admin-expands-safe-responsible-ai-improve-services.html (fetched Oct. 20, 2026, via WebFetch)
+- Quote: "Over the course of 12 months, 175 employees across 14 agencies reported an average 95 minutes saved per day" ... "expanded the use of generative AI tools to over 3,000 state employees across 35 agencies."
+- Use: the essay keeps the March 2025 wording, which is the more precise statement of what was measured.
+
+C39. (Re-verified Oct. 20, 2026.) New Jersey's own page gives the 20,000 figure.
+- Source: https://innovation.nj.gov/projects/ai-assistant (last updated 3/25/26; fetched Oct. 20, 2026)
+- Quote: "Since the July 2024 launch, about 20,000 State employees have used the AI Assistant," ... "Since the tool was built in-house, the cost has been only about $1 per user per month," "versus about $20 per user per month for off-the-shelf commercial licenses."
+
+C40. (Re-verified Oct. 20, 2026.) Shapiro letter, sixth principle, read again from a rendered image of page 3 of the saved PDF (_rebuild/checks/pdfs/the-desk/pa-shapiro-letter.pdf).
+- Quote: "Sixth, maintaining trust is vital. The Commonwealth will work to ensure that where human discretion is involved related to employee performance and oversight, generative AI will not be used to replace human supervision. The Commonwealth will always prioritize having humans in the loop of supervisory work and generative AI should not be used as a substitute for direct human supervision."
+
+C41. (Re-verified Oct. 20, 2026.) CSEA's Jan. 9, 2026, item (page dated Jan. 12, 2026) still carries the phrase; it describes S.7599 (Chapter 711). In Chapter 711 as signed, Civil Service Law 80(10)(b)(ii) still named only state employees (S07599.txt, section 9); Chapter 86 of 2026 added local employees.
+- Source: https://cseany.org/?p=20216 (fetched Oct. 20, 2026)
+- Quote: "will now extend to employees of any county, city, town, village"
+- Use: cut from the essay in the second round; the essay now relies on the statute text (C5) alone.
+
+C42. (Re-verified Oct. 20, 2026.) DC 37 testimony quotes, from the saved testimony packet (_rebuild/checks/pdfs/the-desk/dc37-testimony.txt).
+- Quote: "For many reasons, AI has no place in the City's workplaces." ... "an exploratory committee to find a technocratic justification for austerity and a reduction in the city's workforce." ... "our members will suffer disciplinary consequences for mistakes that are no fault of their own. Unfortunately, we are already experiencing this with the little automation currently in use."
+
 ## Could not confirm
 - Whether a general-purpose drafting assistant counts as an "artificial intelligence system" under State Technology Law 103-e (and so triggers Civil Service Law 80(10)). No court, agency or law-firm reading found.
 - Whether New York City has posted the automated employment decision tool list required of covered entities under State Technology Law 402-a, or how the City reads the deadline.

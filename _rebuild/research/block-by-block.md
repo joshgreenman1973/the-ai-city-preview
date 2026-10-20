@@ -1,5 +1,5 @@
 # block-by-block dossier
-Checked through: Oct. 19, 2026
+Checked through: Oct. 20, 2026
 
 ## Claims
 
@@ -138,13 +138,48 @@ C28. (Added by fact-checker.) Gothamist independently gives the 2015 toll as 138
 - Source: Gothamist, Aug. 7, 2025 (as C8).
 - Quote: "After a Legionnaires' outbreak that sickened 138 people and killed 16 a decade ago, city law requires building owners to test for Legionella bacteria every three months."
 
+C29. (Added Oct. 20, 2026, fix pass.) On Sept. 1, 2026, Mayor Mamdani and the Health Department announced that the Health Department and the Department of Buildings would strengthen connections between the tower registration portal and DOB's construction permitting system, formalizing an existing partnership that had found unregistered towers, with the measures expected by the end of 2026; a public map of registered towers with inspection histories is due by spring 2027. The release also gives the Upper East Side cluster as 94 cases and 11 deaths as of Aug. 31.
+- Source: "Mayor Mamdani Announces Sweeping New Measures to Strengthen New York City's Response to Legionnaires' Disease," NYC Mayor's Office, Sept. 1, 2026 — https://www.nyc.gov/mayors-office/news/2026/09/mayor-mamdani-announces-sweeping-new-measures-to-strengthen-new-.html
+- Quote: "Going forward, the Health Department will work with the New York City Department of Buildings to strengthen connections between the Health Department's Cooling Tower Registration Portal and DOB's construction permitting system. The agencies will also work together to educate developers about cooling tower requirements before systems begin operating. This change will formalize an existing partnership that has helped identify unregistered cooling tower and will ensure more cooling towers are registered before they are ever turned on." / "The new measures are expected to be implemented by the end of the year." / "a citywide mapping feature that will allow New Yorkers to see registered cooling towers across the five boroughs. Users will be able to review each registered cooling tower's inspection history" / "The mapping tool and campaign are expected to launch by spring 2027." / "Yet the Health Department identified unregistered cooling towers during both the Upper East Side investigation and last year's Central Harlem cluster investigation." / "As of August 31, there have been 94 cases of Legionnaires' disease associated with the cluster. No patients remain hospitalized, and 11 people have died."
+- Fetched Oct. 20, 2026.
+
+C30. (Added Oct. 20, 2026.) A South Bronx cluster in Melrose and Morrisania reached 24 cases and two deaths as of Oct. 13, 2026; whole-genome sequencing to find the source was still under way; 7 of 24 tower systems tested were culture positive and all were cleaned.
+- Source: NYC Health, "Legionnaires' Disease" page (nyc.gov/legionnaires), last updated Oct. 13 at 6 p.m. — https://www.nyc.gov/site/doh/health/health-topics/legionnaires-disease.page
+- Quote: "As of October 13, no one is still in the hospital, 2 people have died, and 24 cases have been identified." / "The Health Department continues to work on whole genome sequencing for the source of exposure to the Legionella bacteria associated with this cluster" / "24 cooling tower systems have been tested for Legionella bacteria." / "7 cooling tower systems tested culture positive, confirming the presence of live Legionella bacteria. All have been cleaned and disinfected."
+- Fetched Oct. 20, 2026.
+
+C31. (Added Oct. 20, 2026.) The department sampled 24 towers on Sept. 10; ordered 10 cleaned, all cleaned by Sept. 15; confirmed live bacteria in seven on Sept. 23; declared the elevated risk over Sept. 30, when it counted 23 cases and two deaths (as of Sept. 29).
+- Source: "NYC Health Department Confirms Source of South Bronx Legionnaires' Disease Cluster Is Eliminated, Elevated Risk of Exposure Has Ended," NYC Health, Sept. 30, 2026 — https://www.nyc.gov/site/doh/about/press/pr2026/south-bronx-legionnaires-cluster-source-eliminated.page
+- Quote: "The Health Department launched a Legionnaires' community cluster investigation in the South Bronx on September 10, sampling 24 cooling towers in the area that same day. Initial screening test results were completed by September 12, prompting the Health Department to order 10 cooling towers to be cleaned and disinfected, and all 10 were cleaned by September 15. On September 23, the Health Department confirmed the presence of live Legionella bacteria in seven cooling towers, each of which had been cleaned the week prior." / "As of September 29, 23 people have tested positive for Legionnaires' disease in association with the South Bronx cluster."
+- Fetched Oct. 20, 2026.
+
+C32. (Added Oct. 20, 2026.) The South Bronx investigation opened Sept. 10, 2026.
+- Source: "NYC Health Department Investigating Community Cluster of Legionnaires' Disease in Parts of Melrose and Morrisania," NYC Health, Sept. 10, 2026 — https://www.nyc.gov/site/doh/about/press/pr2026/nyc-health-department-investigating-legionnaires-cluster-in-the-bronx.page
+- Quote: "As of September 10, five people have been diagnosed with Legionnaires' disease in the affected area" / "in parts of Melrose and Morrisania in the South Bronx, including ZIP codes 10451 and 10456."
+- Fetched Oct. 20, 2026.
+
+C33. (Added Oct. 20, 2026.) Local Law 77 of 2015, effective Aug. 18, 2015, requires cooling towers to be registered before initial operation, with mandatory inspection, testing, cleaning and disinfection.
+- Source: NYC Department of Buildings, "Cooling Tower Information & Registration" — https://www.nyc.gov/site/buildings/industry/cooling-tower-information-registration.page
+- Quote: "In accordance with Local Law 77 of 2015 – effective August 18, 2015 – building owners and property managers of cooling towers are required to do the following" / "New cooling towers, fluid coolers, and evaporative condensers must be registered with the Department of Buildings prior to initial operation." / "Mandatory inspection, testing, cleaning, and disinfection of cooling towers, in accordance with ... (DOHMH) regulations, is required."
+- Fetched Oct. 20, 2026.
+
+C34. (Added Oct. 20, 2026.) Chicago's own evaluation of its food-inspection model says the two-month pilot found establishments with violations seven and a half days earlier on average (the IIT paper's simulation gives 7.438).
+- Source: City of Chicago, "Food Inspection Forecasting" evaluation — https://chicago.github.io/food-inspections-evaluation/
+- Quote: "Over the two month pilot, establishments with violations were found, on average, 7 and a half days earlier." / "69 percent of inspections—178 establishments—with critical violations were found during the first half of work"
+- Fetched Oct. 20, 2026.
+
+C35. (Added Oct. 20, 2026.) Kannan et al. offer two explanations for the inspector-cluster effect.
+- Source: Kannan et al. 2019 (as C16), PDF at checks/pdfs/block-by-block/kannan2019.pdf.
+- Quote: "The differences in cluster hit rates imply either or both of the following: • Sanitarians vary in "strictness," citing food establishments for critical violations at different frequencies. • Food establishments vary in levels of compliance and underlying risk across sanitarian clusters."
+- Read Oct. 20, 2026.
+
 ## Could not confirm
 - Chicago model still in use in 2026 — no source found; essay uses past tense for the 2015 deployment only.
 - FDNY "FireCast" 60 risk factors, 50,000 inspections a year (Bloomberg-era press coverage) — the 2013 mayoral press release would not load (nyc.gov redirects old releases); not used.
 - Any independent evaluation of FDNY ALARM/RBIS — none found; a city press release reportedly said the Mayor's Office of Data Analytics validated it, but I could not open it.
 - A New York City Health Department rodent-inspection targeting model — none found in jaw4-yuem or elsewhere; rodents left out of the essay.
 - History of the Health Department's emergency-department syndromic surveillance system (start date, scope) — web search budget ran out before I could fetch a primary page; essay uses only the July 18, 2026 press release's mention of emergency department data.
-- Final source of the 2026 Upper East Side cluster — sequencing results were due end of August 2026; not confirmed.
+- Final source of the 2026 Upper East Side cluster — sequencing results were due end of August 2026, then "this fall" (Sept. 1 release); none found Oct. 20. South Bronx source also unconfirmed as of Oct. 13 (C30).
 - Exact 2015 outbreak toll from a city primary source; 138/16 is from Varma's Healthbeat essay.
 - Kontokosta-Hong full abstract verbatim (only one clause captured).
 

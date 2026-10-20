@@ -175,6 +175,13 @@ C31. The Gold Book's large-load forecast covers projects interconnecting to the 
 - Quote: "The baseline forecasts also incorporate projected load increases from existing and future large load projects interconnecting to the transmission system." / "Expected load growth from certain large load projects in the NYISO IQ, along with impacts from projects not in the queue" / "Table I-14 also includes impacts for loads not listed in the NYISO Interconnection Queue as of March 15, 2026."
 - Last checked: Oct. 19, 2026.
 
+C32. NYISO defines upstate as Zones A-E and downstate as Zones F-K. In the 2026 Gold Book's large-load forecast (Table I-14, summer peak), Zone F is 0 MW in every year 2026-2041; the 292 MW in Zones F-I in 2040 is all in Zone G (H and I are also 0). Added Oct. 20, 2026, in response to the outside review's claim that NYISO counts Zone F as upstate.
+- Source 1: NYISO, Power Trends 2026 (same URL as C1; local copy at _rebuild/checks/pdfs/data-centers/powertrends.pdf), installed-capacity and energy charts
+- Quote: "Upstate Summer Installed Capacity, 2026 (Zones A-E)" / "Downstate Summer Installed Capacity, 2026 (Zones F-K)" / "Upstate Energy, 2025 (Zones A-E)" / "Downstate Energy, 2025 (Zones F-K)"
+- Source 2: 2026 Gold Book (same URL as C4), Table I-14, "Summer Peak Demand by Zone - MW," p. 58 (PDF page 62), read from the rendered page
+- Quote (2040 row, Zones A through K, then NYCA): "2040 440 411 1,050 435 65 0 292 0 0 0 187 2,880"
+- Last checked: Oct. 20, 2026.
+
 ## Could not confirm
 - Google's August 2025 technical report itself (the primary source for 0.24 Wh). The shared web-search budget ran out before I could locate it by search, and I did not type a remembered URL. The essay attributes the figure to Google via MIT Technology Review. Editor may want to swap in the paper link.
 - Status of the Energize NY / large-load proceeding (Case 26-E-0045) and of DPS's 60-day working group and 90-day report under EO 62: no fetched source; search budget exhausted. Essay says only what EO 62 directs.

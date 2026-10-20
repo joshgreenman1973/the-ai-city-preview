@@ -177,3 +177,22 @@ C33. (Added by issue editor, Oct. 20, 2026.) OTI testified to the Council on Oct
 C34. (Issue editor, Oct. 20, 2026.) Erin Dalton became NYC Commissioner of the Department of Social Services in February 2026.
 - Source: Allegheny County, "DHS Director Erin Dalton Named NYC Social Services Commissioner," Feb. 25, 2026 — https://www.alleghenycounty.us/News-Articles/Allegheny-County-Press-Releases/February-2026-PR/2-25-2026-Allegheny-County-Director-of-Human-Services-Erin-Dalton-Named-New-York-City-Commissioner-of-Department-of-Social-Services
 - Quote: "Director Erin Dalton is moving on to serve as Commissioner of the Department of Social Services for New York City." / "After 18 years of service at the Allegheny County Department of Human Services" (fetched Oct. 20, 2026).
+
+## Claims added in the second-round fix (Oct. 20, 2026)
+
+C35. In the CHI 2022 paper, "4.5% more accurate" is a difference in percentage points: the tool alone would have been accurate 51.0% of the time vs. 46.5% for workers' actual decisions (August 2016 to July 2018).
+- Source: https://par.nsf.gov/servlets/purl/10374251 (fetched Oct. 20, 2026)
+- Quote: "the AFST-only screening policy would have been more accurate than the actual screening decisions made by workers from August 2016 to July 2018 (51.0% vs 46.5%)." / "a more precise interpretation of the results in Figure 5 is that the AFST-only was 4.5% more accurate than workers at predicting the outcomes that the AFST was trained to predict. However, prior work suggests that these outcomes are biased and contested"
+- Note: 4.5 points on a base of 46.5 is about 10% in relative terms. The essay now says "somewhat more accurate" and gives no figure.
+
+C36. The Markup prints Kaufman's list of review steps as one continuous quotation (re-verification for the outside review).
+- Source: The Markup, May 20, 2025 (URL as C8; fetched Oct. 20, 2026)
+- Quote: "Kaufman, the spokesperson for ACS, said that direction can include "interviews with family members and collateral contacts; and, in some cases, service referrals, consults with Family Court Legal Services, and clinical experts.""
+
+C37. The Office of Algorithmic Accountability's duties as City & State describes them (supports "analyze agencies' tools, weigh their risks and set up a process for complaints and corrective action").
+- Source: City & State, July 20, 2026 (URL as C26)
+- Quote: "tasked with analyzing algorithmic tools used by city agencies, evaluating their risks and setting up a process for public complaints and corrective action."
+
+C33 re-verified Oct. 20, 2026: OTI testimony PDF fetched; page 1 reads "the Office of Algorithmic Accountability (OAA) has been formally established and six new positions have been created in the FY27 Adopted Budget to staff it up. The hiring process for those roles is actively underway." The testimony names no director; the essay's "No director had been named as of Oct. 19" was not independently verified here and has been cut.
+
+C5 paraphrase note: the essay's "changes in policy and practice had made the old data a poor match for current cases" paraphrases "retrained on new cases to tackle data drift resulting in part from policy changes and practices."

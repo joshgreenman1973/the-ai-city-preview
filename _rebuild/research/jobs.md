@@ -130,6 +130,13 @@ C25. (Added by fact-checker, Oct. 19, 2026.) QWI, same query as C11, all private
 C26. (Added by fact-checker.) A9581B has not been delivered to the governor; Bloomberg Government (June 4, 2026) said it "awaits final approval" from Hochul, and a July 7, 2026 National Law Review piece said the Legislature may not deliver such measures until late in the year.
 - Source: https://www.nysenate.gov/legislation/bills/2025/A9581 — action history ends "Jun 04, 2026 | returned to assembly; passed senate"; status "Passed Senate & Assembly"; no "delivered to governor" entry (fetched Oct. 19, 2026). Search-result summaries only for Bloomberg Government and NLR (not fetched).
 
+C27. (Added Oct. 20, 2026, second-round fix.) Re-fetch of the Stanford Digital Economy Lab page to settle the outside review's claim that the authors' wording is "descriptive indicators... rather than causal estimates." The page's wording is as quoted in C9.
+- Source: https://digitaleconomy.stanford.edu/news/canariesaug26/ (page dated Aug. 12, 2026; fetched Oct. 20, 2026)
+- Quote: "These are descriptive patterns, not causal estimates of the effect of AI."
+- Quote: "U.S. government administrative data show broadly consistent raw descriptive patterns by age and industry"
+- Quote: "by this same measure, the shortfall was 15% at the July 2025 data vintage and is 19% as of June 2026."
+- Note: no sentence on the page contains "descriptive indicators." The review's phrasing may come from another summary or the paper itself; the essay now paraphrases the caveat rather than quoting it.
+
 ## Could not confirm
 - Any WARN filer after Nespresso checking the automation box, or any state Labor Department count after late May 2026. Web search budget ran out; no newer source found before that.
 - Whether the WARN automation question is mandatory. Sources disagree; Hunton says the statute wasn't amended. Essay says only that the statute wasn't changed.

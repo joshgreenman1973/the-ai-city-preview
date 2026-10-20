@@ -174,3 +174,29 @@ C30. (Added by fact-checker.) Searches on Oct. 19, 2026 found no lawsuit filed b
 - ShotSpotter alerts also trigger drone launches under the Drone as First Responder program (DOI testimony, C18) — fits `streets` only loosely; probably nowhere.
 - Local Law 56's external-entity sharing disclosures and tracking system bear on `sanctuary-data` (federal access to NYPD surveillance data). Left out of this essay per assignment.
 - Patternizr (NYPD pattern-matching model, in use since 2016/12 per LL35 data) belongs to `risk-scores`.
+
+## Added Oct. 20, 2026 (second-round fixes)
+
+C31. The audit's 2022 and 2023 results under the contract standard differ: in 2022 ShotSpotter met its 90% target in all zones except Manhattan; between January and June 2023 it was above 90% in all five boroughs.
+- Source: Comptroller audit FP23-074A, June 20, 2024 — https://comptroller.nyc.gov/reports/audit-report-on-the-new-york-city-police-departments-oversight-of-its-agreement-with-shotspotter-inc-for-the-gunshot-detection-and-location-system/
+- Quote: "Applying this standard, ShotSpotter met its performance targets in Calendar Year 2022 in all zones except those located in Manhattan, where ShotSpotter failed to reach the 90% performance target in 8 of 12 months" / "Monthly reports show that between January and June 2023, the contractual performance rate has risen above 90% in all five boroughs."
+- Fetched: saved copy (checks/pdfs/face-and-plate/shotspotter-audit.html, Oct. 19) re-read Oct. 20, 2026; live page re-fetched Oct. 20, 2026 and the 2023 sentence confirmed.
+
+C32. The auditors recommended that the NYPD not renew ShotSpotter without a more thorough performance evaluation; the NYPD disagreed, saying non-renewal "may endanger the public" and that an evaluation before renewal was "not feasible."
+- Source: same audit (C31 URL), Recommendations section.
+- Quote: "Decline to renew the ShotSpotter contract when it expires in December 2024 without first conducting a more thorough performance evaluation, considering the very low rates of confirmed shooting incidents detected, and factoring in the extensive NYPD officer time spent responding to alerts not ultimately confirmed as shootings. NYPD Response: NYPD disagreed with this recommendation, stating that "…non-renewal of ShotSpotter services may endanger the public and not renewing the ShotSpotter contract until the Department conducts further analysis would be a premature measure. ... however, it is not feasible to conduct an evaluation prior to the contract renewal period…."" / "Auditor's Response: The auditors reiterate the need for NYPD to reassess the performance of ShotSpotter, and its ability to detect shootings, before the contract is renewed".
+- Fetched: saved copy re-read Oct. 20, 2026; live page re-fetched Oct. 20, 2026 (recommendation and NYPD disagreement confirmed).
+
+C33. In June 2023, 33 of the 122 confirmed shootings alerted by ShotSpotter had no 911 call. On the accuracy-standard recommendation, the NYPD neither agreed nor disagreed and said it had not received a recommended standard.
+- Source: same audit (C31 URL).
+- Quote: "For the 122 confirmed shootings alerted by ShotSpotter, there were 89 separate calls to 911 for the same incident. There were 33 confirmed incidents where there were no 911 calls (27%)." / "NYPD Response: NYPD did not disagree or agree with this recommendation. ... the Department is open to any auditor recommendations for improved standards calculations but have not received a recommended standard."
+- Fetched: saved copy re-read Oct. 20, 2026; live page re-fetched Oct. 20, 2026 (both sentences confirmed).
+
+C34. Checkbook NYC shows the ShotSpotter renewal (contract CT105620258805158, SoundThinking Inc) at $21,853,900, running Dec. 13, 2024, to Dec. 12, 2027, registered Feb. 13, 2025, eight days after the comptroller's Feb. 5 refusal (C29).
+- Source: procurement dossier C6 (research/procurement.md) and its check report (checks/procurement.md), Checkbook NYC API queried Oct. 19, 2026 — https://www.checkbooknyc.com/
+- Quote (procurement dossier C6): "at $21,853,900, running Dec. 13, 2024, to Dec. 12, 2027, registered Feb. 13, 2025". Not re-queried by this writer; the procurement checker re-pulled it by contract ID Oct. 19, 2026. This supersedes the "could not confirm registration" note in C29.
+
+C35. The inspector general's own wording on the 2022 recommendations is that the NYPD "subsequently rejected" 14 of 15. DOI later testified that one of them (a policy for each distinct technology) was accepted after being reissued in 2023, and another was accepted in principle.
+- Source: OIG-NYPD report, May 30, 2024 — https://www.nyc.gov/assets/doi/reports/pdf/2024/25PostActRelease_Rpt_05_30_2024.pdf ; DOI testimony, Feb. 19, 2025 — https://www.nyc.gov/assets/doi/Testimony/TestimonyPOST_Act_2.19.25_FINAL.pdf
+- Quote (2024): "As a result of the investigation, OIG -NYPD made 15 policy and procedure recommendations to NYPD, 14 of which NYPD subsequently rejected." Quote (2025): "One recommendation, that NYPD issue a unique IUP for each distinct surveillance technology, was initially rejected, but was accepted after DOI reissued the recommendation in our 2023 report. Another recommendation, that NYPD provide DOI with an itemized list of all surveillance technologies the Department is using, was initially rejected, but has now been accepted in principle."
+- Fetched: saved copies (checks/pdfs/face-and-plate/) re-read Oct. 20, 2026. The phrase "accepted only one" (attributed by the outside review to the Brennan Center) does not appear in either inspector general document.

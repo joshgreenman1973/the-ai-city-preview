@@ -139,6 +139,23 @@ C28. (Added by fact-checker) The City's Oct. 13, 2026 release describes Proposal
 - Source: https://www.nyc.gov/mayors-office/news/2026/10/with-three-weeks-until-election-day--commission-on-government-ef.html
 - Quote: "Establishes a savings target of 12% of total tax revenue to help strengthen the City's financial position over the long term."
 
+C29. (Added Oct. 20, 2026, second-round fix) The $350 million June addition to the general reserve was a partial restoration: in the February Preliminary Budget the administration cut the fiscal 2027 general reserve from $1.2 billion to the $100 million statutory minimum and eliminated the $250 million Capital Stabilization Reserve; after the restoration, in-year reserves are $1.0 billion below the usual $1.45 billion.
+- Source: Comments on New York City's Fiscal Year 2027 Adopted Budget, Office of the New York City Comptroller, Aug. 12, 2026 — https://comptroller.nyc.gov/reports/comments-on-new-york-citys-fiscal-year-2027-adopted-budget/ (fetched Oct. 20, 2026 via WebFetch; full text also in checks/pdfs/fiscal/fy27-adopted.txt)
+- Quote: "In the Preliminary Budget released in February, the administration lowered the FY 2027 General Reserve from $1.2 billion to its statutory minimum of $100 million. The FY 2027 Capital Stabilization Reserve (another in-year reserve) budgeted for $250 million was eliminated. After the $350 million partial restoration of the General Reserve, FY 2027 in-year reserves stand $1.0 billion below the $1.45 billion amount typically available at the start of the fiscal year."
+- Also: "The administration restored $350 million in the General Reserve in the Adopted Budget."
+- Supersedes the framing in C16 (the essay no longer presents the $350 million as new saving).
+
+C30. (Added Oct. 20, 2026) The Comptroller bases the 16 percent target on the City's revenue losses in past downturns ("a typical recession"); the report separately says the $13.5 billion amount is comparable to the Shockwave hit.
+- Source: AI and New York City's Fiscal Future, May 21, 2026 (C4 link), pp. 8 and 30; text in checks/pdfs/fiscal/AI-and-NYCs-Fiscal-Future.txt (checked Oct. 20, 2026).
+- Quote (p. 8): "The goal should be to build the fund to 16 percent of annual tax revenue, enough to offset the revenue losses of a typical recession."
+- Quote (p. 30): "The 16 percent target is not arbitrary. It is based on New York City's historical experience in economic downturns, when cumulative revenue losses fell 16 percent below trend before fully recovering. Based on projected FY 2026 tax revenues of $84.4 billion, that means a full target of $13.5 billion. This amount is comparable to the impact of the AI Shockwave scenario on the City's tax revenues estimated in this report."
+- Note: the Aug. 12 comments restate the target on the office's own revenue forecast as $13.78 billion ("In FY 2026 total tax revenues are projected by this Office at approximately $86.12 billion, translating to an RSF target of $13.78 billion at the full 16 percent level"). Essay keeps "about $13.5 billion" from the May report.
+
+C31. (Added Oct. 20, 2026) The Comptroller calls the charter commission's rainy-day proposal progress but lists weaknesses: commingled reserves in the target, discretion in the deposit formula and withdrawal rules no stricter than state law.
+- Source: same as C29 (Aug. 12, 2026 comments).
+- Quote: "The proposal marks meaningful progress but contains several weaknesses, including: 1) the commingling of other to-be-determined reserves in the 12 percent target; 2) excessive discretion in the deposit formula due to the consideration of the level of operating surplus (the prepayment) and "any other factors deemed relevant for the purpose of ensuring sound fiscal management" and; 3) the lack of more stringent withdrawal rules than those currently in State law"
+- Also: "Enshrines in the City Charter the loose withdrawal limitations that are already in State law."
+
 ## Could not confirm
 - Any response from Mayor Mamdani's office or OMB to the Comptroller's AI report. Searched news coverage (amNY, City & State, NY1, all May 21, 2026) and found none; the closest administration actions are the June budget's reserve additions (C16) and the charter commission's rainy-day proposal (C14, C15). Not stated in essay as a negative.
 - Whether OMB runs or publishes any alternative (recession or AI) scenario with its financial plan. I found no such document; the essay relies instead on the Comptroller's statement that AI risks are "not incorporated into the Financial Plan" (C12).

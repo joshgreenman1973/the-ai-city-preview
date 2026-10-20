@@ -155,6 +155,17 @@ C29. (Added by fact-checker.) In the open bus-camera dataset, events on the M79+
 - Query run Oct. 19, 2026: https://data.ny.gov/resource/kh8p-hcbm.json?$select=bus_route_id,violation_status,count(*)&$where=bus_route_id in ('M79+','BX35') and first_occurrence >= '2024-09-01' and first_occurrence < '2024-12-01'&$group=bus_route_id,violation_status
 - Dataset metadata: "Posting Frequency": "Monthly"; rows last updated Sept. 25, 2026; latest first_occurrence Sept. 19, 2026.
 
+C30. (Added Oct. 20, 2026, fix pass.) Waymo's safety hub reports 271.3 million rider-only miles through June 2026, with 82% fewer injury-causing crashes and 95% fewer serious-injury-or-worse crashes than human benchmarks. This supersedes C23's 56.7 million miles (through January 2025) for current figures.
+- Source: Waymo, "Safety Impact" — https://waymo.com/safety/impact/
+- Quote: "Through June 2026, Waymo has driven 271.3M rider-only miles without a human driver" / "82% Fewer injury-causing crashes (841 fewer)" / "95% Fewer serious injury or worse crashes (55 fewer)"
+- Fetched: Oct. 20, 2026. Company self-report.
+
+C31. (Added Oct. 20, 2026, fix pass.) The Hunter College/Open Plans authors' own account of the retraction: after the July 20, 2026 release they learned of a discrepancy between the injury definition in the City (TLC) data and Waymo's; they pulled the safety section and reworked it with TLC and DOT. Their account does not say who raised the discrepancy.
+- Source: revised report, Appendix A4, "On Our Safety Analysis Revisions" (saved at _rebuild/checks/pdfs/streets-hunter/streets-hunter-av-revised.pdf) — https://www.openplans.org/s/How-Would-For-Hire-AVs-Impact-NYC_SSTRP_Open-Plans_Revised.pdf
+- Quote: "After the release of this report on July 20, 2026, we were made aware of a potential discrepancy in the definition of injuries in the City data used in our analysis and the definition used by Waymo." / "discovered that TLC was not using KABCO standards and instead follows Local Law 31 of 2014" / "we temporarily removed our safety section from our report and worked with TLC and DOT to isolate serious injuries"
+- Note: Gothamist (C22) says the retraction came "after Waymo pointed out significant flaws." The two accounts conflict on who raised it; the essay now follows the authors' account and does not name Waymo.
+- Read: Oct. 20, 2026 (local PDF).
+
 ## Could not confirm
 - Erroneous bus-camera tickets in 2025: every report found concerns November 2024 (C1). Web search budget ran out before a final search for 2026 incidents; none turned up in earlier searches.
 - Old essay's "25 to 30 percent" congestion reduction from AI signal systems and "tenfold" crash reduction from autonomous vehicles: not verified; not used.

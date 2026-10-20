@@ -32,7 +32,7 @@ Edited: Oct. 19, 2026
 - Lowercased "city" for Honolulu's government, since capital-C "City" is reserved for New York City's.
 - "Planning, Water and Power and Engineering" → "Planning, Engineering and Water and Power," so it reads clearly without a serial comma.
 - "nine and a half days" → "about 9.5 days" (AP figures for decimals).
-- Named the Just Fix It columnist (Melissa O'Shaughnessy, C27) and identified Crosstown as a University of Southern California news site (dossier C20).
+- Named the Just Fix It columnist (Melissa O'Shaughnessy, C27) [Wrong, corrected Oct. 20, 2026: the column is bylined Vital City; she did the illustration. See checks/plan-review-fix.md.] and identified Crosstown as a University of Southern California news site (dossier C20).
 - Claim map updated: C30 added to paragraph 6 and C31 to paragraph 10. Paragraph count is unchanged at 18.
 
 ## For Josh

@@ -1,5 +1,5 @@
 # preemption dossier
-Checked through: Oct. 19, 2026
+Checked through: Oct. 20, 2026
 
 ## Claims
 
@@ -156,6 +156,22 @@ C30. Other federal preemption texts exist beyond those in the chart: Sen. Marsha
 - Source: MLex, June 17, 2026 — https://www.mlex.com/mlex/articles/2490925/trump-ai-plan-will-leave-limited-room-for-state-regulation-us-sen-blackburn-says (search summary only; paywalled) ; Punchbowl News — https://punchbowl.news/article/tech/obernolte-preemption-shift/ (preview only)
 - Quote (Blackburn via MLex summary): "There is no blanket preemption in this — it only covers what is in the bill."
 - Reason the essay now says "the main" federal proposals rather than "every."
+
+C31. The GUARD Act's full name is the Guaranteeing Unbiased AI Regulation and Disclosure Act.
+- Source: Celia Bernhardt, "New York City will try (again) to regulate AI," City & State, Nov. 25, 2025 — https://www.cityandstateny.com/politics/2025/11/new-york-city-will-try-again-regulate-ai/409803/
+- Quote: "the Guaranteeing Unbiased AI Regulation and Disclosure, or GUARD, Act"
+- Fetched: Oct. 20, 2026.
+
+C32. At the Oct. 5, 2026 hearing, Speaker Menin cited press reports that Jiahao Chen had resigned in frustration over positions not being hired or held up by OMB, and tied it to the Office of Algorithmic Accountability not being up and running; OTI's Sarah Milstein said Chen "served as director of AI and ML at OTI for two and a half years" and "we wish him the best."
+- Source: Committee of the Whole hearing transcript, Oct. 5, 2026, pp. 265-267 (saved: _rebuild/checks/pdfs/inventory/hearing-transcript-2026-10-05.pdf; text in hearing-flat.txt). The City & State story Menin cites was not found by search on Oct. 20.
+- Quote (Menin): "I am concerned by news that city and state reported on Friday that the AI Zar Jiahao Chen, who is our chief technology officer resigned, I think a week to a week and a half ago, and reports saying that he resigned in frustration that a lot of positions were being not hired or being held up by OMB. ... it appears that Mr. Chen's resignation, from what we're reading in the press, was related to that and the fact that that office was supposed to be up and running by the city in June. But it is not up and running."
+- Quote (Milstein): "Jiahao Chen served as director of AI and ML at OTA– at OTI for two and a half years. He did important work in the previous administration to help define and understand AI use throughout the city. ... And we wish him the best."
+- Note: the essay uses Milstein's title for Chen (director of AI and machine learning), not Menin's ("AI czar," "chief technology officer"), and attributes the frustration and OMB reason to press reports as cited by Menin.
+- Read: Oct. 20, 2026.
+
+C33. No appointment of a director of the Office of Algorithmic Accountability found.
+- Source: web search, Oct. 20, 2026, query "Office of Algorithmic Accountability" director named New York City; no result names a director.
+- Status: negative finding only; recheck on publication day.
 
 ## Could not confirm
 - (Partly resolved, see C29.) Whether the Commerce Department ever published its evaluation of "onerous" state AI laws, or whether NTIA issued the BEAD policy notice. Spring 2026 law-firm posts (Proskauer, via search summaries) said neither had been made public; NTIA's administrator reportedly said it needed more time. Nothing later found. Left out of the essay.

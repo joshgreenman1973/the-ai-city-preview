@@ -1,7 +1,7 @@
 ---
 slug: shelter-score
-title: New York Should Report Who Its Housing Score Leaves Behind
-dek: The City grades every approved applicant for supportive housing. It has never reported a reason why thousands get no referral, though Local Law 3 already requires one.
+title: Thousands Get No Housing Referral, and the Reports Never Say Why
+dek: The City publishes how it ranks people for supportive housing but not what the ranking does to the ones it puts last.
 section: The Peril
 category: Homelessness
 skyline_stat: "3,839 approved supportive housing applicants had no referral recorded in fiscal 2026, and no reason given for any of them"
@@ -9,59 +9,41 @@ skyline_value: 3839
 skyline_claim: C19
 ---
 
-Every approved application for supportive housing in New York City comes back with a grade. The Human Resources Administration (HRA) assigns it through what the City calls the [Standardized Vulnerability Assessment](https://www.nyc.gov/assets/nycccoc/downloads/pdf/CAPS_Policies%20_Procedures%20_8.19_final.pdf) (SVA), which sorts applicants into high, medium and low vulnerability. The grade turns mainly on whether a person crossed a threshold for Medicaid service use in the past year, or had contacts with several public systems plus functional impairments in the past two years. It "is determined by real-time data feeds of system contacts" along with what's on the application, according to the City's [answers to frequently asked questions](https://www.nyc.gov/assets/nycccoc/downloads/pdf/NYC-COC-600-CAPS-CE-FAQ.pdf) about coordinated entry. Under the [coordinated entry manual, last posted in 2019](https://www.nyc.gov/assets/nycccoc/downloads/pdf/CAPS_Policies%20_Procedures%20_8.19_final.pdf), chronically homeless applicants graded high go first, then medium, then low. Within each group, more days homeless in the past three years moves a person up. City [placement guidance](https://www.nyc.gov/assets/hpd/downloads/pdfs/services/supportive-housing-lacement-guidance.pdf) tells providers that applicants "with SVAs of 'High' are prioritized."
+Since 2022, a City law has asked the Human Resources Administration (HRA) a plain question about supportive housing: when an approved applicant gets no referral to an apartment, why not? [Local Law 3](https://nyc.legistar.com/View.ashx?M=F&ID=10678340&GUID=D43C19AC-6A67-4DF7-A4EB-D799E502CE0A) requires HRA to report "the reason the agency or program … did not make a referral." In each of its five annual reports, HRA has given one answer for everyone: "Data not in CAPS." CAPS is the Coordinated Assessment and Placement System, the City's referral database, and the entry means the system holds no reason at all.
 
-The apartments are scarce. In fiscal 2026, which ended June 30, HRA's [report on its Coordinated Assessment and Placement System](https://www.nyc.gov/assets/hra/downloads/pdf/news/HRA-Local-Law-3-CFY2025-08272026.pdf) (CAPS) counted 10,938 individuals or families approved for supportive housing. By June 30, 3,220 of them had been accepted into a unit or moved in. Another 3,839 had no referral recorded in the system. [Local Law 3 of 2022](https://nyc.legistar.com/View.ashx?M=F&ID=10678340&GUID=D43C19AC-6A67-4DF7-A4EB-D799E502CE0A) requires HRA to report "the reason the agency or program … did not make a referral." For all 3,839, the report's only entry under "Reason for No Referral" is "Data not in CAPS," meaning the system holds no reason. Every report since fiscal 2022 has the same single entry.
+In fiscal 2026, which ended June 30, that entry covered 3,839 of the 10,938 individuals and families approved for supportive housing, according to [HRA's latest report](https://www.nyc.gov/assets/hra/downloads/pdf/news/HRA-Local-Law-3-CFY2025-08272026.pdf). Fewer than a third of those approved had been accepted into a unit or moved in by year's end.
 
-Any ranking of who gets scarce housing is a judgment about whom to help first. New York has published its priority order. It has not published what the order does: who ends up at the back of the line, and why. HRA can change that without new legislation, by meeting the reporting requirement it already has and breaking its counts out by vulnerability grade.
+Who waits is decided in part by a grade. HRA scores every approved applicant with what it calls the Standardized Vulnerability Assessment (SVA), which sorts people into high, medium and low vulnerability. The current [coordinated entry manual](https://www.nyc.gov/assets/nycccoc/downloads/pdf/CAPS%20Policy%20and%20Procedure_October%202023_FINAL.pdf), approved in October 2023, and a [fact sheet](https://www.nyc.gov/assets/nycccoc/downloads/pdf/SVA_CriteriaFactSheet.pdf) posted with it spell out the basic cutoffs. An applicant is graded high for landing in the top 5% of Medicaid service use in the past year, or for at least three contacts with public systems (a shelter stay, a jail term, a hospital admission, a foster care placement) plus three functional impairments in the past two years. Those contacts come from "real-time data feeds," the City's [coordinated entry guide](https://www.nyc.gov/assets/nycccoc/downloads/pdf/NYC-COC-600-CAPS-CE-FAQ.pdf) says. Chronically homeless applicants graded high go first, then medium, then low. Within each group, more days homeless moves a person up.
 
-## Federal rules require a ranking
+Federal rules require a ranking like this. Every Continuum of Care, the local body that distributes federal homelessness money, must [run a coordinated assessment system](https://www.ecfr.gov/api/versioner/v1/full/2026-10-01/title-24.xml?part=578&section=578.7), and the Department of Housing and Urban Development (HUD) [tells them](https://www.hud.gov/sites/documents/17-01cpdn.pdf) to serve the people with the most severe needs first and to make their priority policies public. New York has done the publishing. It has never shown what its order does: who ends up at the back of the line, whether the grade tracks race and why thousands get no referral. The one piece the law already demands, a reason for each missing referral, HRA has never supplied.
 
-A [federal regulation](https://www.ecfr.gov/api/versioner/v1/full/2026-10-01/title-24.xml?part=578&section=578.7) obliges every Continuum of Care, the local bodies that distribute federal homelessness money, to run a coordinated assessment system. A 2017 Department of Housing and Urban Development (HUD) [notice](https://www.hud.gov/sites/documents/17-01cpdn.pdf) defines prioritization as the process by which everyone seeking help is "ranked in order of priority," with people who have the most severe needs served first "to the maximum extent feasible." The notice says prioritization policies "must be made publicly available." HUD's [2026 grant instructions](https://www.hud.gov/sites/dfiles/CPD/documents/CoC/2026-CoC-RENEWAL-Detailed-Instructions.pdf) still point applicants to it.
+## Scores that looked neutral
 
-HUD's 2026 funding competition, according to the [Congressional Research Service](https://www.everycrsreport.com/reports/IN12709.html), tells local systems to favor projects that promote self-sufficiency, employment income and treatment, and steers roughly 30% of funding toward transitional housing and services and away from permanent housing. A federal judge vacated the competition notice on Aug. 7. An appeals court stayed that ruling on Sept. 16, pending appeal, and HUD [reopened applications](https://www.hud.gov/hud-partners/coc-program-competition). As of Oct. 19, no awards had been announced, and there had been no ruling on a motion by the National Alliance to End Homelessness [to stop HUD from making them](https://endhomelessness.org/blog/update-on-the-2026-coc-nofo/).
+Elsewhere, cities that checked their scores found trouble. Many communities ranked homeless people with a survey called the Vulnerability Index-Service Prioritization Decision Assistance Tool, or VI-SPDAT, which Vanderbilt researchers Marybeth Shinn and Molly Richard [called](https://pmc.ncbi.nlm.nih.gov/articles/PMC8887175/) the most widely used tool until recently. A [2019 analysis](https://www.niwrc.org/sites/default/files/files/reports/CES_Racial_Equity_Analysis_2019-.pdf) by the consulting firm C4 Innovations, drawing on VI-SPDAT results from three communities in Oregon, Washington and Virginia, found that clients of color scored lower than white clients. The gap was small, but most of the survey's subscales were tilted toward vulnerabilities white respondents were more likely to report. In 2021 the firm that co-developed the survey [stopped investing in it](https://www.orgcode.com/blog/a-message-from-orgcode-on-the-vi-spdat-moving-forward) and conceded it "was never designed using a racial or gender equity lens."
 
-## Other places tried better formulas
+Los Angeles went further. Researchers led at the University of Southern California, working with the Los Angeles Homeless Services Authority (LAHSA), [tested the VI-SPDAT](https://cais.usc.edu/wp-content/uploads/2023/11/CESTTRR-Final-Report-2023.pdf) against what happened to people afterward: jail, hospitalization, psychiatric holds, death. It predicted those harms barely better than a coin flip. The team built a shorter replacement that was somewhat more accurate and cut racial gaps in how often the tool underrated people who later came to harm from as high as 8.5% to under 1%.
 
-Many communities ranked people with a survey called the Vulnerability Index-Service Prioritization Decision Assistance Tool, or VI-SPDAT. Marybeth Shinn and Molly Richard, researchers at Vanderbilt University, [wrote in 2022](https://pmc.ncbi.nlm.nih.gov/articles/PMC8887175/) that until recently it was "the most widely used tool." A [2019 analysis](https://www.niwrc.org/sites/default/files/files/reports/CES_Racial_Equity_Analysis_2019-.pdf) by the consulting firm C4 Innovations, using data from four systems in Oregon, Washington and Virginia, found that clients of color received "statistically significantly lower prioritization scores" than white clients. The gap was small, but most of the survey's subscales were "tilted towards capturing vulnerabilities that Whites are more likely to endorse."
+Then the old survey kept winning. From December 2025 to April 2026, LAHSA [reported](https://www.lahsa.org/news?article=1033-los-angeles-housing-assessment-tool-la-hat-), applicants were more likely to reach an eligible score on the VI-SPDAT than on the new tool, and providers chose to give the VI-SPDAT. The agency says that pattern "perpetuated the racial bias of the VI-SPDAT." In April, the policy council of the Los Angeles coordinated entry system lowered the new tool's cutoff. In Allegheny County, Pa., a [study](https://arxiv.org/abs/2407.21209) of another replacement found that scores evened out across races while gaps in who actually got served did not shrink. The researchers traced part of the lasting gap to eligibility rules such as chronic homelessness. In New York, chronic homelessness is a condition of the first priority tier.
 
-The firm that co-developed the tool gave up on it. In December 2020, Iain De Jong of OrgCode Consulting [wrote](https://www.orgcode.com/blog/the-time-seems-right-lets-begin-the-end-of-the-vi-spdat), "Let's put the VI-SPDAT to rest." A month later the firm [conceded](https://www.orgcode.com/blog/a-message-from-orgcode-on-the-vi-spdat-moving-forward) that "the tool was never designed using a racial or gender equity lens."
+Scrapping New York's grade could make things worse. The Los Angeles team wrote that even the weak VI-SPDAT may beat a system where human judgment alone pushes less vulnerable people forward, and the City adopted a points-based questionnaire for its Homebase eviction prevention program because, it [says](https://data.cityofnewyork.us/resource/jaw4-yuem.json?$limit=1000), research showed staff could not predict who would end up in shelter. Los Angeles kept a score and found its problem by watching its score data and listening to providers. New York publishes nothing that would let anyone do the same.
 
-Los Angeles tried to build a better one. A research team led at the University of Southern California, working with the California Policy Lab at the University of California, Los Angeles and with the Los Angeles Homeless Services Authority (LAHSA), [tested the VI-SPDAT](https://cais.usc.edu/wp-content/uploads/2023/11/CESTTRR-Final-Report-2023.pdf) against outcomes a community board defined as harm: jail, hospitalization, psychiatric holds, death. On a standard accuracy measure where 0.5 is a coin flip, the VI-SPDAT scored 0.54. A model built purely for accuracy reached 0.64. The team traded some of that gain for fairness, settling on a 19-question tool that scored 0.60 and cut racial gaps in one measure of its error rate from as high as 8.5% to under 1%.
+## What the reports leave out
 
-Then providers kept using the old survey. LAHSA's [page on the new tool](https://www.lahsa.org/news?article=1033-los-angeles-housing-assessment-tool-la-hat-) reports that from December 2025 to April 2026, applicants were "more likely to obtain an eligible score" for supportive housing on the VI-SPDAT than on the new one. Service providers "opted for administering the VI-SPDAT," and the agency says the pattern "perpetuated the racial bias of the VI-SPDAT in the System." On April 22, the Los Angeles coordinated entry system's policy council lowered the new tool's cutoff.
+Local Law 3 makes HRA break out approvals, referrals, interviews and acceptances by age, gender, race and other traits, and HRA does. The law never asks for those counts by SVA grade, so no one outside the agency can see whether applicants graded low wait longer or whether the grade itself differs by race.
 
-In Allegheny County, Pa., a [study](https://arxiv.org/abs/2407.21209) of an algorithmic replacement for the VI-SPDAT found that scores became similar across races, but "we do not find evidence of a corresponding decrease in disparities in service rates."
+The 3,839 needs care. The report counts only activity within the year, and the City's [data notes](https://data.cityofnewyork.us/d/wh8n-imgd) say some providers take referrals directly, outside CAPS. In its [first report](https://www.nyc.gov/assets/hra/downloads/pdf/news/HRA-Local-Law-3-CFY2022-08302022.pdf), HRA said many applicants without a referral had been approved only in the last few months of the year. It also conceded that it had not built a way to record, person by person, why referrals aren't made. Four reports later, it still hasn't.
 
-The lesson travels because New York's system also has a score, eligibility rules and workers who decide whom to refer. In Allegheny County, the researchers traced the lasting gap partly to eligibility factors such as chronic homelessness. In New York, chronic homelessness is a condition of the first priority tier.
+The grade has a blind spot. HRA's [July 2026 guidance on the housing application](https://www.nyc.gov/assets/nycccoc/downloads/pdf/FAQ_Supportive_Housing_Application_July%202026_%20Final%20Draft%2007-06-26.pdf) says an applicant entered without a Social Security or Medicaid number gets "NO matches" in CAPS, so no homeless history comes back. The grade draws on those same data feeds, and no published figure shows whether such applicants are graded lower. The same document poses the question "Are undocumented applicants less likely to receive housing?" and answers only that federal rental subsidies require at least one household member with a Social Security number. The manual adds that CAPS does not assess eligibility by citizenship status.
 
-## The case against auditing
+The manual also lists "analysis of criteria to determine level of vulnerability" among the things the system is supposed to evaluate. The only evaluation posted among the City's coordinated entry resources, of the system's 2018 rollout, [reports](https://www.nyc.gov/assets/nycccoc/downloads/pdf/DSS%20OER%20CAPS%20Evaluation%20Brief%2010.2020.pdf) how many approved applicants were graded high and nothing on whether the grade predicts need or differs by race. Nor does the SVA appear in any of the City's four annual [inventories of algorithmic tools](https://data.cityofnewyork.us/resource/jaw4-yuem.json?$limit=1000) under Local Law 35, though the Homebase questionnaire is listed every year. Whether a rule set like the SVA meets that law's definition is arguable. It graded nearly 11,000 approved applicants in fiscal 2026.
 
-The strongest objection to auditing a score is that a rule people can see is a rule people can game. A second objection is that any score beats unaided judgment. The Los Angeles researchers wrote that even the weak VI-SPDAT "may still be better than a system with no tool where human decisions and perceived biases" push less vulnerable people forward. New York's Homebase prevention program uses a points-based questionnaire because, the City [says](https://data.cityofnewyork.us/resource/jaw4-yuem.json?$limit=1000), research showed "staff were not accurately able to predict who would or would not enter" the shelter system run by the Department of Homeless Services.
+HRA does not need new authority to fix this. It should record a reason, from a fixed list, whenever an approved applicant gets no referral, as Local Law 3 has required since 2022. In the same report it should break every count out by SVA grade and by whether an applicant's records matched the City's data feeds, and it should publish the evaluation of the vulnerability criteria that the coordinated entry manual calls for. The City should list the SVA in its next Local Law 35 inventory.
 
-Both objections are fair, and both are arguments for keeping a score and checking it. Los Angeles caught the problem because it looked at score data and listened to providers.
-
-## What New York's reports leave out
-
-Local Law 3 requires HRA to break out how many people are approved, referred, interviewed, accepted and rejected by age, gender, race and other factors, and HRA does. The law never asks for those counts by vulnerability grade. No one outside the agency can see whether applicants graded low wait longer, or whether the grade itself tracks race.
-
-The 3,839 figure needs care. It counts only activity within the year, and the City's [data notes](https://data.cityofnewyork.us/d/wh8n-imgd) say some providers take referrals directly, outside CAPS. In its [fiscal 2022 report](https://www.nyc.gov/assets/hra/downloads/pdf/news/HRA-Local-Law-3-CFY2022-08302022.pdf), HRA said 43% of applicants without a referral had been approved within the last four months. It also said HRA "has not operationalized making client-level designations for why referrals are not made in CAPS."
-
-The data feeds have a gap. A [July 2026 HRA training document](https://www.nyc.gov/assets/nycccoc/downloads/pdf/FAQ_Supportive_Housing_Application_July%202026_%20Final%20Draft%2007-06-26.pdf) says that when an applicant is entered without a Social Security or Medicaid number, "there will be NO matches for the client in the CAPS system," and no homeless history comes back. The grade is built from those feeds, and no published figure shows whether such applicants get lower grades. The same document asks, "Are undocumented applicants less likely to receive housing?" Its answer notes only that federal rental subsidies require at least one household member with a Social Security number.
-
-The SVA is also missing from the City's [annual inventory of algorithmic tools](https://data.cityofnewyork.us/resource/jaw4-yuem.json?$limit=1000) under Local Law 35, which lists the Homebase questionnaire every year. It does not appear in any of the 218 entries filed for 2022 through 2025. Whether a rule set like the SVA meets the law's definition is arguable. It graded nearly 11,000 approved applicants in fiscal 2026.
-
-## What the City should do
-
-HRA should do what Local Law 3 has required since 2022: record a reason, from a fixed list, whenever an approved applicant gets no referral, and publish the counts. In the same report, it should break every existing count out by SVA grade and by whether the applicant's records matched the City's data feeds. If HRA won't add the grade breakout, the Council can write it into Local Law 3. The City should also list the SVA in its next Local Law 35 inventory.
-
-With those numbers, anyone could check whether the applicants the City grades as most vulnerable are the ones getting housed, and whether the grade treats Black, Latino and undocumented applicants the way it treats everyone else. Shinn and Richard, summarizing a public health study of how to allocate COVID-19 treatments, wrote that systems should be "explicit about the value choices inherent in the allocation of scarce resources, rather than outsourcing decisions to an instrument."
-
-HRA's next Local Law 3 report, covering fiscal 2027, is due by Sept. 1, 2027.
+The City Council has a date to hold HRA to. HRA's report for fiscal 2027 is due by Sept. 1, 2027. If the reason column again reads "Data not in CAPS," the Council should call HRA in to explain at an oversight hearing and write the grade breakout into the law.
 
 <!-- CHART
 title: More than a third of applicants approved in fiscal 2026 had no referral recorded by year's end
-dek: The City grades every approved applicant for supportive housing. It has never reported a reason why thousands get no referral, though Local Law 3 already requires one.
+dek: Stages overlap, counts cover only activity during the year on applications approved that year, and some providers take referrals outside CAPS
 type: bar
 data:
 | Stage | Individuals or families | Claim |
@@ -72,29 +54,23 @@ data:
 | Interviewed by a housing provider | 5,091 | C19 |
 | Rejected by a provider after interview | 1,674 | C19 |
 | Accepted to or moved into supportive housing | 3,220 | C19 |
-source: NYC Human Resources Administration, Local Law 3 report on the Coordinated Assessment and Placement System, fiscal year 2026; NYC Open Data dataset wh8n-imgd. Counts cover only activity during the year on applications approved that year; not all supportive housing units are in CAPS.
+source: NYC Human Resources Administration, Local Law 3 report on the Coordinated Assessment and Placement System, fiscal year 2026; NYC Open Data dataset wh8n-imgd. Not all supportive housing units are in CAPS.
 claims: C19, C20, C24
 -->
 
 <!-- CLAIM MAP
-paragraph 1: C14, C15, C18 (manual "last posted in 2019": checker's fix)
-paragraph 2: C19, C24, C25
-paragraph 3: C2 (priority order public), C21, C25 (argument)
-paragraph 4 (Federal rules require a ranking): C3, C1, C2, C4
-paragraph 5: C5, C29
-paragraph 6 (Other places tried better formulas): C9, C8
-paragraph 7: C6, C7, C27
-paragraph 8: C10
-paragraph 9: C12
-paragraph 10: C13
-paragraph 11: C13, C14 (argument)
-paragraph 12 (The case against auditing): C12, C11, C23, C28
-paragraph 13: C12 (argument)
-paragraph 14 (What New York's reports leave out): C21, C19
-paragraph 15: C20, C24
-paragraph 16: C17, C15 (FAQ answer on Social Security numbers: checker's fix)
-paragraph 17: C22, C19 (10,938 approved in FY2026; "nearly 11,000")
-paragraph 18 (What the City should do): C25, C21, C22 (proposal)
-paragraph 19: C9, C26
-paragraph 20: C21 (reports due Sept. 1 annually)
+paragraph 1: C25, C24 (five reports, single "Data not in CAPS" entry)
+paragraph 2: C19 (3,220 of 10,938 = 29%, "fewer than a third")
+paragraph 3: C30, C31 (fact sheet URL) (2023 manual, SVA cutoffs, priority order), C15 ("real-time data feeds"), C14
+paragraph 4: C3, C1, C2 (argument), C25
+paragraph 5 (Scores that looked neutral): C9, C8, C35, C7, C27
+paragraph 6: C10, C34
+paragraph 7: C12, C13
+paragraph 8: C11, C23, C28, C12 (argument)
+paragraph 9 (What the reports leave out): C21
+paragraph 10: C20, C24 (fiscal 2022 report: 43% approved within 4 months; "has not operationalized")
+paragraph 11: C17, C33
+paragraph 12: C32, C37, C22, C19 ("nearly 11,000")
+paragraph 13: C25, C21, C32, C22 (proposal)
+paragraph 14: C21 (due Sept. 1 annually); oversight hearing is the essay's proposal
 -->

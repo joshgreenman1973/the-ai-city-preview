@@ -22,7 +22,7 @@ Method: each source was fetched directly (curl, then stripped to text). The DOB 
 - 156,389 first reviews; 111,842 resubmissions (DOB NOW) — same
 - Arithmetic: a 3:1 split puts about 19.05 of 25.4 days with the applicant; half of that is about 9.5 days — derived; correctly framed as hypothetical
 - Fiscal 2026 ended in June; the FY26 MMR is the latest full-year report — MMR
-- "10-plus city agencies" — Vital City, "8 Policy Tweaks...", Melissa O'Shaughnessy, Just Fix It, May 7, 2026 (datePublished 2026-05-07) — https://www.vitalcitynyc.org/nyc-housing-permits-fast-track-construction-mamdani/
+- "10-plus city agencies" — Vital City, "8 Policy Tweaks...", Just Fix It, May 7, 2026 (datePublished 2026-05-07). [Correction, Oct. 20, 2026: the byline is Vital City, prepared with the help of John Surico; O'Shaughnessy did the illustration. See dossier C32 and checks/plan-review-fix.md.] — https://www.vitalcitynyc.org/nyc-housing-permits-fast-track-construction-mamdani/
 - The column urges the Mamdani administration to "Aggressively explore all the ways in which AI could be used to streamline processes" — same, verbatim
 - The column notes "Permitting was not mentioned in the AI Action Plan" (the City's 2023 plan) — same
 - "It can take one to two years for as-of-right development to acquire the appropriate permits" — same; the essay attributes it to the column

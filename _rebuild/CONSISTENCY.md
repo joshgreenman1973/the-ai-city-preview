@@ -17,3 +17,5 @@
 15. RESOLVED: VC stylebook line 1006 says "Use %, not percent (per AP)". Convert "N percent" to "N%" in every essay in the final pass (my brief was wrong).
 16. "comptroller" capitalization: AP/VC: capitalize as a title before a name ("City Comptroller Mark Levine"), lowercase standing alone ("the comptroller"). Apply across fiscal, jobs, procurement, face-and-plate, landlord.
 17. benefits-backlog: check whether placing Tammy Dobbs (cerebral palsy) next to the cerebral palsy coding error implies a link The Verge does not make. Also "the appeals record is poor" fairness.
+18. ROUND 2: jobs dek says young workers "kept shrinking" in office industries; finance grew. Fix in final pass.
+19. ROUND 2: face-and-plate and procurement may both argue no ShotSpotter renewal without a confirmed-shooting standard. Avoid duplicating; give procurement the contract-terms angle.

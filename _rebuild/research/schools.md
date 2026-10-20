@@ -172,6 +172,16 @@ C31. (Added by fact-checker.) The Oct. 9 exemption was to the device (screen-tim
 - Quote: "New York City has granted its first exemption to a sweeping ban on digital devices in classrooms serving young students, allowing a major tutoring program to provide one-on-one virtual instruction." / "officials said programs that use human teachers for real-time instruction, as opposed to platforms where instruction is delivered by software, could qualify for exemptions."
 - Last checked: Oct. 19, 2026.
 
+C32. (Added Oct. 20, 2026, second-round fix.) Liang et al. describe detector accuracy on the U.S. eighth-grade essays as "near perfect," not perfect, and the authors strongly caution against using GPT detectors in educational settings.
+- Source: Liang et al., Patterns, 2023 (C20) — https://pmc.ncbi.nlm.nih.gov/articles/PMC10382961/ (fetched with curl Oct. 20, 2026)
+- Quote: "over half of the non-native English writing samples were misclassified as AI generated, while the accuracy for native samples remained near perfect." / Figure 1 caption: "High misclassification of TOEFL essays written by non-native English authors as AI generated, with near-perfect accuracy for US eighth-grade essays." / "First, we strongly caution against the use of GPT detectors in evaluative or educational settings, particularly when assessing the work of non-native English speakers."
+- Last checked: Oct. 20, 2026.
+
+C33. (Added Oct. 20, 2026, second-round fix.) Paige Wyatt taught high school English and quit her teaching job "last year"; she appears in Chalkbeat's national story (C22), which does not name her school or state.
+- Source: Chalkbeat, Sept. 2, 2026 (C22) — https://www.chalkbeat.org/2026/09/02/state-ai-guidance-schools-skirts-cheating-teachers/ (fetched with curl Oct. 20, 2026)
+- Quote: "Paige Wyatt heard plenty from administrators about using AI to generate lesson plans at the school where she taught high school English." / "Wyatt quit her teaching job last year. She didn’t leave solely due to AI, but its impact on her work was a factor."
+- Last checked: Oct. 20, 2026.
+
 ## Could not confirm
 - Whether the Algebra Teaching Assistant and Open Gen AI tools are still in use in fall 2026, or whether they are among the 38 programs having AI features disabled. The LL35 inventory does not say, and the City has not published the list.
 - Membership or launch of the Technology in Schools Coalition. The NYCPS page says "check back"; my web-search budget ran out before I could search further.

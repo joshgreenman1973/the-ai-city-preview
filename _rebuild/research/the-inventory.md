@@ -184,6 +184,29 @@ C37. (Added by fact-checker.) The federal data dictionary's testing field is mul
 - Source: https://raw.githubusercontent.com/ombegov/2025-Federal-Agency-AI-Use-Case-Inventory/main/Validation/data_dictionary.md
 - Quote: "Has pre-deployment testing been conducted for this AI use case?" Valid values: "a) Yes", "b) In-progress", and a CAIO waiver option. Checker's re-tally of the CSV matched C27: 445 high-impact; 227 deployed; Yes 44, In-progress 81, blank 102.
 
+C38. (Added Oct. 20, 2026, second-round fix.) No director of the Office of Algorithmic Accountability had been announced by Oct. 20, 2026.
+- Method: web search Oct. 20, 2026 ("New York City 'Office of Algorithmic Accountability' director named") returned only 2025 coverage of the GUARD Act package (City & State, GovTech, intro.nyc); no appointment found. Combined with the Oct. 19 check-report currency note (OTI AI page, earlier searches).
+- Caveat: absence of evidence from one search plus the earlier check; recheck before publication.
+
+C39. (Added Oct. 20, 2026.) The Oct. 5, 2026 Committee of the Whole hearing ran from 11:09 a.m. to a 9:16 p.m. recess, just over 10 hours. The Council's Oct. 13 release says "nearly 10 hours" and 46 members participating. The transcript's cover lists all 51 members (Menin, De La Rosa and 49 others), which is a roster, not an attendance count.
+- Source: Hearing Transcript 10/5/26 (URL in C34); local copy checks/pdfs/inventory/hearing-transcript-2026-10-05.txt, fetched Oct. 19, read Oct. 20.
+- Quote: "October 5, 2026 Start: 11:09 a.m. Recess: 09:16 p.m. HELD AT: Council Chambers - City Hall"
+- Source: Council press release, re-fetched Oct. 20, 2026 — https://council.nyc.gov/press/2026/10/13/3295/
+- Quote: "The hearing lasted nearly 10 hours, with 46 Council Members participating in the hearing throughout the day."
+
+C40. (Added Oct. 20, 2026.) At the Oct. 5 hearing, Speaker Menin raised the resignation of Jiahao Chen, citing City & State reporting that he resigned "a week to a week and a half ago" in frustration that positions were being held up by OMB. Milstein said Chen "served as director of AI and ML" at OTI for two and a half years. (Menin called him "our chief technology officer"; Milstein's title is the accurate one. City & State reported in March 2024 that Chen took the role in mid-January 2024, consistent with two and a half years.)
+- Source: Hearing Transcript 10/5/26 (URL in C34), pp. 265-267.
+- Quote (Menin): "I am concerned by news that city and state reported on Friday that the AI Zar Jiahao Chen, who is our chief technology officer resigned, I think a week to a week and a half ago, and reports saying that he resigned in ... frustration that a lot of positions were being not hired or being held up by OMB."
+- Quote (Milstein): "Jiahao Chen served as director of AI and ML at OTA– at OTI for two and a half years. He did important work in the previous administration to help define and understand AI use throughout the city."
+- Corroboration of start date: City & State, March 2024 — https://cityandstateny.com/politics/2024/03/new-york-city-quietly-hired-its-first-ai-czar-who-he/394768 (search-result summary: Chen "took on the role" in mid-January). The City & State resignation story Menin cited was not located (two searches, Oct. 20); the essay attributes the reason for his exit to Menin's account of press reports.
+
+C41. (Added Oct. 20, 2026.) The NYPD's ShotSpotter entry for 2025 is classified as "Data management," so it is not among the 26 decision tools; the ACS ASAP tool is "Performance evaluation," the DOC jail forecast and FDNY hospital algorithm are "Resource allocation."
+- Source: dataset jaw4-yuem, local copy checks/pdfs/inventory/jaw4.json (queried Oct. 19), field purpose_type.
+- Result: ShotSpotter 'Data management'; ASAP 'Performance evaluation'; NYC Jail Population Forecast 'Resource allocation'; EMS Hospital Suggestion Algorithm 'Resource allocation'.
+
+C42. (Re-verified Oct. 20, 2026.) State AI inventory: 19 rows, 13 agencies, 5 columns.
+- Source: https://data.ny.gov/resource/fgvt-qr4i.json?$limit=200, queried Oct. 20, 2026. Result: 19 13 5.
+
 ## Could not confirm
 - Whether the Office of Algorithmic Accountability's director has been named since Oct. 6, 2026. amNY reported OTI hoped to name one "in the next week or two." My web search budget ran out before I could check; the essay attributes the timing to the hearing.
 - Whether the Local Law 195 list of assessed systems has been posted. BetaNYC was asking for it on Oct. 5; I found no list but could not search.
