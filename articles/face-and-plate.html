@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Make the NYPD Count Its Surveillance — The Algorithmic City</title>
+<link rel="stylesheet" href="https://use.typekit.net/qqk2vto.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/styles.css?v=20261020">
+</head>
+<body class="article-page">
+
+<!-- Password gate -->
+<div id="password-gate">
+  <div class="pw-inner">
+    <h1>The Algorithmic City</h1>
+    <p class="pw-sub">Preview access</p>
+    <input id="pw-input" type="password" placeholder="Enter password" onkeydown="if(event.key==='Enter')checkPw()">
+    <button onclick="checkPw()">Enter</button>
+    <p id="pw-error" class="pw-error">Incorrect password</p>
+  </div>
+</div>
+<script>
+function checkPw(){
+  if(document.getElementById('pw-input').value==='#VitalCity2026!?'){
+    document.getElementById('password-gate').style.display='none';
+    document.getElementById('site').style.display='';
+    sessionStorage.setItem('ai-city-auth','1');
+  } else { document.getElementById('pw-error').style.display='block'; }
+}
+if(sessionStorage.getItem('ai-city-auth')==='1'){
+  document.addEventListener('DOMContentLoaded',()=>{
+    document.getElementById('password-gate').style.display='none';
+    document.getElementById('site').style.display='';
+  });
+}
+</script>
+
+<div id="site" style="display:none">
+<header class="site-header">
+  <div class="header-inner">
+    <a href="../index.html" class="logo">The Algorithmic City</a>
+    <div class="header-nav">
+      <a href="../index.html" class="back-link">← Back to issue</a>
+      <button type="button" class="print-btn" onclick="window.print()" aria-label="Print this essay" title="Print this essay">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+        <span>Print this essay</span>
+      </button>
+      <a href="../print-issue.html" class="print-btn" aria-label="Print entire issue" title="Print / Save entire issue as PDF" style="text-decoration:none;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h12a2 2 0 0 1 2 2v14l-3-2-3 2-3-2-3 2-2-1.3V6a2 2 0 0 1 2-2z"/><line x1="8" y1="9" x2="14" y2="9"/><line x1="8" y1="13" x2="14" y2="13"/></svg><span>Print entire issue</span></a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section id="article-hero" class="article-hero-wrap"></section>
+  <figure id="article-lead" class="article-lead-image"></figure>
+  <section class="article-body-wrap">
+    <div id="article-body" class="article-body"></div>
+    <nav id="article-footer-nav" class="article-footer-nav"></nav>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="footer-logo">The Algorithmic City</span>
+      <p>A special issue written, designed and fact-checked by artificial intelligence. Twenty essays on artificial intelligence and New York City.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Issue</h4>
+      <a href="../index.html">All essays</a>
+      <a href="../index.html#promise">The Promise</a>
+      <a href="../index.html#peril">The Peril</a>
+      <a href="../index.html#disruption">The Disruption</a>
+      <a href="../index.html#governance">The Governance Question</a>
+    </div>
+    <div class="footer-col">
+      <h4>About</h4>
+      <a href="../index.html#about">About this issue</a>
+      <a href="javascript:window.print()">Print this essay</a>
+      <a href="../print-issue.html">Print entire issue</a>
+    </div>
+  </div>
+</footer>
+</div>
+
+<script>window.ARTICLE_SLUG = "face-and-plate";</script>
+<script src="../assets/articles.js?v=20261020"></script>
+<script src="../assets/article.js?v=20261020"></script>
+</body>
+</html>

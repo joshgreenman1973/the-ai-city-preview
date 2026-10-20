@@ -1,0 +1,82 @@
+{
+ "front-door": {
+  "alt": "Ink drawing of a 311 call center at night, rows of desks mostly empty, one operator in a headset listening, apartment towers lit outside.",
+  "credit": "Illustration generated with Google's Gemini image model for this issue."
+ },
+ "plan-review": {
+  "alt": "Ink drawing of a plan examiner's desk with rolled drawings, a blueprint with circled corrections, a laptop and a crane outside the window.",
+  "credit": "Illustration generated with Google's Gemini image model for this issue."
+ },
+ "benefits-backlog": {
+  "alt": "Ink drawing of a benefits office waiting room, people on plastic chairs holding folders of documents, a caseworker at a service window.",
+  "credit": "Illustration generated with Google's Gemini image model for this issue."
+ },
+ "block-by-block": {
+  "alt": "Ink drawing of a Manhattan rooftop with a cooling tower and water tanks, an inspector with a flashlight climbing a ladder.",
+  "credit": "Illustration generated with Google's Gemini image model for this issue."
+ },
+ "streets": {
+  "alt": "Ink drawing of a city bus with a windshield camera in a painted bus lane on a Manhattan avenue, a delivery van stopped ahead.",
+  "credit": "Illustration generated with Google's Gemini image model for this issue."
+ },
+ "risk-scores": {
+  "alt": "Ink drawing of an arraignment courtroom seen from the back benches, the judge at the bench and a lawyer reading a single page.",
+  "credit": "Illustration generated with Google's Gemini image model for this issue."
+ },
+ "face-and-plate": {
+  "alt": "Ink drawing of police cameras on a lamppost aimed at traffic on a Queens boulevard, an elevated train behind.",
+  "credit": "Illustration generated with Google's Gemini image model for this issue."
+ },
+ "sanctuary-data": {
+  "alt": "Ink drawing of a license plate camera on a highway overpass at night, thin lines running from it across the sky.",
+  "credit": "Illustration generated with Google's Gemini image model for this issue."
+ },
+ "acs-model": {
+  "alt": "Ink drawing of an empty caseworker's office, a tall stack of case folders with one tab marked, a window onto Brooklyn rowhouses.",
+  "credit": "Illustration generated with Google's Gemini image model for this issue."
+ },
+ "shelter-score": {
+  "alt": "Ink drawing of a housing intake room, a staff member and an applicant across a table with a long paper questionnaire.",
+  "credit": "Illustration generated with Google's Gemini image model for this issue."
+ },
+ "landlord-algorithm": {
+  "alt": "Ink drawing of Brooklyn apartment buildings at dusk with a few lit windows, a landlord's desk with a laptop and keys in front.",
+  "credit": "Illustration generated with Google's Gemini image model for this issue."
+ },
+ "jobs": {
+  "alt": "Ink drawing of a Midtown office floor in the morning, many desks empty, a few young workers at laptops.",
+  "credit": "Illustration generated with Google's Gemini image model for this issue."
+ },
+ "schools": {
+  "alt": "Ink drawing of a high school classroom, students writing by hand, a teacher walking the rows, a laptop cart in the corner.",
+  "credit": "Illustration generated with Google's Gemini image model for this issue."
+ },
+ "deepfakes": {
+  "alt": "Ink drawing of a subway car, riders looking at phones, one phone showing a politician at a podium.",
+  "credit": "Illustration generated with Google's Gemini image model for this issue."
+ },
+ "data-centers": {
+  "alt": "Ink drawing of upstate farmland with a long windowless data center beside transmission towers.",
+  "credit": "Illustration generated with Google's Gemini image model for this issue."
+ },
+ "fiscal": {
+  "alt": "Ink drawing of Wall Street on a weekday, the stock exchange's columns and office workers crossing the street.",
+  "credit": "Illustration generated with Google's Gemini image model for this issue."
+ },
+ "the-inventory": {
+  "alt": "Ink drawing of a records room with shelves of file boxes and an open card catalog, a clerk reading one card.",
+  "credit": "Illustration generated with Google's Gemini image model for this issue."
+ },
+ "the-desk": {
+  "alt": "Ink drawing of a city office cubicle, a clerk typing at a computer beside a stack of forms.",
+  "credit": "Illustration generated with Google's Gemini image model for this issue."
+ },
+ "procurement": {
+  "alt": "Ink drawing of a conference table with a thick tabbed contract open to a signature page, the Brooklyn Bridge through the window.",
+  "credit": "Illustration generated with Google's Gemini image model for this issue."
+ },
+ "preemption": {
+  "alt": "Ink drawing of New York City Hall in the foreground with the U.S. Capitol dome small on the horizon.",
+  "credit": "Illustration generated with Google's Gemini image model for this issue."
+ }
+}

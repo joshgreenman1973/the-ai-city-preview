@@ -1,0 +1,105 @@
+{
+ "front-door": {"type": "hbar", "rows": [
+   {"label": "Fiscal 2022 (18.2 million calls)", "value": 29, "display": "29 sec.", "color": "periwinkle"},
+   {"label": "Fiscal 2023 (17.9 million calls)", "value": 17, "display": "17 sec.", "color": "periwinkle"},
+   {"label": "Fiscal 2024 (17.5 million calls)", "value": 31, "display": "31 sec.", "color": "periwinkle"},
+   {"label": "Fiscal 2025 (17.4 million calls)", "value": 25, "display": "25 sec.", "color": "periwinkle"},
+   {"label": "Fiscal 2026 (16.6 million calls)", "value": 43, "display": "43 sec.", "color": "orange"}]},
+ "plan-review": {"type": "line", "x": ["2022", "2023", "2024", "2025", "2026"], "ymax": 30, "yticks": [0, 10, 20, 30], "yfmt": "{v}", "series": [
+   {"name": "Filing to approval", "color": "orange", "values": [14.7, 18.1, 20.2, 20.3, 25.4], "displays": ["14.7", "18.1", "20.2", "20.3", "25.4 days"]},
+   {"name": "First plan review", "color": "indigo", "values": [2.9, 2.7, 3.3, 3.7, 5.4], "displays": ["2.9", "2.7", "3.3", "3.7", "5.4 days"]}]},
+ "benefits-backlog": {"type": "line", "x": ["FY2022", "FY2023", "FY2024", "FY2025", "FY2026"], "ymax": 100, "yticks": [0, 25, 50, 75, 100], "yfmt": "{v}%", "series": [
+   {"name": "SNAP", "color": "orange", "values": [60.1, 39.7, 65.1, 87.6, 84.7], "displays": ["60.1%", "39.7%", "65.1%", "87.6%", "84.7%"], "labelDy": -6},
+   {"name": "Cash assistance", "color": "indigo", "values": [82.3, 28.8, 42.4, 63.2, 65.8], "displays": ["82.3%", "28.8%", "42.4%", "63.2%", "65.8%"], "labelDy": 6}]},
+ "block-by-block": {"type": "hbar", "rows": [
+   {"label": "Lab software for sequencing and comparing genomes", "value": 13, "display": "13", "color": "periwinkle"},
+   {"label": "Record matching (duplicate immunization and lead records)", "value": 1, "display": "1", "color": "periwinkle"},
+   {"label": "Immunization schedule calculator", "value": 1, "display": "1", "color": "periwinkle"},
+   {"label": "Generative AI assistant for staff", "value": 1, "display": "1", "color": "periwinkle"},
+   {"label": "Food-poisoning classifier for Yelp reviews", "value": 1, "display": "1", "color": "periwinkle"},
+   {"label": "Ranking sites for inspection", "value": 0, "display": "0", "color": "orange"}]},
+ "streets": {"type": "hbar", "rows": [
+   {"label": "Notice issued", "value": 1568647, "display": "1,568,647", "color": "orange"},
+   {"label": "Rejected: exempt vehicle", "value": 712421, "display": "712,421", "color": "periwinkle"},
+   {"label": "Rejected: technical issue/other", "value": 308691, "display": "308,691", "color": "periwinkle"},
+   {"label": "Rejected: driver or vehicle info missing", "value": 243610, "display": "243,610", "color": "periwinkle"}]},
+ "risk-scores": {"type": "groupbar", "max": 100, "series": [{"name": "Tool recommended release", "color": "periwinkle"}, {"name": "Judge released when the tool recommended it", "color": "orange"}], "rows": [
+   {"label": "Black defendants", "values": [78, 26], "displays": ["78%", "26%"]},
+   {"label": "Hispanic defendants", "values": [78, 32], "displays": ["78%", "32%"]},
+   {"label": "White defendants", "values": [77, 43], "displays": ["77%", "43%"]}]},
+ "face-and-plate": {"type": "table", "columns": ["Tool", "Latest public count of use", "Who published it", "Required to report use?"], "rows": [
+   ["Facial recognition", "9,850 requests, 2,510 possible matches (2019)", "NYPD website", "Yes, annual audit since Sept. 1, 2025; none posted on the City's portal"],
+   ["ShotSpotter", "940 alerts, 122 confirmed shootings (June 2023)", "City Comptroller audit", "No"],
+   ["Drones", "More than 4,000 flight missions (2023, \"reportedly\")", "Department of Investigation testimony", "No"],
+   ["License plate readers", "None found; data kept five years", "—", "No"]]},
+ "sanctuary-data": {"type": "table", "columns": ["Rule", "How long plate data may be kept"], "rows": [
+   ["NYPD policy (Feb. 2026)", "1,825 days (five years)"],
+   ["Flock default before Aug. 2026", "30 days"],
+   ["Washington state law (2026)", "21 days"],
+   ["Flock default since Aug. 2026", "7 days"],
+   ["Pending New York bill", "2 days (48 hours)"]]},
+ "acs-model": {"type": "groupbar", "max": 100, "series": [{"name": "Black children", "color": "orange"}, {"name": "White children", "color": "indigo"}], "rows": [
+   {"label": "Tool alone (score 15 or higher)", "values": [71.0, 50.9], "displays": ["71.0%", "50.9%"]},
+   {"label": "Workers using the tool", "values": [61.8, 52.8], "displays": ["61.8%", "52.8%"]}]},
+ "shelter-score": {"type": "hbar", "rows": [
+   {"label": "Approved for supportive housing", "value": 10938, "display": "10,938", "color": "indigo"},
+   {"label": "Got at least one referral", "value": 7099, "display": "7,099", "color": "periwinkle"},
+   {"label": "Got no referral in CAPS (no reason recorded)", "value": 3839, "display": "3,839", "color": "orange"},
+   {"label": "Interviewed by a housing provider", "value": 5091, "display": "5,091", "color": "periwinkle"},
+   {"label": "Rejected by a provider after interview", "value": 1674, "display": "1,674", "color": "periwinkle"},
+   {"label": "Accepted to or moved into supportive housing", "value": 3220, "display": "3,220", "color": "periwinkle"}]},
+ "landlord-algorithm": {"type": "table", "columns": ["Measure", "Figure"], "rows": [
+   ["Complaints about automated hiring tools received by DCWP, July 2023 to June 2025", "2"],
+   ["Auditors' 311 test calls transferred to DCWP", "3 of 12"],
+   ["Potential violations DCWP found among 32 companies it reviewed", "1"],
+   ["Potential violations state auditors found among the 22 employers in that group", "at least 17"],
+   ["Employers with a posted bias audit, of 391 checked by researchers", "18"],
+   ["Employers with a posted applicant notice, of 391 checked", "13"]]},
+ "jobs": {"type": "line", "x": ["2019", "2022", "2025"], "ymin": 3, "ymax": 8, "yticks": [3, 4, 5, 6, 7, 8], "yfmt": "{v}%", "series": [
+   {"name": "Professional services", "color": "indigo", "values": [7.55, 7.21, 6.14], "displays": ["7.5%", "7.2%", "6.1%"]},
+   {"name": "Finance", "color": "periwinkle", "values": [5.57, 5.86, 5.81], "displays": ["5.6%", "5.9%", "5.8%"], "labelDy": 4},
+   {"name": "All private", "color": "charcoal", "values": [6.17, 5.75, 5.53], "displays": ["6.2%", "5.7%", "5.5%"], "labelDy": -4},
+   {"name": "Information", "color": "orange", "values": [5.42, 4.62, 3.40], "displays": ["5.4%", "4.6%", "3.4%"]}]},
+ "schools": {"type": "hbar", "rows": [
+   {"label": "All or most", "value": 10, "display": "10%", "color": "orange"},
+   {"label": "Some", "value": 21, "display": "21%", "color": "periwinkle"},
+   {"label": "A little", "value": 23, "display": "23%", "color": "periwinkle"},
+   {"label": "None", "value": 45, "display": "45%", "color": "indigo"}]},
+ "deepfakes": {"type": "hbar", "rows": [
+   {"label": "All AI ads identified (164)", "value": 31, "display": "31%", "color": "indigo"},
+   {"label": "Ads in states with AI disclosure laws", "value": 29, "display": "29%", "color": "orange"},
+   {"label": "Ads in states without such laws", "value": 32, "display": "32%", "color": "periwinkle"}]},
+ "data-centers": {"type": "hbar", "rows": [
+   {"label": "Upstate (Zones A to E)", "value": 2401, "display": "2,401 MW", "color": "indigo"},
+   {"label": "Other downstate zones (F to I)", "value": 292, "display": "292 MW", "color": "periwinkle"},
+   {"label": "Long Island (Zone K)", "value": 187, "display": "187 MW", "color": "periwinkle"},
+   {"label": "New York City (Zone J)", "value": 0, "display": "0 MW", "color": "orange"},
+   {"label": "Statewide total", "value": 2880, "display": "2,880 MW", "color": "charcoal", "total": true}]},
+ "fiscal": {"type": "hbar", "rows": [
+   {"label": "Productivity Boon (15% chance)", "value": 8, "display": "+$8 billion", "color": "indigo"},
+   {"label": "AI-Empowered Economy, the baseline (35%)", "value": 0, "display": "$0", "color": "charcoal"},
+   {"label": "Job Replacement (20%)", "value": -5.5, "display": "−$5.5 billion", "color": "periwinkle"},
+   {"label": "AI Falls Flat (25%)", "value": -9, "display": "−$9 billion", "color": "orange"},
+   {"label": "AI Shockwave (5%)", "value": -14, "display": "−$14 billion", "color": "magenta"}]},
+ "the-inventory": {"type": "hbar", "rows": [
+   {"label": "2022 (11 agencies)", "value": 31, "display": "31 tools", "color": "periwinkle"},
+   {"label": "2023 (14 agencies)", "value": 46, "display": "46 tools", "color": "periwinkle"},
+   {"label": "2024 (13 agencies)", "value": 55, "display": "55 tools", "color": "periwinkle"},
+   {"label": "2025 (19 agencies)", "value": 86, "display": "86 tools", "color": "orange"}]},
+ "the-desk": {"type": "stacked", "max": 50, "series": [{"name": "Daily or several times a week", "color": "orange"}, {"name": "Less often, at least a few times a year", "color": "periwinkle"}], "rows": [
+   {"label": "Q2 2023", "parts": [10, 7], "total": "17%"},
+   {"label": "Q2 2024", "parts": [11, 18], "total": "28%"},
+   {"label": "Q2 2025", "parts": [14, 23], "total": "37%"},
+   {"label": "Q3 2025", "parts": [20, 23], "total": "43%"},
+   {"label": "Q4 2025", "parts": [21, 22], "total": "43%"}]},
+ "procurement": {"type": "hbar", "rows": [
+   {"label": "Sept. 2014 to Sept. 2016: demonstration project (originally $1.5 million)", "value": 3041934, "display": "$3.0 million", "color": "orange"},
+   {"label": "June 2016 to Dec. 2021: negotiated acquisition", "value": 29585202, "display": "$29.6 million", "color": "periwinkle"},
+   {"label": "Dec. 2021 to Dec. 2024: renewal", "value": 22004388, "display": "$22.0 million", "color": "periwinkle"},
+   {"label": "Dec. 2024 to Dec. 2027: renewal", "value": 21853900, "display": "$21.9 million", "color": "periwinkle"}]},
+ "preemption": {"type": "table", "columns": ["Proposal", "Date", "Would preempt", "Leaves alone", "Status"], "rows": [
+   ["House budget bill moratorium", "Passed House May 22, 2025", "Any state or local law regulating AI models, AI systems or automated decision systems, for 10 years", "Rules that streamline procurement to speed AI adoption; generally applicable laws; criminal laws. No exception for a government's rules about its own use", "Stripped by Senate 99-1, July 1, 2025"],
+   ["Executive Order 14365", "Signed Dec. 11, 2025", "Directs lawsuits and funding conditions against \"onerous\" state AI laws", "Its preemption bill must not reach child safety, data center infrastructure or \"State government procurement and use of AI\"", "In force; Justice Department moved to join xAI suit against Colorado, April 24, 2026"],
+   ["White House legislative framework", "March 20, 2026", "State laws imposing \"undue burdens,\" including any regulating AI development", "\"Requirements governing a state's own use of AI,\" general laws, zoning for AI infrastructure", "Recommendations to Congress"],
+   ["Great American AI Act (House discussion draft)", "June 4, 2026", "State laws \"specifically regulating the development\" of AI models, for three years", "Laws on use or deployment of AI models", "11 bills cleared House Science Committee in July; none on the floor as of Sept. 17, 2026"]]}
+}

@@ -1,1 +1,7 @@
 _research/
+
+# rebuild scratch and downloaded third-party documents
+_rebuild/out/
+_rebuild/art/
+_rebuild/checks/pdfs/
+_rebuild/research/pdfs/
