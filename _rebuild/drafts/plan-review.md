@@ -37,7 +37,7 @@ The argument for moving faster is DOB's own clock. First reviews took 3.7 days i
 
 The gain would still be modest next to the whole wait. By DOB's three-to-one rule of thumb, about 19 of the 25.4 days sit with the applicant. Halve that and the average filing gets through DOB about 9.5 days sooner. The same column put the time for as-of-right projects to collect their permits at one to two years. If that is close, DOB's approval loop is a small slice of the total, and the rest passes in stages, including other agencies' reviews, that a tool reading plans for DOB does not touch.
 
-So the question for New York is how to try one. Honolulu's mandate arrived with published evidence from 19 permits whose applicants had opted in, and New York can learn far more than that for the price of a coin flip. If DOB tests a pre-check, it should assign eligible filings to it at random, for instance by alternating job numbers, and publish the pilot group's days to approval and count of resubmissions beside the comparison group's before it requires any applicant to use the tool.
+Honolulu's mandate arrived with published evidence from 19 permits whose applicants had opted in, and New York can learn far more than that for the price of a coin flip. If DOB tests a pre-check, it should assign eligible filings to it at random, for instance by alternating job numbers, and publish the pilot group's days to approval and count of resubmissions beside the comparison group's before it requires any applicant to use the tool.
 
 <!-- CHART
 title: Approval at the Buildings Department takes several times longer than the first review
